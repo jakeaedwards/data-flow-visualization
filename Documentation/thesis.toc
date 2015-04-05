@@ -1,0 +1,25 @@
+\contentsline {chapter}{\nonumberline List of Figures}{iii}{chapter*.2}
+\contentsline {chapter}{List of Abbreviations}{v}{chapter*.3}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.4}
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.5}
+\contentsline {paragraph}{Intermediate data sets}{1}{paragraph*.6}
+\contentsline {paragraph}{Directed Acyclic Graphs}{1}{paragraph*.7}
+\contentsline {section}{\numberline {1.2}Structure of this Thesis}{2}{section.8}
+\contentsline {chapter}{\numberline {2}Related Work}{3}{chapter.9}
+\contentsline {section}{\numberline {2.1}Visualization of Data}{3}{section.10}
+\contentsline {paragraph}{Chart Junk}{3}{paragraph*.11}
+\contentsline {paragraph}{Data-rich Visualizations}{4}{paragraph*.12}
+\contentsline {paragraph}{Dashboards}{4}{paragraph*.14}
+\contentsline {paragraph}{Dashboard constraints}{4}{paragraph*.15}
+\contentsline {paragraph}{Evaluation of Visualizations}{4}{paragraph*.16}
+\contentsline {section}{\numberline {2.2}In-Situ Processing}{4}{section.17}
+\contentsline {paragraph}{Pig}{6}{paragraph*.18}
+\contentsline {paragraph}{Flink}{6}{paragraph*.19}
+\contentsline {section}{\numberline {2.3}Visualization of Data Flow Graphs}{6}{section.20}
+\contentsline {paragraph}{IBM System S}{6}{paragraph*.21}
+\contentsline {paragraph}{Retrospective Debugging}{7}{paragraph*.23}
+\contentsline {paragraph}{Lipstick}{7}{paragraph*.24}
+\contentsline {chapter}{\numberline {A}Implementation}{9}{appendix.25}
+\contentsline {section}{\numberline {A.1}My Algorithm}{9}{section.26}
+\contentsline {paragraph}{}{9}{paragraph*.27}
+\contentsline {chapter}{\nonumberline Bibliography}{11}{appendix*.33}

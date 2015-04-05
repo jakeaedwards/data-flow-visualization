@@ -1,0 +1,22 @@
+\chapter{Introduction}
+\label{sec:Introduction}
+
+
+
+\section{Motivation}
+\INITIAL{I}{n-situ} data processing is currently extremely popular. In this approach, in order to achieve the minimum possible time in which results are returned, very little preprocessing of any kind is performed. This means that users do not have a very comprehensive understanding of the nuances and problems which may exist in the data beforehand. Any potential pitfalls are likely to only be discovered at a later time, after much time and effort will already have been invested.
+
+\paragraph{Intermediate data sets}
+Standard statistics such as minimum, maximum, average, or median may help for simple numeric data. However, text data or (semi-) structured data call for different approaches. Aside from knowing what your raw data looks like at the input stage it is also crucial to understand intermediate data sets, i.e. how the different operations affect the data within the data flow.
+
+\paragraph{Directed Acyclic Graphs}
+It is typical for large scale analysis systems such as Flink \cite{Battre2010}, Pig \cite{Amsterdamer2011}, or IBMs System S \cite{Gedik2008} to represent analysis jobs as a series of individual tasks. These tasks are connected into a data flow which generally takes the form of an directed acyclic graph (DAG), which provides a useful visual metaphor for the ordering and dependencies of each task within a job. While this is adequate for describing the process by which data is analyzed, it leaves much to be desired in terms of describing the data itself. In particular, in cases where execution times are particularly long. Thus far, few systems making use of data flow graphs have invested significantly in the area of visual feedback within these graphs. System S provides basic feedback indicating the status of dataset processing without real feedback regarding data features \cite{Pauw2010}, and Lipstick has evolved from a method of providing provenance models for pig latin queries \cite{Amsterdamer2011} to providing rudimentary DAG visualization capabilities for Apache Pig in its current development state \cite{Amsterdamer2011}.
+
+\section{Structure of this Thesis}
+
+\begin{description}
+\item[Chapter 2] contains a survey of related work
+\item[Chapter 3] provides an overview of data types and models
+\item[Chapter 4] details the implementation
+\item[Chapter 5] results and conclusions
+\end{description}

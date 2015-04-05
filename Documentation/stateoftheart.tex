@@ -1,0 +1,66 @@
+\chapter{Related Work}
+\label{sec:state_of_the_art}
+\INITIAL{T}{he field of data visualization} has existed in some form for as long as data analysis has taken place. The primary purpose of data visualization is of course the effective communication of information through the use of graphics. Across varying fields and time periods, different approaches have been applied to varying degrees of success. Most are familiar with basic forms of information graphics, such as tables or basic charts, but as more data is generated and the economy becomes increasingly information-driven we have seen data visualization expand as a field of study in and of itself. 
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Visualization of Data}
+\label{sec:dataviz}
+\INITIAL{G}{eneral purpose visualization techniques} have evolved over the past several decades, but often simple techniques still provide the most effective solution. One of the most seminal works in information display is Edward Tufte's "The Visual Display of Quantitative Information"\cite{Tufle1983}. This work provided a summary of several different types of visualizations applied in many fields, but more importantly it set guidelines as to what makes an effective visualization.
+
+\paragraph{Chart Junk}
+Many of the key concepts of Tufte's work revolve around the idea of limiting what he called \emph{chart junk}. Chart junk refers to "useless, non-informative, or information-obscuring elements of information displays"\cite{Tufle1983}. While Tufte acknowledges that using non-data graphics can help to editorialize or provide context for the information being displayed,  it is more important to ensure that data is not distorted in order to fit an aesthetic. 
+
+\paragraph{Data-rich Visualizations}
+In addition to limiting non-data information in visualizations, Tufte makes a strong case for the value of data-rich visualizations. Data-rich visualizations are those which include all available information, providing a comprehensive view from which macro trends may emerge. In essence, perhaps at the expense of being able to read individual data points, viewing a complete data set visually may provide insight without need for mathematical analysis. One of many examples of this given in the work is the famous map of central London used by Dr. John Snow to determine the root cause of a cholera outbreak, shown in Figure \ref{fig:snowmap}. By marking the location of cholera deaths with dots and water pumps with crosses it became immediately clear that deaths were clustered around a central pump on Broad Street. Dismantling this pump quickly stopped the deaths. This provides a clear case where a simple graphical analysis proved far more efficient than mathematical computation would have been in determining a causal link.
+
+%%%%%%%%%%%%%%%%%%
+\begin{figure}
+	\centering
+	\label{fig:snowmap}
+	\includegraphics[scale=0.14]{jonsnowmap.jpg}
+	\caption{The map used by John Snow to determine the source of a cholera outbreak \cite{Tufle1983}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%
+
+\paragraph{Dashboards}
+A more contemporary area of work which is directly connected to digital display is the concept of a \emph{dashboard}. As defined by Stephen Few, a pre-eminent expert in this area, a dashboard is a single-screen visual display of the information required to achieve a specific set of goals. In a business context, this generally refers to key performance Indicators (KPIs). Such a dashboard is typically generated dynamically, allowing for real-time display of data trends as they occur. 
+
+\paragraph{Dashboard constraints}
+In Stephen Few's "Information Dashboard Design" \cite{Few2006} a comprehensive guide to the development of dashboards is given. In particular, specific charts and graphics are matched to appropriate use cases and perhaps more importantly, areas in which some visualizations are inappropriate are defined. Beyond being a discussion simply on visual design, interactivity is discussed. The author notes that although the capability to explore data and perform analysis is available, for monitoring purposes it is more appropriate to not allow such features. Though these analyses are often important, it is more crucial to the purpose of a dashboard to display the data in the form that the dashboard was originally designed for. To do otherwise would risk undermining the purpose, which is a focus on optimal display of key metrics.
+
+\paragraph{Evaluation of Visualizations}
+
+
+\section{In-Situ Processing}
+\label{sec:insitu}
+
+\INITIAL{P}{rocessing large quantities of data} has become a common task within many organizations. Data sources such as sensor networks or click streams necessitate handling both massive quantities of information and rapid rates of change. The size of this data presents issues in the efficiency of storage solutions and there are many options for handling such problems \cite{Klasky2011}. Beyond storage, when analysis occurs on large data stores it is often necessary to apply in-situ processing rather than a more thoroughly controlled approach. In-situ analysis allows for results to be obtained quickly by ignoring much, or all, of the preprocessing that may be involved in an analysis performed on a more controlled data source. Removing preprocessing steps of course increases speed while introducing a number of potential unknown factors.
+
+\paragraph{Pig}
+
+\paragraph{Flink}
+
+\section{Visualization of Data Flow Graphs}
+\label{sec:dfgviz}
+
+\INITIAL{D}{ata flow graph visualizations} have existed in some form for as long as data flow graphs have been used in analysis systems. However, their use is almost exclusively applied to examining meta-information such as optimization plans. Relatively little work has been done in generating visualizations which help in the understanding of data, as a supplement to the analyses themselves.
+
+\paragraph{IBM System S}
+IBM research has developed a stream processing system known as \emph{System S}, which builds processing graphs using predefined operators \cite{Gedik2008} and has included basic visualization of these graphs \cite{Pauw2010}. The visualizations show the DAG of analysis operators and indicate whether the operations have completed through colour coding. Additionally, each operator has a small widget which identifies the tuples which have been passed to or from the operator, as seen in Figure \ref{fig:systemsop}. These tuples can be highlighted in order to show specific data values, and to highlight data dependencies which exist downstream.
+
+%%%%%%%%%%%%%%%%%%
+\begin{figure}
+	\centering
+	\label{fig:systemsop}
+	\includegraphics[scale=0.5]{SystemSOperator.png}
+	\caption{An executing operator as visualized in IBM's System S \cite{Pauw2010}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%
+
+\paragraph{Retrospective Debugging}
+This type of visualization exists primarily to support debugging after some failure has been detected post-analysis. It can be seen in Figure \ref{fig:systemsop} that there are only ten tuples visible at a single time. Though this number can be expanded, this limitation is here because the envisioned use-case consists of a user scrolling through tuples to identify a single suspected problem tuple. While this is very useful for repairing a problem which is found post-analysis, in cases where this computation is very expensive or the problem is particularly unclear after a failure it may not be efficient. 
+
+\paragraph{Lipstick}
+Lipstick \cite{Amsterdamer2011}, a workflow provenance model framework built for use with Pig takes a similar approach to that of IBM. Lipstick examines the internals of modules within a data flow in order to determine dependencies between parts of a flow. This approach is used for very much the same debugging cases which are expected within System S, with the addition of an added feature allowing developers to query a dependency graph. These queries allow developers to change parameters of the tuples in the graph in order to undertake "what-if" style analyses. Beyond the analysis options introduced through the querying capabilities of Lipstick however, the added visualization features are relatively simple. Like in System S, single operations change colour to indicate status and the tuples being passed to and from operations are identified. In this case the key difference is that the widget for selecting single tuples from System S is replaced with a simple integer iindicating the quantity of tuples moving through a flow. The exploratory capabilities here are left for queries made against the graphs generated in Lipstick.
+
