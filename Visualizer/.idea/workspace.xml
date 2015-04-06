@@ -2,31 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c96af5c-725b-468a-a9ce-305f93204e70" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestResources/Apriori/1000/1000-out1.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestResources/Apriori/1000/1000-out2.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestResources/Apriori/1000/1000i.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestResources/Apriori/20000/20000-out1.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestResources/Apriori/20000/20000-out2.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestResources/Apriori/20000/20000i.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestResources/Apriori/5000/5000-out1.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestResources/Apriori/5000/5000-out2.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestResources/Apriori/5000/5000i.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestResources/Apriori/75000/75000-out1.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestResources/Apriori/75000/75000-out2.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TestResources/Apriori/75000/75000i.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Testing/Logging/Apriori.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Testing/Logging/Conditional.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Testing/Logging/WordCount.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ant_ant_apache_log4j_1_6_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_flink_flink_core_0_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_flink_flink_java_0_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_flink_flink_java_examples_0_8_1.xml" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\Visualizer\out\production\Visualizer\Testing\BasicTest.class" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\Visualizer\Visualizer.iml" afterPath="$PROJECT_DIR$/DFGVisualization.iml" />
-      <change type="MOVED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\Visualizer\src\Testing\BasicTest.java" afterPath="$PROJECT_DIR$/Testing/Visualizing/BasicTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Visualizer.iws" />
@@ -575,12 +550,19 @@
       <updated>1427109847503</updated>
       <workItem from="1427109854160" duration="22722000" />
       <workItem from="1428266245660" duration="290000" />
-      <workItem from="1428323051615" duration="10673000" />
+      <workItem from="1428323051615" duration="10709000" />
     </task>
+    <task id="LOCAL-00001" summary="Basic structural changes">
+      <created>1428360509679</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1428360509679</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33685000" />
+    <option name="totallyTimeSpent" value="33721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="-8" width="1538" height="916" extended-state="6" />
@@ -631,6 +613,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Basic structural changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic structural changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
