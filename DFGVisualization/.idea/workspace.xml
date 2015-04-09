@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c96af5c-725b-468a-a9ce-305f93204e70" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DataRecording/InSituCollector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_flink_flink_core_0_8_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_flink_flink_java_0_8_1.xml" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\out\production\DFGVisualization\DataRecording\Logger.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\out\production\DFGVisualization\Data\DataSet.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\src\DataRecording\Logger.java" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\src\Data\DataSet.java" afterPath="$PROJECT_DIR$/src/Data/InSituDataSet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFGVisualization/Visualization/BarChartSketch.class" afterPath="$PROJECT_DIR$/out/production/DFGVisualization/Visualization/BarChartSketch.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/DFGVisualization/Visualizing/BasicTest.class" afterPath="$PROJECT_DIR$/out/test/DFGVisualization/Visualizing/BasicTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFGVisualization/Visualization/Visualizer.class" afterPath="$PROJECT_DIR$/out/production/DFGVisualization/Visualization/Visualizer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/DFGVisualization/Logging/WordCount$Tokenizer.class" afterPath="$PROJECT_DIR$/out/test/DFGVisualization/Logging/WordCount$Tokenizer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/DFGVisualization/Logging/WordCount.class" afterPath="$PROJECT_DIR$/out/test/DFGVisualization/Logging/WordCount.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visualization/BarChartSketch.java" afterPath="$PROJECT_DIR$/src/Visualization/BarChartSketch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testing/Visualizing/BasicTest.java" afterPath="$PROJECT_DIR$/testing/Visualizing/BasicTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DFGVisualization.iml" afterPath="$PROJECT_DIR$/DFGVisualization.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visualization/Visualizer.java" afterPath="$PROJECT_DIR$/src/Visualization/Visualizer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testing/Logging/WordCount.java" afterPath="$PROJECT_DIR$/testing/Logging/WordCount.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Visualizer.iws" />
@@ -60,9 +48,11 @@
       <file leaf-file-name="InSituCollector.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/DataRecording/InSituCollector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2319688" vertical-offset="0" max-vertical-offset="1122">
-              <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-              <folding />
+            <state vertical-scroll-proportion="0.76218325" vertical-offset="0" max-vertical-offset="1122">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -651,7 +641,7 @@
       <workItem from="1428266245660" duration="290000" />
       <workItem from="1428323051615" duration="10709000" />
       <workItem from="1428360744498" duration="41290000" />
-      <workItem from="1428621933876" duration="727000" />
+      <workItem from="1428621933876" duration="800000" />
     </task>
     <task id="LOCAL-00001" summary="Basic structural changes">
       <created>1428360509679</created>
@@ -665,11 +655,17 @@
       <option name="project" value="LOCAL" />
       <updated>1428361011771</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Collector captures and writes datasets to files properly">
+      <created>1428622728703</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1428622728703</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75738000" />
+    <option name="totallyTimeSpent" value="75811000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="-8" width="1538" height="916" extended-state="6" />
@@ -722,7 +718,8 @@
     </option>
     <MESSAGE value="Basic structural changes" />
     <MESSAGE value="Folder renaming" />
-    <option name="LAST_COMMIT_MESSAGE" value="Folder renaming" />
+    <MESSAGE value="Collector captures and writes datasets to files properly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Collector captures and writes datasets to files properly" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -764,6 +761,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -771,6 +771,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="612">
           <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -790,6 +791,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="425">
           <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -797,6 +799,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="425">
           <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -804,6 +807,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -811,6 +817,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="612">
           <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -830,6 +837,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="425">
           <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -837,6 +845,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="425">
           <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -878,6 +887,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
           <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -885,6 +895,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
           <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -892,6 +903,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="156" max-vertical-offset="935">
           <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -944,6 +958,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0331384" vertical-offset="0" max-vertical-offset="513">
           <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -992,6 +1007,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.668616" vertical-offset="48" max-vertical-offset="561">
           <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1142,9 +1158,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DataRecording/InSituCollector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2319688" vertical-offset="0" max-vertical-offset="1122">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-          <folding />
+        <state vertical-scroll-proportion="0.76218325" vertical-offset="0" max-vertical-offset="1122">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
