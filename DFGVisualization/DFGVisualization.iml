@@ -11,9 +11,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="processing" level="project" />
     <orderEntry type="library" name="gicentreUtils" level="project" />
-    <orderEntry type="library" name="org.apache.flink:flink-core:0.8.0" level="project" />
-    <orderEntry type="library" name="org.apache.flink:flink-java:0.8.0" level="project" />
     <orderEntry type="library" name="ant:ant-apache-log4j:1.6.5" level="project" />
     <orderEntry type="library" name="org.apache.flink:flink-java-examples:0.8.1" level="project" />
+    <orderEntry type="library" name="org.apache.flink:flink-java:0.8.1" level="project" />
+    <orderEntry type="library" name="org.apache.flink:flink-core:0.8.1" level="project" />
   </component>
 </module>

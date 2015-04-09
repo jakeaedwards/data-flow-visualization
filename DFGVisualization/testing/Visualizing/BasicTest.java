@@ -1,9 +1,7 @@
 package Visualizing;
 
 import Visualization.Visualizer;
-import Data.DataSet;
-import java.util.ArrayList;
-import java.util.Arrays;
+import Data.InSituDataSet;
 
 /**
  * Created by Jake on 4/1/2015.
@@ -11,7 +9,7 @@ import java.util.Arrays;
 public class BasicTest {
 
     private static Visualizer visualizer = new Visualizer();
-    private static DataSet dataset = new DataSet();
+    //private static InSituDataSet dataset = new InSituDataSet();
 
     public static void main(String[] args){
 
@@ -24,7 +22,7 @@ public class BasicTest {
         dataset.addRecord(System.currentTimeMillis(),new ArrayList<Integer>(Arrays.asList(5,1)));
         */
 
-        visualizer.setDataSet(dataset);
+      //  visualizer.setDataSet(dataset);
         visualizer.visualize();
     }
 }

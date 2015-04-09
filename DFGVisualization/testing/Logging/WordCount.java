@@ -1,5 +1,6 @@
 package Logging;
 
+import DataRecording.InSituCollector;
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.java.DataSet;
 import org.apache.flink.api.java.ExecutionEnvironment;
@@ -48,10 +49,15 @@ public class WordCount {
 
         DataSet<Tuple2<String, Integer>> counts =
                 // split up the lines in pairs (2-tuples) containing: (word,1)
-                text.flatMap(new Tokenizer())
+                text.flatMap(new Tokenizer()).groupBy(0).sum(1);
                         // group by the tuple field "0" and sum up tuple field "1"
-                        .groupBy(0)
-                        .sum(1);
+
+
+        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        InSituCollector inSituCollector = new InSituCollector();
+        inSituCollector.collect(counts);
+        inSituCollector.output();
+        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
         // emit result
         if(fileOutput) {
@@ -60,8 +66,11 @@ public class WordCount {
             counts.print();
         }
 
+
         // execute program
         env.execute("WordCount Example");
+
+
     }
 
     // *************************************************************************
@@ -84,6 +93,7 @@ public class WordCount {
             for (String token : tokens) {
                 if (token.length() > 0) {
                     out.collect(new Tuple2<String, Integer>(token, 1));
+
                 }
             }
         }

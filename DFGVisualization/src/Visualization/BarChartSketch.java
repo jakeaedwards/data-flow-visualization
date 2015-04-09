@@ -1,5 +1,5 @@
 package Visualization;
-import Data.DataSet;
+import Data.InSituDataSet;
 import processing.core.*;
 
 import org.gicentre.utils.stat.*;
@@ -9,9 +9,9 @@ import org.gicentre.utils.stat.*;
  */
 public class BarChartSketch extends PApplet{
 
-    private DataSet dataSet;
+    private InSituDataSet dataSet;
 
-    public void BarChartSketch(DataSet dataSet){
+    public void BarChartSketch(InSituDataSet dataSet){
         this.dataSet = dataSet;
     }
 

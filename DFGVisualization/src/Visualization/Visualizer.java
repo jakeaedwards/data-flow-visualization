@@ -1,19 +1,19 @@
 package Visualization;
 
-import Data.DataSet;
+import Data.InSituDataSet;
 
 /**
  * Created by Jake on 4/1/2015.
  */
 public class Visualizer {
 
-    public DataSet dataSet;
+    public InSituDataSet dataSet;
 
     public void visualize(){
         new DisplayFrame().setVisible(true);
     }
 
-    public void setDataSet(DataSet dataSet){
+    public void setDataSet(InSituDataSet dataSet){
         this.dataSet = dataSet;
     }
 }
