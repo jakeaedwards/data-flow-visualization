@@ -56,7 +56,7 @@ public class WordCount {
         //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         InSituCollector inSituCollector = new InSituCollector();
         inSituCollector.collect(counts);
-        inSituCollector.output();
+
         //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
         // emit result
@@ -68,6 +68,7 @@ public class WordCount {
 
 
         // execute program
+        inSituCollector.output();
         env.execute("WordCount Example");
 
 

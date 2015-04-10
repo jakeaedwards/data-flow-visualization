@@ -1,11 +1,15 @@
 package DataRecording;
 
-
-import Data.InSituDataSet;
 import org.apache.flink.api.java.DataSet;
 import org.apache.flink.api.java.ExecutionEnvironment;
 import org.apache.flink.api.java.tuple.*;
 import org.apache.flink.core.fs.FileSystem;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.lang.reflect.TypeVariable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +19,7 @@ import java.util.List;
 public class InSituCollector{
 
     ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
-    InSituDataSet dataSet;
+    List dataSet;
     String outputPath = "C:\\Users\\Jake\\Desktop\\TestOutput";
 
     public InSituCollector() {
@@ -30,34 +34,64 @@ public class InSituCollector{
     public void collect(DataSet data){
 
         //Initialize local data set
-        if(dataSet == null){
-            dataSet = new InSituDataSet(env, data.getType());
-        }
+        dataSet = new ArrayList<>();
 
         //Write external data set to CSV
         data.writeAsCsv(outputPath, FileSystem.WriteMode.OVERWRITE);
 
-        System.out.println(data.getType().getTypeClass().toString());
-        DataSet<Tuple2<String, Integer>> temp = env.readCsvFile(outputPath).types(String.class, Integer.class);
-
         //Read data originally from external data set into internal one
-        dataSet.union(temp);
+        File dir = new File(outputPath);
+        File[] directoryListing = dir.listFiles();
+        BufferedReader reader = null;
+        String line;
+        int tupleSize = data.getType().getArity();
+        TypeVariable[] tupleClasses = data.getType().getTypeClass().getTypeParameters();
+        System.out.println(data.getType().getTypeClass().getDeclaredFields()[0]);
+        //TODO: Find way around erasure obfuscation
 
+        for(File file: directoryListing) {
+            try {
+                reader = new BufferedReader(new FileReader(file.getPath()));
+                while ((line = reader.readLine()) != null) {
+
+
+                    Tuple addedTuple = parseTuple(line, tupleSize);
+                    dataSet.add(addedTuple);
+                }
+            }
+            catch(IOException e){
+                e.printStackTrace();
+            }
+            finally {
+                if (reader != null) {
+                    try {
+                        reader.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
     }
 
-    public DataSet getData(){
-        return dataSet;
+    public Tuple parseTuple(String line, int size){
+        String[] tuple = line.split(",");
+        Tuple created = null;
+
+        for(int i = 0; i < size; i++){
+            Boolean b = Boolean.parseBoolean(tuple[i]);
+            if(b != null){
+
+            }
+        }
+
+        return created;
     }
 
-    public void output(){
+    public void output() throws Exception{
 
-        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        List<Tuple2<String, Integer>> outData = new ArrayList<>();
-        dataSet.writeAsCsv(outputPath + "\\final", FileSystem.WriteMode.OVERWRITE);
+        System.out.println(dataSet.toString());
 
 
-
-        //dataSet.output(new LocalCollectionOutputFormat(outData)).name("Test Sink");
-        System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!");
     }
 }
