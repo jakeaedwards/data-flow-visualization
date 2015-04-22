@@ -10,6 +10,15 @@
 \BOOKMARK [1][]{section.10}{Visualization of Data}{chapter.9}% 10
 \BOOKMARK [1][]{section.17}{In-Situ Processing}{chapter.9}% 11
 \BOOKMARK [1][]{section.20}{Visualization of Data Flow Graphs}{chapter.9}% 12
-\BOOKMARK [0][]{appendix.25}{Implementation}{}% 13
-\BOOKMARK [1][]{section.26}{My Algorithm}{appendix.25}% 14
-\BOOKMARK [0][]{appendix*.33}{Bibliography}{}% 15
+\BOOKMARK [0][]{chapter.25}{Implementation}{}% 13
+\BOOKMARK [1][]{section.26}{Overview}{chapter.25}% 14
+\BOOKMARK [1][]{section.27}{Data Collection}{chapter.25}% 15
+\BOOKMARK [1][]{section.35}{Distribution}{chapter.25}% 16
+\BOOKMARK [1][]{section.40}{Visualization}{chapter.25}% 17
+\BOOKMARK [0][]{chapter.45}{Evaluation}{}% 18
+\BOOKMARK [1][]{section.46}{Accuracy}{chapter.45}% 19
+\BOOKMARK [1][]{section.47}{Performance}{chapter.45}% 20
+\BOOKMARK [1][]{section.48}{Usefulness}{chapter.45}% 21
+\BOOKMARK [0][]{appendix.49}{Implementation}{}% 22
+\BOOKMARK [1][]{section.50}{My Algorithm}{appendix.49}% 23
+\BOOKMARK [0][]{appendix*.57}{Bibliography}{}% 24

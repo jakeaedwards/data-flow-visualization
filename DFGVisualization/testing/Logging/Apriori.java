@@ -1,13 +1,13 @@
 package Logging;
 
-import org.apache.flink.api.common.functions.MapFunction;
+import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.common.functions.ReduceFunction;
 import org.apache.flink.api.java.DataSet;
 import org.apache.flink.api.java.ExecutionEnvironment;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import org.apache.flink.api.java.io.CsvReader;
+import org.apache.flink.api.java.tuple.Tuple1;
+import org.apache.flink.api.java.tuple.Tuple2;
+import org.apache.flink.util.Collector;
 
 /**
  * Created by Jake on 4/6/2015.
@@ -29,36 +29,43 @@ public class Apriori {
 
     private static int MIN_SUPPORT_THRESHOLD = 3;
 
-    public static void main(String[] args){ //Modify arg path to be general
+    public static void main(String[] args) throws Exception{
 
         final ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
 
-        String filepath = args[0];
+        DataSet<String> transactions = getTextDataSet(env, "C:\\Users\\Jake\\Documents\\GitHub\\data-flow-visualization\\DFGVisualization\\resources\\Apriori\\trivial.csv");
 
-        try (BufferedReader br = new BufferedReader(new FileReader(filepath))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                // process the line.
-            }
-        }
-        catch(IOException e){
+        DataSet<Tuple2<String, Integer>> frequentItems = transactions.flatMap(new Tokenizer()).groupBy(0).sum(1);
 
-        }
+        frequentItems.print();
+
+        env.execute("Apriori");
 
     }
 
+    // *************************************************************************
+    //     USER FUNCTIONS
+    // *************************************************************************
+
     /**
-     * Sampler randomly emits points that fall within a square of edge x * y.
-     * It calculates the distance to the center of a virtually centered circle of radius x = y = 1
-     * If the distance is less than 1, then and only then does it returns a 1.
+     * Implements the string tokenizer that splits sentences into words as a user-defined
+     * FlatMapFunction. The function takes a line (String) and splits it into
+     * multiple pairs in the form of "(word,1)" (Tuple2<String, Integer>).
      */
-    public static class Sampler implements MapFunction<Long, Long> {
+    public static final class Tokenizer implements FlatMapFunction<String, Tuple2<String, Integer>> {
 
         @Override
-        public Long map(Long value) throws Exception{
-            double x = Math.random();
-            double y = Math.random();
-            return (x * x + y * y) < 1 ? 1L : 0L;
+        public void flatMap(String value, Collector<Tuple2<String, Integer>> out) {
+            // normalize and split the line
+            String[] tokens = value.toLowerCase().split(", ");
+
+            // emit the pairs
+            for (String token : tokens) {
+                if (token.length() > 0) {
+                    out.collect(new Tuple2<String, Integer>(token, 1));
+
+                }
+            }
         }
     }
 
@@ -74,5 +81,19 @@ public class Apriori {
             return value1 + value2;
         }
     }
+
+    // *************************************************************************
+    //     UTIL FUNCTIONS
+    // *************************************************************************
+
+    private static DataSet<String> getTextDataSet(ExecutionEnvironment env, String path) {
+        //Read text from given input path
+        CsvReader reader = env.readCsvFile(path);
+        Boolean[] mask = {false,true,true};
+
+        DataSet<Tuple1<String>> items = reader.includeFields(false, true, true).tupleType(String);
+        return items;
+    }
 }
+
 

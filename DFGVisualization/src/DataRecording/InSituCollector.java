@@ -1,11 +1,12 @@
 package DataRecording;
 
+import com.rabbitmq.client.ConnectionFactory;
+import com.rabbitmq.client.Connection;
+import com.rabbitmq.client.Channel;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.flink.api.java.DataSet;
-import org.apache.flink.api.java.ExecutionEnvironment;
 import org.apache.flink.api.java.tuple.*;
 import org.apache.flink.core.fs.FileSystem;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -19,13 +20,13 @@ import java.util.regex.Pattern;
  * Created by Jake on 3/23/2015.
  */
 public class InSituCollector{
-
-    ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
-    List dataSet;
-    String outputPath = "C:\\Users\\Jake\\Desktop\\TestOutput";
+    String QUEUE_NAME = "queue";
+    List<List> dataSets;
+    String outputPath;
 
     public InSituCollector() {
-
+        dataSets = new ArrayList<>();
+        outputPath = "C:\\Users\\Jake\\Desktop\\TestOutput";
     }
 
     /**
@@ -35,8 +36,9 @@ public class InSituCollector{
      */
     public void collect(DataSet data){
 
+
         //Initialize local data set
-        dataSet = new ArrayList<>();
+        List dataSet = new ArrayList<>();
 
         //Write external data set to CSV
         data.writeAsCsv(outputPath, FileSystem.WriteMode.OVERWRITE);
@@ -46,8 +48,6 @@ public class InSituCollector{
         File[] directoryListing = dir.listFiles();
         BufferedReader reader = null;
         String line;
-        int tupleSize = data.getType().getArity();
-
 
         for(File file: directoryListing) {
             try {
@@ -72,10 +72,12 @@ public class InSituCollector{
                 }
             }
         }
+        dataSets.add(dataSet);
     }
 
     /**
-     * Parses a line of text data from a CSV into a tuple object of the appropriate size and field types
+     * Parses a line of text data from a CSV into a tuple object of the appropriate size and field types.
+     * Assumes tuple fields are of basic type (Boolean, String, Int, Long, Float, Double).
      * @param line The CSV line to be read
      * @return The generated tuple
      */
@@ -86,44 +88,35 @@ public class InSituCollector{
         Matcher matcher;
         Tuple created = null;
 
-        for(int i = 0; i < tuple.length; i++){
-            if(StringUtils.isAlpha(tuple[i])) { //Field is non-numeric
+
+        for(int i = 0; i < tuple.length; i++) {
+            if (StringUtils.isAlpha(tuple[i])) { //Field is non-numeric
                 matcher = queryLangPattern.matcher(tuple[i]);
                 if (matcher.matches()) { //Boolean (probably)
                     values.add(Boolean.parseBoolean(tuple[i]));
-                }
-                else{ //String
+                } else { //String
                     values.add(tuple[i]);
                 }
-            }
-            else{ //Field is numeric
-                try{
-                    values.add(Integer.parseInt(tuple[i]));
-                }
-                catch(NumberFormatException e){
+            } else try { //Field is numeric
+                values.add(Integer.parseInt(tuple[i]));
+            } catch (NumberFormatException e) {
+                try {
+                    values.add(Long.parseLong(tuple[i]));
+                } catch (NumberFormatException e1) {
                     try {
-                        values.add(Long.parseLong(tuple[i]));
-                    }
-                    catch(NumberFormatException e1){
-                        try{
-                            values.add(Float.parseFloat(tuple[i]));
-                        }
-                        catch(NumberFormatException e2){
-                            try{
-                                values.add(Double.parseDouble(tuple[i]));
-                            }
-                            catch(NumberFormatException e3){
-                                e3.printStackTrace();
-                                System.out.println("Parsed field non-numeric");
-                            }
+                        values.add(Float.parseFloat(tuple[i]));
+                    } catch (NumberFormatException e2) {
+                        try {
+                            values.add(Double.parseDouble(tuple[i]));
+                        } catch (NumberFormatException e3) {
+                            e3.printStackTrace();
+                            System.out.println("Parsed field non-numeric");
                         }
                     }
-
                 }
+
             }
         }
-
-        System.out.println(values.toString());
 
         switch(tuple.length){
             case 1 : created = new Tuple1<>(values.get(0));
@@ -182,10 +175,33 @@ public class InSituCollector{
         return created;
     }
 
+    /**
+     * Sends collected data set as a message to the messaging server for collection
+     */
+    public void send() throws IOException{
+
+        //Create connection to messaging server
+        ConnectionFactory factory = new ConnectionFactory();
+        factory.setHost("localhost"); //TODO: Determine appropriate host
+        Connection connection = factory.newConnection();
+        Channel channel = connection.createChannel();
+
+        //Create messaging channel
+        channel.queueDeclare(QUEUE_NAME, false, false, false, null);
+        String message = "Hello World!";
+        channel.basicPublish("", QUEUE_NAME, null, message.getBytes());
+        System.out.println(" [x] Sent '" + message + "'");
+
+        //close everything
+        channel.close();
+        connection.close();
+    }
+
+    /**
+     * Writes the current dataset to the console as a string.
+     * @throws Exception
+     */
     public void output() throws Exception{
-
-        System.out.println(dataSet.toString());
-
-
+        System.out.println(dataSets.toString());
     }
 }

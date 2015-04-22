@@ -19,7 +19,31 @@
 \contentsline {paragraph}{IBM System S}{6}{paragraph*.21}
 \contentsline {paragraph}{Retrospective Debugging}{7}{paragraph*.23}
 \contentsline {paragraph}{Lipstick}{7}{paragraph*.24}
-\contentsline {chapter}{\numberline {A}Implementation}{9}{appendix.25}
-\contentsline {section}{\numberline {A.1}My Algorithm}{9}{section.26}
-\contentsline {paragraph}{}{9}{paragraph*.27}
-\contentsline {chapter}{\nonumberline Bibliography}{11}{appendix*.33}
+\contentsline {chapter}{\numberline {3}Implementation}{9}{chapter.25}
+\contentsline {section}{\numberline {3.1}Overview}{9}{section.26}
+\contentsline {section}{\numberline {3.2}Data Collection}{9}{section.27}
+\contentsline {paragraph}{Tuples}{9}{paragraph*.28}
+\contentsline {paragraph}{Values}{10}{paragraph*.29}
+\contentsline {paragraph}{Hadoop Writeables}{10}{paragraph*.30}
+\contentsline {paragraph}{Data Collector}{10}{paragraph*.31}
+\contentsline {paragraph}{Collect Method}{10}{paragraph*.32}
+\contentsline {paragraph}{Data Sets}{10}{paragraph*.33}
+\contentsline {paragraph}{Type Erasure}{10}{paragraph*.34}
+\contentsline {section}{\numberline {3.3}Distribution}{11}{section.35}
+\contentsline {paragraph}{Message Passing}{11}{paragraph*.36}
+\contentsline {paragraph}{Patterns?}{11}{paragraph*.37}
+\contentsline {paragraph}{RabbitMQ}{11}{paragraph*.38}
+\contentsline {paragraph}{Specifics}{11}{paragraph*.39}
+\contentsline {section}{\numberline {3.4}Visualization}{11}{section.40}
+\contentsline {paragraph}{Processing 2}{11}{paragraph*.41}
+\contentsline {paragraph}{Libraries}{11}{paragraph*.42}
+\contentsline {paragraph}{Swing}{11}{paragraph*.43}
+\contentsline {paragraph}{Presentation of Visualizations}{11}{paragraph*.44}
+\contentsline {chapter}{\numberline {4}Evaluation}{13}{chapter.45}
+\contentsline {section}{\numberline {4.1}Accuracy}{13}{section.46}
+\contentsline {section}{\numberline {4.2}Performance}{13}{section.47}
+\contentsline {section}{\numberline {4.3}Usefulness}{13}{section.48}
+\contentsline {chapter}{\numberline {A}Implementation}{15}{appendix.49}
+\contentsline {section}{\numberline {A.1}My Algorithm}{15}{section.50}
+\contentsline {paragraph}{}{15}{paragraph*.51}
+\contentsline {chapter}{\nonumberline Bibliography}{17}{appendix*.57}
