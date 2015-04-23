@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c96af5c-725b-468a-a9ce-305f93204e70" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Jake.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_rabbitmq_amqp_client_3_5_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/Apriori/trivial.csv" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\out\test\DFGVisualization\Logging\Apriori$Sampler.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/DFGVisualization/Logging/Apriori$SumReducer.class" afterPath="$PROJECT_DIR$/out/test/DFGVisualization/Logging/Apriori$SumReducer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/DFGVisualization/Logging/Apriori.class" afterPath="$PROJECT_DIR$/out/test/DFGVisualization/Logging/Apriori.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DFGVisualization/DataRecording/InSituCollector.class" afterPath="$PROJECT_DIR$/out/production/DFGVisualization/DataRecording/InSituCollector.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Documentation/thesis.pdf" afterPath="$PROJECT_DIR$/../Documentation/thesis.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Documentation/thesis.synctex.gz" afterPath="$PROJECT_DIR$/../Documentation/thesis.synctex.gz" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testing/Logging/Apriori.java" afterPath="$PROJECT_DIR$/testing/Logging/Apriori.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DFGVisualization.iml" afterPath="$PROJECT_DIR$/DFGVisualization.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DataRecording/InSituCollector.java" afterPath="$PROJECT_DIR$/src/DataRecording/InSituCollector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Visualization/Visualizer.java" afterPath="$PROJECT_DIR$/src/Visualization/Visualizer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Documentation/thesis.aux" afterPath="$PROJECT_DIR$/../Documentation/thesis.aux" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Documentation/thesis.lof" afterPath="$PROJECT_DIR$/../Documentation/thesis.lof" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Documentation/thesis.out" afterPath="$PROJECT_DIR$/../Documentation/thesis.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Documentation/thesis.tex" afterPath="$PROJECT_DIR$/../Documentation/thesis.tex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Documentation/thesis.toc" afterPath="$PROJECT_DIR$/../Documentation/thesis.toc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="9c96af5c-725b-468a-a9ce-305f93204e70" name="Default" comment="" />
     <ignored path="Visualizer.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -58,21 +38,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordCount.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WordCount.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testing/Logging/WordCount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="2363">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.45827985" vertical-offset="493" max-vertical-offset="2363">
+              <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InSituCollector.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InSituCollector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DataRecording/InSituCollector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.3550913" vertical-offset="696" max-vertical-offset="3604">
-              <caret line="102" column="21" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="3604">
+              <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -638,7 +618,7 @@
       <workItem from="1428360744498" duration="41290000" />
       <workItem from="1428621933876" duration="20925000" />
       <workItem from="1429521770764" duration="5770000" />
-      <workItem from="1429735229581" duration="1186000" />
+      <workItem from="1429735229581" duration="2505000" />
     </task>
     <task id="LOCAL-00001" summary="Basic structural changes">
       <created>1428360509679</created>
@@ -668,10 +648,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102892000" />
+    <option name="totallyTimeSpent" value="104211000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="70" y="-8" width="1538" height="916" extended-state="7" />
+    <frame x="70" y="-8" width="1538" height="916" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1144,21 +1124,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing/Logging/WordCount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="2363">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DataRecording/InSituCollector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3550913" vertical-offset="696" max-vertical-offset="3604">
-          <caret line="102" column="21" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="3604">
+          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testing/Logging/WordCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45827985" vertical-offset="493" max-vertical-offset="2363">
+          <caret line="56" column="64" selection-start-line="56" selection-start-column="64" selection-end-line="56" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
