@@ -9,8 +9,8 @@
 
 ##Phase 3: Robust Cluster Version (Completion June 25th)
 1. Complete appropriately comprehensive battery of test programs/datasets (June 10th)
-	*Data: Text, Numerical, Graph, combinations
-	*Analysis: Simple, Iterative, Delta-Iterative, combinations
+	* Data: Text, Numerical, Graph, combinations
+	* Analysis: Simple, Iterative, Delta-Iterative, combinations
 2. Expand visualization portion beyond basic functionality (June 25th)
 
 ##Phase 4: Written Document Completion (Completion July 24th)
@@ -24,4 +24,3 @@ Four weeks planned to be devoted to writing, with an additional week after plann
 ##Phase 5: Real-time Version (Completion July 31st)
 Assuming that either the previous phases complete ahead of schedule, or that sufficient time is available during the writing/review phase I will direct efforts toward real-time functionality.
 -	Implement message passing from collectors 
-
