@@ -1,3 +1,4 @@
+
 package Logging;
 
 import org.apache.flink.api.common.functions.FlatMapFunction;
@@ -25,6 +26,7 @@ import org.apache.flink.util.Collector;
  (8) }
  (9)return L=L∪ k L k ;
  */
+/*
 public class Apriori {
 
     private static int MIN_SUPPORT_THRESHOLD = 3;
@@ -47,11 +49,14 @@ public class Apriori {
     //     USER FUNCTIONS
     // *************************************************************************
 
-    /**
+    /*
      * Implements the string tokenizer that splits sentences into words as a user-defined
      * FlatMapFunction. The function takes a line (String) and splits it into
      * multiple pairs in the form of "(word,1)" (Tuple2<String, Integer>).
      */
+
+    /*
+
     public static final class Tokenizer implements FlatMapFunction<String, Tuple2<String, Integer>> {
 
         @Override
@@ -73,6 +78,8 @@ public class Apriori {
     /**
      * Simply sums up all long values.
      */
+
+    /*
     public static final class SumReducer implements ReduceFunction<Long>{
 
         @Override
@@ -95,5 +102,6 @@ public class Apriori {
         return items;
     }
 }
+*/
 
 

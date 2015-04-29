@@ -1,9 +1,9 @@
 package DataRecording;
 
-import com.rabbitmq.client.ConnectionFactory;
-import com.rabbitmq.client.Connection;
-import com.rabbitmq.client.Channel;
+import Visualization.Visualizer;
+import com.sun.tools.javac.code.Attribute;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.flink.api.common.typeinfo.TypeInformation;
 import org.apache.flink.api.java.DataSet;
 import org.apache.flink.api.java.tuple.*;
 import org.apache.flink.core.fs.FileSystem;
@@ -20,13 +20,17 @@ import java.util.regex.Pattern;
  * Created by Jake on 3/23/2015.
  */
 public class InSituCollector{
-    String QUEUE_NAME = "queue";
-    List<List> dataSets;
-    String outputPath;
 
-    public InSituCollector() {
-        dataSets = new ArrayList<>();
+    private static Visualizer visualizer;
+    String outputPath;
+    TypeInformation dataFormat;
+
+    public InSituCollector(Visualizer visualizer, TypeInformation typeInfo, Class... c ) {
+        this.visualizer = visualizer;
         outputPath = "C:\\Users\\Jake\\Desktop\\TestOutput";
+        dataFormat = typeInfo;
+
+
     }
 
     /**
@@ -36,9 +40,9 @@ public class InSituCollector{
      */
     public void collect(DataSet data){
 
-
+        dataFormat.getTypeClass();
         //Initialize local data set
-        List dataSet = new ArrayList<>();
+        ArrayList<Tuple> dataSet = new ArrayList<Tuple>();
 
         //Write external data set to CSV
         data.writeAsCsv(outputPath, FileSystem.WriteMode.OVERWRITE);
@@ -55,7 +59,7 @@ public class InSituCollector{
                 while ((line = reader.readLine()) != null) {
 
 
-                    Tuple addedTuple = parseTuple(line);
+                    Tuple addedTuple = parseUnknownTuple(line);
                     dataSet.add(addedTuple);
                 }
             }
@@ -72,16 +76,30 @@ public class InSituCollector{
                 }
             }
         }
-        dataSets.add(dataSet);
+        visualizer.addData(dataSet);
+        dir.deleteOnExit();
     }
 
     /**
      * Parses a line of text data from a CSV into a tuple object of the appropriate size and field types.
-     * Assumes tuple fields are of basic type (Boolean, String, Int, Long, Float, Double).
      * @param line The CSV line to be read
      * @return The generated tuple
      */
     public Tuple parseTuple(String line){
+        String[] tuple = line.split(",");
+        List values = new ArrayList<>();
+        Tuple created = null;
+
+        return created;
+    }
+
+    /**
+     * Parses a line of text data from a CSV into a tuple object of the appropriate size and field types,
+     * assuming these features are unknown. Assumes tuple fields are of basic type.
+     * @param line The CSV line to be read
+     * @return The generated tuple
+     */
+    public Tuple parseUnknownTuple(String line){
         String[] tuple = line.split(",");
         List values = new ArrayList<>();
         Pattern queryLangPattern = Pattern.compile("true|false", Pattern.CASE_INSENSITIVE);
@@ -173,35 +191,5 @@ public class InSituCollector{
         }
 
         return created;
-    }
-
-    /**
-     * Sends collected data set as a message to the messaging server for collection
-     */
-    public void send() throws IOException{
-
-        //Create connection to messaging server
-        ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost"); //TODO: Determine appropriate host
-        Connection connection = factory.newConnection();
-        Channel channel = connection.createChannel();
-
-        //Create messaging channel
-        channel.queueDeclare(QUEUE_NAME, false, false, false, null);
-        String message = "Hello World!";
-        channel.basicPublish("", QUEUE_NAME, null, message.getBytes());
-        System.out.println(" [x] Sent '" + message + "'");
-
-        //close everything
-        channel.close();
-        connection.close();
-    }
-
-    /**
-     * Writes the current dataset to the console as a string.
-     * @throws Exception
-     */
-    public void output() throws Exception{
-        System.out.println(dataSets.toString());
     }
 }

@@ -1,6 +1,16 @@
-1, cracker, beer
-2, chicken, pizza,
-3, coke, cracker, beer
-4, coke, cracker
-5, beer, chicken, coke
-6, chicken, coke
+Transaction, Quantity, Item
+1, 1, cracker
+1, 1, beer
+2, 1, chicken
+2, 1, pizza
+3, 1, coke
+3, 1, cracker
+3, 1, beer
+4, 1, coke
+4, 1, cracker
+5, 1, beer
+5, 1, chicken
+5, 1, coke
+6, 1, chicken
+6, 1, coke
+

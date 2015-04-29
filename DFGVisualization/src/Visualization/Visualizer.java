@@ -1,51 +1,25 @@
 package Visualization;
 
-import Data.InSituDataSet;
-import com.rabbitmq.client.ConnectionFactory;
-import com.rabbitmq.client.Connection;
-import com.rabbitmq.client.Channel;
-import com.rabbitmq.client.QueueingConsumer;
+import org.apache.flink.api.java.tuple.Tuple;
 
-import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  * Created by Jake on 4/1/2015.
  */
 public class Visualizer {
 
-    public InSituDataSet dataSet;
+    public ArrayList<ArrayList> dataSets = new ArrayList<>();
     private String QUEUE_NAME = "queue";
 
     public void visualize(){
-        new DisplayFrame().setVisible(true);
+        System.out.println(dataSets.toString());
+        new DisplayFrame(dataSets.get(0)).setVisible(true);
     }
 
-    public void setDataSet(InSituDataSet dataSet){
-        this.dataSet = dataSet;
+    public void addData(ArrayList<Tuple> newData){
+        dataSets.add(newData);
     }
 
-    /**
-     * Receives messages from message server containing datasets
-     */
-    public void receive() throws IOException, InterruptedException{
 
-        //Establish connection
-        ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
-        Connection connection = factory.newConnection();
-        Channel channel = connection.createChannel();
-
-        channel.queueDeclare(QUEUE_NAME, false, false, false, null);
-        System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
-
-        QueueingConsumer consumer = new QueueingConsumer(channel);
-        channel.basicConsume(QUEUE_NAME, true, consumer);
-
-        while (true) {
-            QueueingConsumer.Delivery delivery = consumer.nextDelivery();
-            String message = new String(delivery.getBody());
-            System.out.println(" Visualizer Received '" + message + "'");
-        }
-
-    }
 }
