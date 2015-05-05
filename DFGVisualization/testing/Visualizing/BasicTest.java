@@ -23,6 +23,6 @@ public class BasicTest {
         */
 
       //  visualizer.setDataSet(dataset);
-        visualizer.visualize();
+        visualizer.visualizeBarChart();
     }
 }

@@ -1,7 +1,6 @@
 package DataRecording;
 
 import Visualization.Visualizer;
-import com.sun.tools.javac.code.Attribute;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
 import org.apache.flink.api.java.DataSet;

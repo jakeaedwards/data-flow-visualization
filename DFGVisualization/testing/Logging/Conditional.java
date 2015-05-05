@@ -36,7 +36,7 @@ public class Conditional {
         totals.print();
 
         // execute program
-        visualizer.visualize();
+        visualizer.visualizeBarChart();
         env.execute("Basic Example");
     }
 
