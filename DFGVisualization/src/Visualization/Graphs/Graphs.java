@@ -75,12 +75,12 @@ public class Graphs extends PApplet {
         g = new DirectedGraph(this);
 
         // define some nodes
-        Node n1 = new Node("1",padding,padding, this);
-        Node n2 = new Node("2",padding,height-padding, this);
-        Node n3 = new Node("3",width-padding,height-padding, this);
-        Node n4 = new Node("4",width-padding,padding, this);
-        Node n5 = new Node("5",width-3*padding,height-2*padding, this);
-        Node n6 = new Node("6",width-3*padding,2*padding, this);
+        Node n1 = new Node("1","1",padding,padding, this);
+        Node n2 = new Node("2","2",padding,height-padding, this);
+        Node n3 = new Node("3","3",width-padding,height-padding, this);
+        Node n4 = new Node("4","4",width-padding,padding, this);
+        Node n5 = new Node("5","5",width-3*padding,height-2*padding, this);
+        Node n6 = new Node("6","6",width-3*padding,2*padding, this);
 
         // add nodes to graph
         g.addNode(n1);
@@ -104,6 +104,7 @@ public class Graphs extends PApplet {
 
     void makeTree()
     {
+        /*
         // define a root node
         Node root = new Node("root",0,0, this);
 
@@ -136,6 +137,8 @@ public class Graphs extends PApplet {
         t.addChild(cbb, cbbb);
         t.addChild(cbbb, cbbba);
         t.addChild(cbbb, cbbbb);
+        */
     }
+
 
 }

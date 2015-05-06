@@ -10,11 +10,13 @@ import java.util.ArrayList;
 public class Node{
     ArrayList<Node> inlinks = new ArrayList<Node>();
     ArrayList<Node> outlinks = new ArrayList<Node>();
+    String id;
     String label;
     GraphUtility utility;
     PApplet parent;
 
-    public Node(String _label, int _x, int _y, PApplet parent) {
+    public Node(String _id, String _label, int _x, int _y, PApplet parent) {
+        id = _id;
         label = _label;
         x = _x;
         y = _y;
@@ -22,6 +24,10 @@ public class Node{
         r2 = 5;
         this.parent = parent;
         utility = new GraphUtility(parent);
+    }
+
+    public String getID(){
+        return this.id;
     }
 
     public void addIncomingLink(Node n) {
@@ -109,6 +115,7 @@ public class Node{
         for (Node o : outlinks) {
             drawArrow(x, y, o.x, o.y);
         }
+
         parent.ellipse(x, y, r1 * 2, r2 * 2);
         parent.fill(50, 50, 255);
         parent.text(label, x + r1 * 2, y + r2 * 2);

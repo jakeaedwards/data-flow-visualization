@@ -1,6 +1,7 @@
 package Visualization;
 
 import Visualization.Graphs.Graphs;
+import Visualization.Graphs.JobGraphSketch;
 import org.apache.flink.api.java.tuple.Tuple;
 import java.util.ArrayList;
 import processing.core.PApplet;
@@ -13,6 +14,7 @@ public class Visualizer {
 
     public ArrayList<ArrayList> dataSets = new ArrayList<>();
     private String QUEUE_NAME = "queue";
+    private String executionPlan;
 
     //TODO: Examine why this can print output data before the actual job does
     public void visualizeBarChart(){
@@ -27,5 +29,14 @@ public class Visualizer {
     public void visualizeGraph(){
         PApplet sketch = new Graphs();
         new DisplayFrame(sketch).setVisible(true);
+    }
+
+    public void visualizeExecutionPlan(){
+        PApplet sketch = new JobGraphSketch(executionPlan);
+        new DisplayFrame(sketch).setVisible(true);
+    }
+
+    public void setPlan(String plan){
+        executionPlan = plan;
     }
 }

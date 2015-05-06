@@ -1,5 +1,7 @@
 package Visualizing;
 
+import DataRecording.InSituCollector;
+import Visualization.Visualizer;
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.java.DataSet;
 import org.apache.flink.api.java.ExecutionEnvironment;
@@ -34,22 +36,20 @@ public class JobGraphTest {
                 text.flatMap(new Tokenizer()).groupBy(0).sum(1);
         // group by the tuple field "0" and sum up tuple field "1"
 
-
-        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        // InSituCollector inSituCollector = new InSituCollector();
-        // inSituCollector.collect(counts);
-
-        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
         // emit result
-        DataSink sink = counts.print();
-        System.out.println(env.);
+        counts.print();
 
-
-
+        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        Visualizer visualizer = new Visualizer();
+        InSituCollector inSituCollector = new InSituCollector(visualizer, counts.getType());
+        inSituCollector.collect(counts);
+        inSituCollector.collectPlan(env.getExecutionPlan());
+        System.out.println(env.getExecutionPlan());
+        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
         // execute program
         //inSituCollector.output();
+        visualizer.visualizeExecutionPlan();
         env.execute("WordCount Example");
     }
 

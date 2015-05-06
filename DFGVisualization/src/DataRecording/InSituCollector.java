@@ -79,6 +79,11 @@ public class InSituCollector{
         dir.deleteOnExit();
     }
 
+    public void collectPlan(String plan){
+        visualizer.setPlan(plan);
+
+    }
+
     /**
      * Parses a line of text data from a CSV into a tuple object of the appropriate size and field types.
      * @param line The CSV line to be read
