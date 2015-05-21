@@ -10,13 +10,21 @@ import java.util.ArrayList;
 public class DisplayFrame extends javax.swing.JFrame {
 
     public DisplayFrame(PApplet sketch){
-        this.setSize(600, 600); //The window Dimensions
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         javax.swing.JPanel panel = new javax.swing.JPanel();
-        panel.setBounds(20, 20, 600, 600);
         panel.add(sketch);
         this.add(panel);
-        sketch.init(); //this is the function used to start the execution of the sketch
+        sketch.init();
+
+        //Initialization is slow enough that sketch size needs time to set
+        try {
+            Thread.sleep(1000);
+        } catch(InterruptedException ex) {
+            Thread.currentThread().interrupt();
+        }
+
+        panel.setBounds(20, 20, sketch.getWidth(), sketch.getHeight());
+        this.setSize(sketch.getWidth(), sketch.getHeight());
         this.setVisible(true);
     }
 }

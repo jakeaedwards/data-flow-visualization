@@ -2,6 +2,7 @@ package Visualization;
 
 import Visualization.Graphs.Graphs;
 import Visualization.Graphs.JobGraphSketch;
+import Visualization.Text.WordCloudSketch;
 import org.apache.flink.api.java.tuple.Tuple;
 import java.util.ArrayList;
 import processing.core.PApplet;
@@ -23,6 +24,7 @@ public class Visualizer {
     }
 
     public void addData(ArrayList<Tuple> newData){
+
         dataSets.add(newData);
     }
 
@@ -33,6 +35,11 @@ public class Visualizer {
 
     public void visualizeExecutionPlan(){
         PApplet sketch = new JobGraphSketch(executionPlan);
+        new DisplayFrame(sketch).setVisible(true);
+    }
+
+    public void visualizeWordCloud(){
+        PApplet sketch= new WordCloudSketch();
         new DisplayFrame(sketch).setVisible(true);
     }
 

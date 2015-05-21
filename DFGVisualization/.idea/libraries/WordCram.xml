@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="WordCram">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Processing/libraries/wordcram.0.6.1/WordCram/library/WordCram.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
