@@ -1,7 +1,6 @@
 package Visualization.Graphs;
 
 import processing.core.*;
-
 import java.util.ArrayList;
 
 /**

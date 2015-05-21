@@ -5,11 +5,14 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
 import org.apache.flink.api.java.DataSet;
 import org.apache.flink.api.java.tuple.*;
-import org.apache.flink.core.fs.FileSystem;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FSDataOutputStream;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+
+import java.io.*;
+
+import java.nio.file.FileSystems;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -21,15 +24,11 @@ import java.util.regex.Pattern;
 public class InSituCollector{
 
     private static Visualizer visualizer;
-    String outputPath;
     TypeInformation dataFormat;
 
     public InSituCollector(Visualizer visualizer, TypeInformation typeInfo, Class... c ) {
         this.visualizer = visualizer;
-        outputPath = "C:\\Users\\Jake\\Desktop\\TestOutput";
         dataFormat = typeInfo;
-
-
     }
 
     /**
@@ -43,40 +42,81 @@ public class InSituCollector{
         //Initialize local data set
         ArrayList<Tuple> dataSet = new ArrayList<Tuple>();
 
-        //Write external data set to CSV
-        data.writeAsCsv(outputPath, FileSystem.WriteMode.OVERWRITE);
+        try {
+            System.out.println(org.apache.flink.core.fs.FileSystem.getLocalFileSystem().isDistributedFS());
+            System.out.println(FileSystems.getDefault().getClass().toString());
+            //Local (Non-HDFS) filesystem
+            //!org.apache.flink.core.fs.FileSystem.getLocalFileSystem().isDistributedFS()
+            if (false) {
 
-        //Read data originally from external data set into internal one
-        File dir = new File(outputPath);
-        File[] directoryListing = dir.listFiles();
-        BufferedReader reader = null;
-        String line;
+                String outputPath = "C:\\Users\\Jake\\Desktop\\TestOutput";
 
-        for(File file: directoryListing) {
-            try {
-                reader = new BufferedReader(new FileReader(file.getPath()));
-                while ((line = reader.readLine()) != null) {
+                //Write external data set to CSV
+                data.writeAsCsv(outputPath, org.apache.flink.core.fs.FileSystem.WriteMode.OVERWRITE);
+
+                //Read data originally from external data set into internal one
+                File dir = new File(outputPath);
+                File[] directoryListing = dir.listFiles();
+                BufferedReader reader = null;
+                String line;
+
+                for (File file : directoryListing) {
+                    try {
+                        reader = new BufferedReader(new FileReader(file.getPath()));
+                        while ((line = reader.readLine()) != null) {
 
 
+                            Tuple addedTuple = parseUnknownTuple(line);
+                            dataSet.add(addedTuple);
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    } finally {
+                        if (reader != null) {
+                            try {
+                                reader.close();
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                }
+                visualizer.addData(dataSet);
+                dir.deleteOnExit();
+            }
+            else{
+                //Write dataset to HDFS
+                FileSystem hdfs = FileSystem.get(new Configuration());
+                Path workingDir = hdfs.getWorkingDirectory();
+                Path outputPath = new Path("/CollectorOutput");
+                outputPath = Path.mergePaths(workingDir, outputPath);
+
+                if(hdfs.exists(outputPath)){
+                    hdfs.delete(outputPath, true); //Delete existing Directory
+                }
+
+                hdfs.mkdirs(outputPath);     //Create new Directory
+
+                byte[] writtenData = data.toString().getBytes();
+                FSDataOutputStream outputStream = hdfs.create(outputPath);
+                outputStream.write(writtenData);
+                outputStream.close();
+
+                //Read data back into new dataset
+                BufferedReader reader = new BufferedReader(new InputStreamReader(hdfs.open(outputPath)));
+                String line;
+
+                while ((line = reader.readLine())!= null){
                     Tuple addedTuple = parseUnknownTuple(line);
                     dataSet.add(addedTuple);
                 }
-            }
-            catch(IOException e){
-                e.printStackTrace();
-            }
-            finally {
-                if (reader != null) {
-                    try {
-                        reader.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
+
             }
         }
-        visualizer.addData(dataSet);
-        dir.deleteOnExit();
+        catch(IOException e){
+            System.out.println("Problem with the filesystem in the collector");
+            e.printStackTrace();
+        }
     }
 
     public void collectPlan(String plan){

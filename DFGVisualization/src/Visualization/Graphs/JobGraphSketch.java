@@ -60,7 +60,7 @@ public class JobGraphSketch extends PApplet {
 
             //Potentially arrange positions intelligently later
             int x = width / 2;
-            int y = i * 50;
+            int y = 15 + i * 50;
 
             Node newNode = new Node(id,label,x,y,this);
 

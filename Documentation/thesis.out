@@ -10,15 +10,25 @@
 \BOOKMARK [1][]{section.10}{Visualization of Data}{chapter.9}% 10
 \BOOKMARK [1][]{section.17}{In-Situ Processing}{chapter.9}% 11
 \BOOKMARK [1][]{section.20}{Visualization of Data Flow Graphs}{chapter.9}% 12
-\BOOKMARK [0][]{chapter.25}{Implementation}{}% 13
-\BOOKMARK [1][]{section.26}{Overview}{chapter.25}% 14
-\BOOKMARK [1][]{section.27}{Data Collection}{chapter.25}% 15
-\BOOKMARK [1][]{section.35}{Distribution}{chapter.25}% 16
-\BOOKMARK [1][]{section.40}{Visualization}{chapter.25}% 17
-\BOOKMARK [0][]{chapter.45}{Evaluation}{}% 18
-\BOOKMARK [1][]{section.46}{Accuracy}{chapter.45}% 19
-\BOOKMARK [1][]{section.47}{Performance}{chapter.45}% 20
-\BOOKMARK [1][]{section.48}{Usefulness}{chapter.45}% 21
-\BOOKMARK [0][]{appendix.49}{Implementation}{}% 22
-\BOOKMARK [1][]{section.50}{My Algorithm}{appendix.49}% 23
-\BOOKMARK [0][]{appendix*.57}{Bibliography}{}% 24
+\BOOKMARK [0][]{chapter.25}{Visualizations}{}% 13
+\BOOKMARK [1][]{section.26}{Numerical Data}{chapter.25}% 14
+\BOOKMARK [1][]{section.30}{Text Data}{chapter.25}% 15
+\BOOKMARK [1][]{section.36}{Graph Data}{chapter.25}% 16
+\BOOKMARK [0][]{chapter.37}{Implementation}{}% 17
+\BOOKMARK [1][]{section.38}{Overview}{chapter.37}% 18
+\BOOKMARK [1][]{section.41}{Data Collection}{chapter.37}% 19
+\BOOKMARK [1][]{section.49}{Distribution}{chapter.37}% 20
+\BOOKMARK [1][]{section.54}{Visualization}{chapter.37}% 21
+\BOOKMARK [0][]{chapter.59}{Testing}{}% 22
+\BOOKMARK [1][]{section.60}{Summarization}{chapter.59}% 23
+\BOOKMARK [1][]{section.61}{Filtering}{chapter.59}% 24
+\BOOKMARK [1][]{section.62}{Data Organization}{chapter.59}% 25
+\BOOKMARK [1][]{section.63}{Joins}{chapter.59}% 26
+\BOOKMARK [1][]{section.64}{Meta Patterns}{chapter.59}% 27
+\BOOKMARK [0][]{chapter.65}{Evaluation}{}% 28
+\BOOKMARK [1][]{section.66}{Accuracy}{chapter.65}% 29
+\BOOKMARK [1][]{section.67}{Performance}{chapter.65}% 30
+\BOOKMARK [1][]{section.68}{Usefulness}{chapter.65}% 31
+\BOOKMARK [0][]{appendix.69}{Implementation}{}% 32
+\BOOKMARK [1][]{section.70}{My Algorithm}{appendix.69}% 33
+\BOOKMARK [0][]{appendix*.77}{Bibliography}{}% 34
