@@ -1,8 +1,8 @@
 package DataRecording;
 
+import Data.InSituDataSet;
 import Visualization.Visualizer;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.flink.api.common.typeinfo.TypeInformation;
 import org.apache.flink.api.java.DataSet;
 import org.apache.flink.api.java.tuple.*;
 import org.apache.hadoop.conf.Configuration;
@@ -14,6 +14,7 @@ import java.io.*;
 
 import java.nio.file.FileSystems;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -24,11 +25,9 @@ import java.util.regex.Pattern;
 public class InSituCollector{
 
     private static Visualizer visualizer;
-    TypeInformation dataFormat;
 
-    public InSituCollector(Visualizer visualizer, TypeInformation typeInfo, Class... c ) {
+    public InSituCollector(Visualizer visualizer) {
         this.visualizer = visualizer;
-        dataFormat = typeInfo;
     }
 
     /**
@@ -36,18 +35,16 @@ public class InSituCollector{
      * the contained data and then reading it into a new dataset which has the InSituCollector's ExecutionEnvironment
      * @param data External DataSet to be collected
      */
-    public void collect(DataSet data){
+    public void collect(int id, DataSet data, Class... c){
 
-        dataFormat.getTypeClass();
         //Initialize local data set
-        ArrayList<Tuple> dataSet = new ArrayList<Tuple>();
+        ArrayList<Tuple> dataSet = new ArrayList<>();
 
         try {
             System.out.println(org.apache.flink.core.fs.FileSystem.getLocalFileSystem().isDistributedFS());
             System.out.println(FileSystems.getDefault().getClass().toString());
             //Local (Non-HDFS) filesystem
-            //!org.apache.flink.core.fs.FileSystem.getLocalFileSystem().isDistributedFS()
-            if (false) {
+            if (!org.apache.flink.core.fs.FileSystem.getLocalFileSystem().isDistributedFS()) {
 
                 String outputPath = "C:\\Users\\Jake\\Desktop\\TestOutput";
 
@@ -64,9 +61,7 @@ public class InSituCollector{
                     try {
                         reader = new BufferedReader(new FileReader(file.getPath()));
                         while ((line = reader.readLine()) != null) {
-
-
-                            Tuple addedTuple = parseUnknownTuple(line);
+                            Tuple addedTuple = parseTuple(line, c);
                             dataSet.add(addedTuple);
                         }
                     } catch (IOException e) {
@@ -81,8 +76,8 @@ public class InSituCollector{
                         }
                     }
                 }
-                visualizer.addData(dataSet);
-                dir.deleteOnExit();
+                visualizer.addData(new InSituDataSet(id,dataSet));
+                //dir.deleteOnExit();
             }
             else{
                 //Write dataset to HDFS
@@ -107,7 +102,7 @@ public class InSituCollector{
                 String line;
 
                 while ((line = reader.readLine())!= null){
-                    Tuple addedTuple = parseUnknownTuple(line);
+                    Tuple addedTuple = parseTuple(line, c);
                     dataSet.add(addedTuple);
                 }
 
@@ -121,7 +116,6 @@ public class InSituCollector{
 
     public void collectPlan(String plan){
         visualizer.setPlan(plan);
-
     }
 
     /**
@@ -129,12 +123,104 @@ public class InSituCollector{
      * @param line The CSV line to be read
      * @return The generated tuple
      */
-    public Tuple parseTuple(String line){
+    public Tuple parseTuple(String line, Class... c){
         String[] tuple = line.split(",");
-        List values = new ArrayList<>();
+
+        if(tuple.length > c.length){
+            System.out.println("Too few classes provided");
+            System.out.println(Arrays.toString(tuple));
+            System.out.println(Arrays.toString(c));
+        }
+        else if (c.length > tuple.length){
+            System.out.println("Missing value in tuple/Too many classes provided");
+        }
+
         Tuple created = null;
 
+        switch(c.length){
+            case 1 : created = new Tuple1<>(c[0]);
+                break;
+            case 2 : created = new Tuple2<>(c[0],c[1]);
+                break;
+            case 3 : created = new Tuple3<>(c[0],c[1],c[2]);
+                break;
+            case 4 : created = new Tuple4<>(c[0],c[1],c[2],c[3]);
+                break;
+            case 5 : created = new Tuple5<>(c[0],c[1],c[2],c[3],c[4]);
+                break;
+            case 6 : created = new Tuple6<>(c[0],c[1],c[2],c[3],c[4],c[5]);
+                break;
+            case 7 : created = new Tuple7<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6]);
+                break;
+            case 8 : created = new Tuple8<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6],c[7]);
+                break;
+            case 9 : created = new Tuple9<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8]);
+                break;
+            case 10 : created = new Tuple10<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9]);
+                break;
+            case 11 : created = new Tuple11<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9],c[10]);
+                break;
+            case 12 : created = new Tuple12<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9],c[10],c[11]);
+                break;
+            case 13 : created = new Tuple13<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9],c[10],c[11],c[12]);
+                break;
+            case 14 : created = new Tuple14<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9],c[10],c[11],c[12],c[13]);
+                break;
+            case 15 : created = new Tuple15<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9],c[10],c[11],c[12],c[13],c[14]);
+                break;
+            case 16 : created = new Tuple16<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9],c[10],c[11],c[12],c[13],c[14],c[15]);
+                break;
+            case 17 : created = new Tuple17<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9],c[10],c[11],c[12],c[13],c[14],c[15],c[16]);
+                break;
+            case 18 : created = new Tuple18<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9],c[10],c[11],c[12],c[13],c[14],c[15],c[16],c[17]);
+                break;
+            case 19 : created = new Tuple19<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9],c[10],c[11],c[12],c[13],c[14],c[15],c[16],c[17],c[18]);
+                break;
+            case 20 : created = new Tuple20<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9],c[10],c[11],c[12],c[13],c[14],c[15],c[16],c[17],c[18],c[19]);
+                break;
+            case 21 : created = new Tuple21<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9],c[10],c[11],c[12],c[13],c[14],c[15],c[16],c[17],c[18],c[19],c[20]);
+                break;
+            case 22 : created = new Tuple22<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9],c[10],c[11],c[12],c[13],c[14],c[15],c[16],c[17],c[18],c[19],c[20],c[21]);
+                break;
+            case 23 : created = new Tuple23<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9],c[10],c[11],c[12],c[13],c[14],c[15],c[16],c[17],c[18],c[19],c[20],c[21],c[22]);
+                break;
+            case 24 : created = new Tuple24<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9],c[10],c[11],c[12],c[13],c[14],c[15],c[16],c[17],c[18],c[19],c[20],c[21],c[22],c[23]);
+                break;
+            case 25 : created = new Tuple25<>(c[0],c[1],c[2],c[3],c[4],c[5],c[6],c[7],c[8],c[9],c[10],c[11],c[12],c[13],c[14],c[15],c[16],c[17],c[18],c[19],c[20],c[21],c[22],c[23],c[24]);
+                break;
+            default : System.out.println("Too many classes provided");
+        }
+
+        for(int i = 0; i < tuple.length; i++){
+            created.setField(convertType(tuple[i],c[i]), i);
+        }
+
         return created;
+    }
+
+    /**
+     * Takes a given string and class object, and converts the string to an object of the provided class
+     * @param s The String to be converted
+     * @param c The desired output class type
+     * @return AN object of type 'c' based on the input string
+     */
+    public <T>T convertType(String s, Class<T> c){
+
+        if(c.equals(Integer.class)){
+            return (T) Integer.valueOf(s);
+        }
+        else if(c.equals(Double.class)){
+            return (T) Double.valueOf(s);
+        }
+        else if(c.equals(Float.class)){
+            return (T) Float.valueOf(s);
+        }
+        else if(c.equals(Character.class)){
+            return (T) Character.valueOf(s.charAt(0));
+        }
+        else { //String
+            return (T) s;
+        }
     }
 
     /**

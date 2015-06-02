@@ -23,6 +23,6 @@ public class BasicTest {
         */
 
       //  visualizer.setDataSet(dataset);
-        visualizer.visualizeWordCloud();
+        visualizer.visualizeWordCloud(1);
     }
 }

@@ -5,24 +5,40 @@ import org.apache.flink.api.java.ExecutionEnvironment;
 import org.apache.flink.api.java.DataSet;
 import org.apache.flink.api.java.io.CsvOutputFormat;
 import org.apache.flink.api.java.operators.DataSink;
+import org.apache.flink.api.java.tuple.Tuple;
+
+import java.util.ArrayList;
 
 /**
  * Created to handle data collected by an InSituCollector.
- * Extends the Flink dataset, meant to allow for additional functionality. Primarily timestamping and metadata tracking.
+ * Stores metadata reflecting point of collection and timing.
  */
-public class InSituDataSet<T> extends DataSet{
+public class InSituDataSet{
 
-    public InSituDataSet(ExecutionEnvironment context, TypeInformation type){
-        super(context, type);
+    ArrayList<Tuple> data;
+    int id;
+    int timestamp;
+
+    public InSituDataSet(int id, ArrayList data){
+        this.data = data;
+        this.id = id;
     }
 
-    public String toString(){
-        return this.print().toString();
+    public InSituDataSet(int id, int timestamp, ArrayList data){
+        this.data = data;
+        this.id = id;
+        this.timestamp = timestamp;
     }
 
-    public DataSink<T> writeAsCsv(String filePath) {
-        System.out.println("writing from dataset");
-        return this.writeAsCsv(filePath, "\n", CsvOutputFormat.DEFAULT_FIELD_DELIMITER);
+    public ArrayList<Tuple> getData(){
+        return this.data;
     }
 
+    public int getId(){
+        return id;
+    }
+
+    public int getTimestamp(){
+        return timestamp;
+    }
 }

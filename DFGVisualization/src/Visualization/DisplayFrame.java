@@ -20,10 +20,10 @@ public class DisplayFrame extends javax.swing.JFrame {
         try {
             Thread.sleep(1000);
         } catch(InterruptedException ex) {
-            Thread.currentThread().interrupt();
+            Thread.currentThread();
         }
 
-        panel.setBounds(20, 20, sketch.getWidth(), sketch.getHeight());
+        panel.setBounds(20, 20, sketch.getWidth() + 50, sketch.getHeight() + 50);
         this.setSize(sketch.getWidth(), sketch.getHeight());
         this.setVisible(true);
     }

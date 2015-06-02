@@ -28,15 +28,20 @@ public class Conditional {
 
         //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         Visualizer visualizer = new Visualizer();
-        InSituCollector totalsCollector = new InSituCollector(visualizer, totals.getType());
-        totalsCollector.collect(totals);
+        InSituCollector totalsCollector = new InSituCollector(visualizer);
+        ////////////////////////id  data   classes
+        totalsCollector.collect(1, totals, String.class, Integer.class);
+        totalsCollector.collectPlan(env.getExecutionPlan());
         //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
         // emit result
         totals.print();
 
         // execute program
-        visualizer.visualizeBarChart();
+        visualizer.visualizeBarChart(1);
+        visualizer.visualizeLineChart(1);
+        visualizer.visualizeScatterPlot(1);
+        visualizer.visualizeExecutionPlan();
         env.execute("Conditional");
     }
 

@@ -1,4 +1,6 @@
 package Visualization.Text;
+
+import Data.InSituDataSet;
 import processing.core.*;
 import wordcram.*;
 
@@ -7,6 +9,12 @@ import wordcram.*;
  */
 public class WordCloudSketch extends PApplet{
 
+    private InSituDataSet dataSet;
+
+    public WordCloudSketch(InSituDataSet data) {
+        this.dataSet = data;
+    }
+
     public void setup(){
         size(700, 400);
         background(255);
@@ -14,22 +22,42 @@ public class WordCloudSketch extends PApplet{
 
     public void draw() {
 
+        Word[] words = new Word[dataSet.getData().size()];
 
-        // Each Word object has its word, and its weight.  You can use whatever
-        // numbers you like for their weights, and they can be in any order.
-        Word[] wordArray = new Word[]{
-                new Word("Hello", 100),
-                new Word("Test", 60)
-        };
+        int max = 0;
 
-        // Pass in the sketch (the variable "this"), so WordCram can draw to it.
-        WordCram wordcram = new WordCram(this)
+        for(int i =0; i < dataSet.getData().size(); i++){
+            if(max < (Integer)dataSet.getData().get(i).getField(1)){
+                max = dataSet.getData().get(i).getField(1);
+            }
+        }
 
-                // Pass in the words to draw.
-                .fromWords(wordArray);
+        for(int i = 0; i < dataSet.getData().size(); i++){
+            String currentWord = dataSet.getData().get(i).getField(0);
+            float weight = (float)((int)dataSet.getData().get(i).getField(1))/(float)max;
+            words[i] = new Word(currentWord, weight);
+            System.out.println(currentWord);
+            System.out.println("!!!!!!!!!!!!!!" + i);
+        }
 
-        // Now we've created our WordCram, we can draw it:
+        // Pass in the sketch, so WordCram can draw to it.
+        WordCram wordcram = new WordCram(this).fromWords(words);
+
+        //Automatically stops drawing when space is used up
         wordcram.drawAll();
+
+        for (Word word :wordcram.getSkippedWords()) {
+            if(word.wasSkippedBecause() == WordSkipReason.SHAPE_WAS_TOO_SMALL){
+                println(word.word + ": shape was too small");
+            }
+            else if(word.wasSkippedBecause() == WordSkipReason.WAS_OVER_MAX_NUMBER_OF_WORDS){
+                println(word.word + ": was over max # of words");
+            }
+            else if(word.wasSkippedBecause() == WordSkipReason.NO_SPACE){
+                println(word.word + ": no room to place it");
+            }
+        }
+
         noLoop();
     }
 }
