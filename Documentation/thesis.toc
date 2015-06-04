@@ -69,15 +69,15 @@
 \contentsline {paragraph}{Shuffling}{22}{paragraph*.75}
 \contentsline {section}{\numberline {5.4}Join Patterns}{22}{section.76}
 \contentsline {paragraph}{Reduce Side Join}{22}{paragraph*.77}
-\contentsline {paragraph}{Replicated Join}{22}{paragraph*.78}
-\contentsline {paragraph}{Composite Join}{22}{paragraph*.79}
-\contentsline {paragraph}{Cartesian Product}{22}{paragraph*.80}
-\contentsline {section}{\numberline {5.5}Meta Patterns}{22}{section.81}
-\contentsline {chapter}{\numberline {6}Evaluation}{23}{chapter.82}
-\contentsline {section}{\numberline {6.1}Accuracy}{23}{section.83}
-\contentsline {section}{\numberline {6.2}Performance}{23}{section.84}
-\contentsline {section}{\numberline {6.3}Usefulness}{23}{section.85}
-\contentsline {chapter}{\numberline {A}Implementation}{25}{appendix.86}
-\contentsline {section}{\numberline {A.1}My Algorithm}{25}{section.87}
-\contentsline {paragraph}{}{25}{paragraph*.88}
-\contentsline {chapter}{\nonumberline Bibliography}{27}{appendix*.94}
+\contentsline {paragraph}{Replicated Join}{23}{paragraph*.78}
+\contentsline {paragraph}{Composite Join}{23}{paragraph*.79}
+\contentsline {paragraph}{Cartesian Product}{23}{paragraph*.80}
+\contentsline {section}{\numberline {5.5}Meta Patterns}{23}{section.81}
+\contentsline {chapter}{\numberline {6}Evaluation}{25}{chapter.82}
+\contentsline {section}{\numberline {6.1}Accuracy}{25}{section.83}
+\contentsline {section}{\numberline {6.2}Performance}{25}{section.84}
+\contentsline {section}{\numberline {6.3}Usefulness}{25}{section.85}
+\contentsline {chapter}{\numberline {A}Implementation}{27}{appendix.86}
+\contentsline {section}{\numberline {A.1}My Algorithm}{27}{section.87}
+\contentsline {paragraph}{}{27}{paragraph*.88}
+\contentsline {chapter}{\nonumberline Bibliography}{29}{appendix*.94}

@@ -40,15 +40,19 @@ Filtering for distinct records is of course self-explanatory in meaning. There a
 
 \section{Data Organization Patterns}
 \label{sec:dataorganization}
-\INITIAL{D}{ata organization} problems can present themselves in many ways, and have a wide variety of semantic motivations behind them.
+\INITIAL{D}{ata organization} problems can present themselves in many ways, and have a wide variety of motivations behind them. With respect to big data problems in particular, the way that data is partitioned, sharded, or sorted can have serious implications for performance. If we consider in-situ processing in particular, there are many cases where data will need to be restructured for further analysis beyond that which is performed in the map-reduce context.
 
 \paragraph{Structured to Hierarchical}
+The structured to hierarchical pattern takes a row based data set and transforms it into a hierarchical format such as JSON or XML. Because MapReduce systems don't care about data format, hierarchical data structures can be immensely helpful in avoiding joins.
 
 \paragraph{Partitioning}
+Partitioning of course separates data into categories. This can be considered semantically similar to a summarization task without any form of aggregation, although the implementation may differ significantly. The major requirement of a partitioning job is to know in advance how many partitions should be created. This can be user provided, or derived from a prior analysis job, in which case the number of partitions may remain unknown to the user. Partitioning becomes very interesting for performance reasons when the partitions are actually sharded across different physical machines in a cluster.
 
 \paragraph{Binning}
+Binning can often be used to solve the same problems as partitioning and is very similar overall. The key difference between the two lies in implementation; binning splits data in the map phase instead of within a partitioner, eliminating the need for a reduce phase. The data structures, and therefore types of visualizations that we would want to see, in such a scenario are identical.
 
-\paragraph{Total Order Sorting}
+\paragraph{Sorting}
+The total order sorting pattern is of course concerned with the order of records within a data set. 
 
 \paragraph{Shuffling}
 
