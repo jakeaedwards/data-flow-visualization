@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="gicentreUtils">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/gicentreUtils/gicentreUtils/library/gicentreUtils.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../External Libraries/gicentreUtils.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

@@ -76,8 +76,8 @@ public class InSituCollector{
                         }
                     }
                 }
+                dir.deleteOnExit();
                 visualizer.addData(new InSituDataSet(id,dataSet));
-                //dir.deleteOnExit();
             }
             else{
                 //Write dataset to HDFS

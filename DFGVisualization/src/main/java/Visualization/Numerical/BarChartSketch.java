@@ -13,6 +13,7 @@ public class BarChartSketch extends PApplet{
 
     public BarChartSketch(InSituDataSet data) {
         this.dataSet = data;
+        dataSet.sortOn(0);
     }
 
     BarChart barChart;
@@ -25,14 +26,13 @@ public class BarChartSketch extends PApplet{
 
         // Scaling
         barChart.setMinValue(0);
-        barChart.setMaxValue(15);
+       // barChart.setMaxValue(15);
 
         // Axis appearance
         textFont(createFont("Serif",10),10);
 
         barChart.showValueAxis(true);
         //barChart.setValueFormat("#%");
-        //barChart.setBarLabels(dataSet.getLabels());
         barChart.setBarLabels(buildLabels());
         barChart.showCategoryAxis(true);
 
@@ -64,7 +64,7 @@ public class BarChartSketch extends PApplet{
         String[] data = new String[dataSet.getData().size()];
 
         for(int i = 0; i < data.length; i++){
-            data[i] = dataSet.getData().get(i).getField(0);
+            data[i] = String.valueOf(dataSet.getData().get(i).getField(0));
         }
 
         return data;

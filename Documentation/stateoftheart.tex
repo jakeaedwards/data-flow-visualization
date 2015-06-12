@@ -6,7 +6,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Visualization of Data}
 \label{sec:dataviz}
-\INITIAL{G}{eneral purpose visualization techniques} have evolved over the past several decades, but often simple techniques still provide the most effective solution. One of the most seminal works in information display is Edward Tufte's "The Visual Display of Quantitative Information"\cite{Tufle1983}. This work provided a summary of several different types of visualizations applied in many fields, but more importantly it set guidelines as to what makes an effective visualization.
+\INITIAL{D}{ata often contains hidden patterns} which are very easily understood by humans, but can be difficult to extract using basic statistical or computational methods. A demonstration of this was famously constructed by Francis Anscombe in his 1973 paper "Graphs in Statistical Analysis" \cite{Anscombe1973}. Known as Anscombe's quartet, this example consisted of four data sets containing (x, y) coordinates. Each of these data sets had identical simple statistical summaries (linear regression coefficients, x and y means, x and y variance, and Pearson Correlation Coefficient). When visualized using a simple scatterplot however, each dataset clearly exhibited a unique pattern. Figure \ref{fig:anscombe} shows Anscombe's quartet visualized together. 
+
+%%%%%%%%%%%%%%%%%%
+\begin{figure}
+	\centering
+	\label{fig:anscombe}
+	\includegraphics[scale=0.8]{anscombes_quartet.png}
+	\caption{Anscombe's Quartet \cite{Shoresh2012}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%
+
+\paragraph{Tufte}
+General purpose visualization techniques have evolved over the past several decades, but often simple techniques still provide the most effective solution. One of the most seminal works in information display is Edward Tufte's "The Visual Display of Quantitative Information"\cite{Tufle1983}. This work provided a summary of several different types of visualizations applied in many fields, but more importantly it set guidelines as to what makes an effective visualization.
 
 \paragraph{Chart Junk}
 Many of the key concepts of Tufte's work revolve around the idea of limiting what he called \emph{chart junk}. Chart junk refers to "useless, non-informative, or information-obscuring elements of information displays"\cite{Tufle1983}. While Tufte acknowledges that using non-data graphics can help to editorialize or provide context for the information being displayed,  it is more important to ensure that data is not distorted in order to fit an aesthetic. 
@@ -19,7 +31,7 @@ In addition to limiting non-data information in visualizations, Tufte makes a st
 	\centering
 	\label{fig:snowmap}
 	\includegraphics[scale=0.14]{jonsnowmap.jpg}
-	\caption{The map used by John Snow to determine the source of a cholera outbreak \cite{Tufle1983}}
+	\caption{The map used by John Snow to determine the source of a cholera outbreak \cite{Tufte1983}}
 \end{figure}
 %%%%%%%%%%%%%%%%%%
 

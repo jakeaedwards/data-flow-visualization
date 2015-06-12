@@ -8,27 +8,27 @@
 \BOOKMARK [1][]{section.8}{Structure of this Thesis}{chapter.4}% 8
 \BOOKMARK [0][]{chapter.9}{Related Work}{}% 9
 \BOOKMARK [1][]{section.10}{Visualization of Data}{chapter.9}% 10
-\BOOKMARK [1][]{section.17}{In-Situ Processing}{chapter.9}% 11
-\BOOKMARK [1][]{section.20}{Visualization of Data Flow Graphs}{chapter.9}% 12
-\BOOKMARK [0][]{chapter.25}{Visualizations}{}% 13
-\BOOKMARK [1][]{section.26}{Numerical Data}{chapter.25}% 14
-\BOOKMARK [1][]{section.30}{Text Data}{chapter.25}% 15
-\BOOKMARK [1][]{section.36}{Graph Data}{chapter.25}% 16
-\BOOKMARK [0][]{chapter.37}{Implementation}{}% 17
-\BOOKMARK [1][]{section.38}{Overview}{chapter.37}% 18
-\BOOKMARK [1][]{section.41}{Data Collection}{chapter.37}% 19
-\BOOKMARK [1][]{section.49}{Distribution}{chapter.37}% 20
-\BOOKMARK [1][]{section.54}{Visualization}{chapter.37}% 21
-\BOOKMARK [0][]{chapter.59}{Testing}{}% 22
-\BOOKMARK [1][]{section.60}{Summarization Patterns}{chapter.59}% 23
-\BOOKMARK [1][]{section.64}{Filtering Patterns}{chapter.59}% 24
-\BOOKMARK [1][]{section.70}{Data Organization Patterns}{chapter.59}% 25
-\BOOKMARK [1][]{section.76}{Join Patterns}{chapter.59}% 26
-\BOOKMARK [1][]{section.81}{Meta Patterns}{chapter.59}% 27
-\BOOKMARK [0][]{chapter.82}{Evaluation}{}% 28
-\BOOKMARK [1][]{section.83}{Accuracy}{chapter.82}% 29
-\BOOKMARK [1][]{section.84}{Performance}{chapter.82}% 30
-\BOOKMARK [1][]{section.85}{Usefulness}{chapter.82}% 31
-\BOOKMARK [0][]{appendix.86}{Implementation}{}% 32
-\BOOKMARK [1][]{section.87}{My Algorithm}{appendix.86}% 33
-\BOOKMARK [0][]{appendix*.94}{Bibliography}{}% 34
+\BOOKMARK [1][]{section.19}{In-Situ Processing}{chapter.9}% 11
+\BOOKMARK [1][]{section.22}{Visualization of Data Flow Graphs}{chapter.9}% 12
+\BOOKMARK [0][]{chapter.27}{Visualizations}{}% 13
+\BOOKMARK [1][]{section.28}{Numerical Data}{chapter.27}% 14
+\BOOKMARK [1][]{section.38}{Text Data}{chapter.27}% 15
+\BOOKMARK [1][]{section.44}{Graph Data}{chapter.27}% 16
+\BOOKMARK [0][]{chapter.45}{Usage Scenarios}{}% 17
+\BOOKMARK [1][]{section.46}{Summarization Patterns}{chapter.45}% 18
+\BOOKMARK [1][]{section.50}{Filtering Patterns}{chapter.45}% 19
+\BOOKMARK [1][]{section.56}{Data Organization Patterns}{chapter.45}% 20
+\BOOKMARK [1][]{section.62}{Join Patterns}{chapter.45}% 21
+\BOOKMARK [1][]{section.67}{Meta Patterns}{chapter.45}% 22
+\BOOKMARK [0][]{chapter.68}{Implementation}{}% 23
+\BOOKMARK [1][]{section.69}{Overview}{chapter.68}% 24
+\BOOKMARK [1][]{section.72}{Data Collection}{chapter.68}% 25
+\BOOKMARK [1][]{section.80}{Distribution}{chapter.68}% 26
+\BOOKMARK [1][]{section.85}{Visualization}{chapter.68}% 27
+\BOOKMARK [0][]{chapter.90}{Evaluation}{}% 28
+\BOOKMARK [1][]{section.91}{Accuracy}{chapter.90}% 29
+\BOOKMARK [1][]{section.92}{Performance}{chapter.90}% 30
+\BOOKMARK [1][]{section.93}{Usefulness}{chapter.90}% 31
+\BOOKMARK [0][]{appendix.94}{Implementation}{}% 32
+\BOOKMARK [1][]{section.95}{My Algorithm}{appendix.94}% 33
+\BOOKMARK [0][]{appendix*.102}{Bibliography}{}% 34

@@ -1,0 +1,74 @@
+\chapter{Usage Scenarios}
+\label{sec:usagescenarios}
+\INITIAL{T}{here are many scenarios} in which MapReduce can be applied. Because this work is meant to applicable to any MapReduce job, tests have been selected in order to cover a varied range of analysis and data types. In this case, the analyses chosen attempt to cover the major MapReduce pattern categories as presented in the text "MapReduce Design Patterns" \cite{Miner2012}. In addition to this, the unique features of Flink are applied in order to establish that non-generic cases are also covered. Of course, in addition to the analysis itself the type of data being visualized is key. As such, these design patterns and features are applied to a varied array of data sources which necessitate the use of all of the most vital data visualization approaches.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Summarization Patterns}
+\label{sec:summarization}
+\INITIAL{N}{umerical aggregation tasks} across groupings in a data set are the most common tasks which are encountered in MapReduce analysis programs. This base grouping of data is of course one of the most core functions of the MapReduce paradigm, and thus is often the most straightforward and commonly encountered type of analysis. Because of the simplicity of summarization tasks, they are frequently the first form of analysis performed in the exploration of a new data set. This makes summarization patterns a crucial, albeit straightforward, point of focus for any work concerning the evaluation of unknown factors in data.
+
+\paragraph{Numerical Summary}
+Numerical summarization is a general pattern for calculation aggregate statistical values across groupings in a data set. Most data sets will be too large for a human to be able to extract meaningful patterns from viewing individual records. Hence, when we are dealing with data that can be grouped by fields in a semantically meaningful way and can be sensibly aggregated or counted we can summarize in hopes of revealing insight. This pattern is analagous to performing an aggregation after a group by expression in a SQL-like context.
+
+\paragraph{Inverted Index}
+Inverted indexes are often constructed in scenarios when it is useful to associate some key term with a set of related results within a dataset. This serves to improve search speed by eliminating the need to examine each possible result in a large data set. It does this by pre-restricting the potential results to those which are known to be associated with the search term provided. This differs structurally from the numerical summarization pattern in that the result will be a set of record identifiers mapped onto some search keyword, rather than the relatively simpler group identifier-statistic pairs provided by numerical summarization. Though the actual implementation of the analysis differs, the information which would be useful for basic analysis remains very similar. Namely, the most crucial information here would be the number and nature of results associated with each keyword. This is generally identical to the previous visualization scenario, if we consider the dataset to be visualized as a set of keywords and associated statistical result set metadata (Number of results, average result size, etc.).  
+
+\paragraph{Counting}
+Semantically, counting problems could be considered a subset of numerical summarization. In scenarios where we require only a simple count or summary of a specific field, we could output the key of a record with a count of one and then reduce to generate a final count. The counting pattern instead utilizes the internal counting mechanism of our mapreduce framework to render the use of a reduce or summation stage unnecessary. One can simply create a counter with the ID of the field to be counted and increment by one until logging the result before the end of the execution. An example of a case where this is more efficient than a normal numerical summarization is the classic word count example. As the differences between this pattern differ in implementation rather than goal, the visualization scenarios are likewise identical to those found with numerical summarization. 
+
+\section{Filtering Patterns}
+\label{sec:filtering}
+
+\INITIAL{F}{iltering patterns} are primarily concerned with understanding a specific part of an overall data set. As such, all filtering patterns are defined by the fact that they do not alter records in the data set, and that they each return a subset of the original data set. This can be considered analogous to search tasks, in that a set of relevant records is returned based on some provided criteria. All filtering tasks require that data be organized into discrete records.
+
+\paragraph{Sampling}
+In the context of map-reduce problems in particular, filtering is very useful for sampling. In situations where the data set to be analyzed is too large for processing in full, sampling methods can provide representative subsets. In some cases there are analysis based reasons to perform sampling; such as separating data into training and testing sets for machine learning algorithms. While this alone makes filtering an interesting use case, sampling is of specific interest for this work due to it's frequent application in exploratory analyses. When testing of an analysis job is performed on a large unknown data set, it is intuitive to simply select an arbitrary subset of records to analyze for debugging purposes. This likely provides a skewed view of the data, and an appropriately sampled data set will provide a more representative view of the task at hand. 
+
+\paragraph{Filtering}
+Filtering itself serves as an abstract pattern for the many different types of filtering that can occur in an analysis job. This is of course the most basic filtering function, wherein a subset of the records in a data set are removed based on whether they are of interest or not. In processing systems such as Flink, the purpose is very typically to collect a large sum of data in one place. Simple filtering can serve to either pare some unnecessary data from this sum, or focus on a small set of records or attributes which are particularly important.
+
+\paragraph{Bloom Filtering}
+Bloom filtering performs much the same task as basic filtering, but with added control in the method through which records are selected for filtering. When applying a bloom filter we extract a feature from each record, and compare that value to a set of values represented by the filter. The primary difference between this and standard filtering are that the decision to filter a given record is determined by the result of a set operation against our filter values. For this approach to be relevant, we must have extractable features which can be compared to the set of filter values, and these filter values must be predefined. It is possible when applying a bloom filter that some records will not be filtered out when they should have been, so they should only be used in scenarios where false positives are acceptable. Such a scenario could occur when prefiltering before performing a more thorough, and much more expensive, robust filtering.
+
+\paragraph{Top N}
+Performing a top N filter on a data set is of course distinct in that the size of the output data set is known before filtering occurs. Functionally, this is of course very similar to the previous two filtering methods. The application however differs in that there is a clear semantic application of this filter, the collection of outliers. In map-reduce settings this can be a particularly interesting problem as the typical method for accomplishing such a task in another context generally involves sorting the items in a data set, an extremely involved task using MapReduce. This provides additional information about our output, as we can infer that the output of a top N filter will be significantly smaller than the original data set; otherwise a total ordering is often a more suitable approach.
+
+\paragraph{Distinct}
+Filtering for distinct records is of course self-explanatory in meaning. There are several applications for such a filter, the most common of which is most likely removing duplicate records. In collecting data sets, duplication of records is a frequent data quality issue which can both add unnecessary processing time and skew analysis results. 
+
+
+\section{Data Organization Patterns}
+\label{sec:dataorganization}
+\INITIAL{D}{ata organization} problems can present themselves in many ways, and have a wide variety of motivations behind them. With respect to big data problems in particular, the way that data is partitioned, sharded, or sorted can have serious implications for performance. If we consider in-situ processing in particular, there are many cases where data will need to be restructured for further analysis beyond that which is performed in the map-reduce context.
+
+\paragraph{Structured to Hierarchical}
+The structured to hierarchical pattern takes a row based data set and transforms it into a hierarchical format such as JSON or XML. Because MapReduce systems don't care about data format, hierarchical data structures can be immensely helpful in avoiding joins.
+
+\paragraph{Partitioning}
+Partitioning of course separates data into categories. This can be considered semantically similar to a summarization task without any form of aggregation, although the implementation may differ significantly. The major requirement of a partitioning job is to know in advance how many partitions should be created. This can be user provided, or derived from a prior analysis job, in which case the number of partitions may remain unknown to the user. Partitioning becomes very interesting for performance reasons when the partitions are actually sharded across different physical machines in a cluster.
+
+\paragraph{Binning}
+Binning can often be used to solve the same problems as partitioning and is very similar overall. The key difference between the two lies in implementation; binning splits data in the map phase instead of within a partitioner, eliminating the need for a reduce phase. The data structures, and therefore types of visualizations that we would want to see, in such a scenario are identical.
+
+\paragraph{Sorting}
+The total order sorting pattern is of course concerned with the order of records within a data set. 
+
+\paragraph{Shuffling}
+
+
+\section{Join Patterns}
+\label{sec:joins}
+
+\paragraph{Reduce Side Join}
+
+\paragraph{Replicated Join}
+
+\paragraph{Composite Join}
+
+\paragraph{Cartesian Product}
+
+\section{Meta Patterns}
+\label{sec:metapatterns}
+Probably not particularly useful.
+

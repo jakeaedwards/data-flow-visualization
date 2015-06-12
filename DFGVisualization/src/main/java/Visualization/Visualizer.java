@@ -60,6 +60,11 @@ public class Visualizer {
         executionPlan = plan;
     }
 
+    /**
+     * Returns the desired data set given an id
+     * @param id the provided dataset id
+     * @return the dataset with the desired id
+     */
     private InSituDataSet getDataSet(int id){
         for(InSituDataSet i : dataSets){
             if(i.getId() == id){

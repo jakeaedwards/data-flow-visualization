@@ -10,14 +10,40 @@
 \INITIAL{N}{umerical data is ubiquitous} when it comes to analysis. Almost all tasks which involve any type of computation will have some sort of summary  or statistics to display as a result. This ubiquity has led to a myriad of visualizations being developed for similar tasks, some of which have more merit than others. The key point to consider when visualizing numerical data is to determine the purpose of the visualization. 
 
 \paragraph{Category Comparison}
-Bar chart
+Comparing data across several categories is a task which applies to many different forms of analysis. This is best accomplished through the use of a bar chart. Bar charts display discrete groupings of typically qualitative data such as months, product categories, or ages. Rectangular bars are rendered on the horizontal axis, with the bars' heights reflecting the value assigned to their respective categories. The ordering of the bars is often arbitrary, but in cases where the bars are ordered from highest to lowest incidence the resulting chart is known as a Pareto chart. This can help to reveal trends which exist on top of being used for comparison between two individual categories. In cases where the category values are non-discrete, they can be grouped into discrete bins based on semantically sensible ranges. In this case, the resulting chart is referred to as a histogram.  
 
-Anti pie chart
+\paragraph{Pie Chart}
+Another option for comparing categories is the pie chart. A pie chart is a circle which is divided into wedges representing each category, where the arc length of a wedge reflects the category's assigned value. While these charts are visually appealing, and provide an obvious visual metaphor for parts of a whole, they are generally inferior to a simple bar chart. There are several scenarios in which a pie chart becomes very difficult to read accurately. Primarily, when there are many categories, or when the categories presented are of a very similar size. In such cases, it becomes very difficult to make judgments based on the angles of the various wedges \cite{Robbins2005}. An example of this is shown in Figure \ref{fig:winepie}, in which comparing the blue wedges accurately is quite difficult visually. While it is clear that they are all roughly similar, it is particularly difficult to be certain whether Pinot Grigio and Prosecco have equal quantities, or if one is greater. This could be corrected by adding numerical labels, but the necessity for written numbers implies that a chart may not be better suited to the task than a well formatted simple table. 
 
-\paragraph{Trend Examination} 
+%%%%%%%%%%%%%%%%%%
+\begin{figure}
+	\centering
+	\label{fig:winepie}
+	\includegraphics[scale=0.7]{pie_wine.png}
+	\caption{A pie chart showing proportions of wine varieties \cite{Few2007}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%
+\begin{figure}
+	\centering
+	\label{fig:winebar}
+	\includegraphics[scale=0.7]{bar_wine.png}
+	\caption{A bar chart showing proportions of wine varieties \cite{Few2007}}
+\end{figure}
+%%%%%%%%%%%%%%%%%%
+
+\paragraph{Pie Replacement}
+For use in visualizing in-situ data processing in particular, we of course cannot reliably predict the proportion or in some cases number of categories in the data set. As such, it is better to assume the worst case and use a visualization which is more consistantly appropriate. Applying a percentage scale to the y-axis of a bar chart will adequately replace the visual part of whole metaphor provided by the pie chart. Aside from this, their tasks are never strongly divergent, so no other modification is necessary. Figure \ref{fig:winebar} visualizes the same data as seen in Figure \ref{fig:winepie}, using a bar chart rather than a pie. In the bar chart, the percentages are very clear and the comparison is much less ambiguous.
+
+\paragraph{Correlation}
+One of the visual analysis tasks which is best suited to human analysis is the assessment of correlation between variables. In a scenario where a data set exists with two variables, we can place each variable along an axis and mark each record as a coordinate point. Such a chart is known as a scatter plot, and suggests correlation (or lack thereof) based on the pattern of points drawn on the plot. In cases where the drawn points slope from the bottom left to the top right of the chart area, we can infer that there is a positive correlation between the two variables. Likewise, a slope from top left to bottom right implies a negative correlation. A line of best fit can be drawn on top of the scatter plot in cases where the slope is not immediately clear, or simply for clarification. 
+
+\paragraph{Non-linear Relationships}
+While seeing these positive and negative correlations is useful, it is possible to calculate them using simple methods. An even more powerful application of scatter plots is in identifying non-linear relationships between variables. For example, clusters of points are much more easily detected visually in a scatter plot than they would be through the application of statistical methods in the context of an exploratory analysis.
+
+\paragraph{Trends} 
 Line chart
-
-Scatterplot
 
 \paragraph{Summary Statistics}
 There are cases where a visualization more complex than a simple table is unnecessary and perhaps even ill-suited. When 
