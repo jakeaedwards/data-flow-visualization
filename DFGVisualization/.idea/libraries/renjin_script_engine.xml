@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="renjin-script-engine">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../External Libraries/renjin-script-engine-0.7.1535-jar-with-dependencies.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

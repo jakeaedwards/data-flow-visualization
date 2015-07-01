@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="RCaller-2.1.1">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../External Libraries/RCaller-2.1.1-SNAPSHOT.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

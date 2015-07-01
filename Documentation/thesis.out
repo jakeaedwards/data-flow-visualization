@@ -15,23 +15,22 @@
 \BOOKMARK [1][]{section.38}{Text Data}{chapter.27}% 15
 \BOOKMARK [1][]{section.44}{Graph Data}{chapter.27}% 16
 \BOOKMARK [1][]{section.53}{Summary}{chapter.27}% 17
-\BOOKMARK [0][]{chapter.54}{MapReduce Patterns}{}% 18
+\BOOKMARK [0][]{chapter.54}{Usage Scenarios}{}% 18
 \BOOKMARK [1][]{section.55}{Summarization Patterns}{chapter.54}% 19
 \BOOKMARK [1][]{section.59}{Filtering Patterns}{chapter.54}% 20
 \BOOKMARK [1][]{section.65}{Data Organization Patterns}{chapter.54}% 21
 \BOOKMARK [1][]{section.71}{Join Patterns}{chapter.54}% 22
 \BOOKMARK [1][]{section.76}{Meta Patterns}{chapter.54}% 23
 \BOOKMARK [1][]{section.80}{Summary}{chapter.54}% 24
-\BOOKMARK [0][]{chapter.81}{Examples}{}% 25
-\BOOKMARK [1][]{section.82}{Census Data Analysis}{chapter.81}% 26
-\BOOKMARK [1][]{section.95}{Network Analysis}{chapter.81}% 27
-\BOOKMARK [0][]{chapter.99}{Implementation}{}% 28
-\BOOKMARK [1][]{section.100}{Overview}{chapter.99}% 29
-\BOOKMARK [1][]{section.103}{Data Collection}{chapter.99}% 30
-\BOOKMARK [1][]{section.111}{Visualization}{chapter.99}% 31
-\BOOKMARK [0][]{chapter.117}{Future Work}{}% 32
-\BOOKMARK [1][]{section.118}{Visualizations}{chapter.117}% 33
-\BOOKMARK [1][]{section.125}{Distribution}{chapter.117}% 34
-\BOOKMARK [0][]{appendix.130}{Implementation}{}% 35
-\BOOKMARK [1][]{section.131}{My Algorithm}{appendix.130}% 36
-\BOOKMARK [0][]{appendix*.138}{Bibliography}{}% 37
+\BOOKMARK [0][]{chapter.81}{Implementation}{}% 25
+\BOOKMARK [1][]{section.82}{Overview}{chapter.81}% 26
+\BOOKMARK [1][]{section.85}{Data Collection}{chapter.81}% 27
+\BOOKMARK [1][]{section.93}{Distribution}{chapter.81}% 28
+\BOOKMARK [1][]{section.98}{Visualization}{chapter.81}% 29
+\BOOKMARK [0][]{chapter.103}{Evaluation}{}% 30
+\BOOKMARK [1][]{section.104}{Accuracy}{chapter.103}% 31
+\BOOKMARK [1][]{section.105}{Performance}{chapter.103}% 32
+\BOOKMARK [1][]{section.106}{Usefulness}{chapter.103}% 33
+\BOOKMARK [0][]{appendix.107}{Implementation}{}% 34
+\BOOKMARK [1][]{section.108}{My Algorithm}{appendix.107}% 35
+\BOOKMARK [0][]{appendix*.115}{Bibliography}{}% 36

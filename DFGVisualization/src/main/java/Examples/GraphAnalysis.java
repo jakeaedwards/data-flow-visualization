@@ -25,25 +25,23 @@ public class GraphAnalysis {
         DataSet<Tuple2<Integer, Integer>> edgeWeightFreq = weights.flatMap(new WeightLister()).groupBy(0).sum(1);
 
         DataSet<Tuple2<String, String>> edges = graph.project(0,1);
-        DataSet<Tuple2<String, Integer>> degreeCounts = edges.flatMap(new EdgeLister()).groupBy(0).sum(1);
-        DataSet<Tuple1<Integer>> degrees = degreeCounts.project(1);
-        DataSet<Tuple2<Integer, Integer>> degreeFreq = degrees.flatMap(new WeightLister()).groupBy(0).sum(1);
+        DataSet<Tuple2<String, Integer>> degrees = edges.flatMap(new EdgeLister()).groupBy(0).sum(1);
 
-        degreeFreq.print();
+        edgeWeightFreq.print();
 
         //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         Visualizer visualizer = new Visualizer();
         InSituCollector collector = new InSituCollector(visualizer);
         ////////////////////////id  data   classes
-       // collector.collect(1, edgeWeightFreq, Integer.class, Integer.class);
-        collector.collect(2, degreeFreq, Integer.class, Integer.class);
-        //collector.collectPlan(env.getExecutionPlan());
+        collector.collect(1, edgeWeightFreq, Integer.class, Integer.class);
+        collector.collect(2, degrees, String.class, Integer.class);
+        collector.collectPlan(env.getExecutionPlan());
         //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
         env.execute("Graph Analysis");
 
-        //visualizer.visualizeBarChart(1, "Edge Weight Frequency", "Weight", "Count");
-        visualizer.visualizeScatterPlot(2, "Degree Frequency", "Degree", "Frequency");
+        visualizer.visualizeBarChart(1);
+        //visualizer.visualizeScatterPlot(2);
     }
 
     public static final class GraphParser implements FlatMapFunction<String, Tuple3<String, String, Integer>> {

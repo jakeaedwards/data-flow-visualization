@@ -38,10 +38,10 @@ public class Conditional {
         totals.print();
 
         // execute program
-        visualizer.visualizeBarChart(1, "Example Bar Chart", "Category", "Count");
-        //visualizer.visualizeLineChart(1);
-        //visualizer.visualizeScatterPlot(1);
-        //visualizer.visualizeExecutionPlan();
+        visualizer.visualizeBarChart(1);
+        visualizer.visualizeLineChart(1);
+        visualizer.visualizeScatterPlot(1);
+        visualizer.visualizeExecutionPlan();
         env.execute("Conditional");
     }
 
