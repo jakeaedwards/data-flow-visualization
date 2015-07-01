@@ -14,21 +14,24 @@
 \BOOKMARK [1][]{section.28}{Numerical Data}{chapter.27}% 14
 \BOOKMARK [1][]{section.38}{Text Data}{chapter.27}% 15
 \BOOKMARK [1][]{section.44}{Graph Data}{chapter.27}% 16
-\BOOKMARK [0][]{chapter.45}{Usage Scenarios}{}% 17
-\BOOKMARK [1][]{section.46}{Summarization Patterns}{chapter.45}% 18
-\BOOKMARK [1][]{section.50}{Filtering Patterns}{chapter.45}% 19
-\BOOKMARK [1][]{section.56}{Data Organization Patterns}{chapter.45}% 20
-\BOOKMARK [1][]{section.62}{Join Patterns}{chapter.45}% 21
-\BOOKMARK [1][]{section.67}{Meta Patterns}{chapter.45}% 22
-\BOOKMARK [0][]{chapter.68}{Implementation}{}% 23
-\BOOKMARK [1][]{section.69}{Overview}{chapter.68}% 24
-\BOOKMARK [1][]{section.72}{Data Collection}{chapter.68}% 25
-\BOOKMARK [1][]{section.80}{Distribution}{chapter.68}% 26
-\BOOKMARK [1][]{section.85}{Visualization}{chapter.68}% 27
-\BOOKMARK [0][]{chapter.90}{Evaluation}{}% 28
-\BOOKMARK [1][]{section.91}{Accuracy}{chapter.90}% 29
-\BOOKMARK [1][]{section.92}{Performance}{chapter.90}% 30
-\BOOKMARK [1][]{section.93}{Usefulness}{chapter.90}% 31
-\BOOKMARK [0][]{appendix.94}{Implementation}{}% 32
-\BOOKMARK [1][]{section.95}{My Algorithm}{appendix.94}% 33
-\BOOKMARK [0][]{appendix*.102}{Bibliography}{}% 34
+\BOOKMARK [1][]{section.53}{Summary}{chapter.27}% 17
+\BOOKMARK [0][]{chapter.54}{MapReduce Patterns}{}% 18
+\BOOKMARK [1][]{section.55}{Summarization Patterns}{chapter.54}% 19
+\BOOKMARK [1][]{section.59}{Filtering Patterns}{chapter.54}% 20
+\BOOKMARK [1][]{section.65}{Data Organization Patterns}{chapter.54}% 21
+\BOOKMARK [1][]{section.71}{Join Patterns}{chapter.54}% 22
+\BOOKMARK [1][]{section.76}{Meta Patterns}{chapter.54}% 23
+\BOOKMARK [1][]{section.80}{Summary}{chapter.54}% 24
+\BOOKMARK [0][]{chapter.81}{Examples}{}% 25
+\BOOKMARK [1][]{section.82}{Census Data Analysis}{chapter.81}% 26
+\BOOKMARK [1][]{section.95}{Network Analysis}{chapter.81}% 27
+\BOOKMARK [0][]{chapter.99}{Implementation}{}% 28
+\BOOKMARK [1][]{section.100}{Overview}{chapter.99}% 29
+\BOOKMARK [1][]{section.103}{Data Collection}{chapter.99}% 30
+\BOOKMARK [1][]{section.111}{Visualization}{chapter.99}% 31
+\BOOKMARK [0][]{chapter.117}{Future Work}{}% 32
+\BOOKMARK [1][]{section.118}{Visualizations}{chapter.117}% 33
+\BOOKMARK [1][]{section.125}{Distribution}{chapter.117}% 34
+\BOOKMARK [0][]{appendix.130}{Implementation}{}% 35
+\BOOKMARK [1][]{section.131}{My Algorithm}{appendix.130}% 36
+\BOOKMARK [0][]{appendix*.138}{Bibliography}{}% 37

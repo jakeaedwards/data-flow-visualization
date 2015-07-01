@@ -6,10 +6,17 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces A pie chart showing proportions of wine varieties \cite {Few2007}}}{10}{figure.31}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces A bar chart showing proportions of wine varieties \cite {Few2007}}}{10}{figure.32}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces A word cloud as presented in "Tausend Plateaus: Kapitalismus und Schizophrenie" \cite {Deleuze1987}}}{12}{figure.40}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces A phrase net visualizeing "X of Y" in the old testament \cite {VanHam1987}}}{13}{figure.43}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces A word cloud as presented in "Tausend Plateaus: Kapitalismus und Schizophrenie" \cite {Deleuze1987}}}{13}{figure.40}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces A phrase net visualizeing "X of Y" in the old testament \cite {VanHam1987}}}{14}{figure.43}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces A visualization of edge weight distribution \cite {KONECT2015}}}{15}{figure.49}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces A temporal visualization of edge growth \cite {KONECT2015}}}{15}{figure.50}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces A visualization of cumulative distribution \cite {KONECT2015}}}{16}{figure.51}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces A UML diagram of the core classes}}{22}{figure.71}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces A bar chart showing census income category proportions}}{27}{figure.93}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces A bar chart showing edge weights in the Les Mis\IeC {\'e}rables Graph}}{28}{figure.97}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces A scatter plot showing degree frequency in the Les Mis\IeC {\'e}rables Graph}}{29}{figure.98}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces A UML diagram of the core classes}}{32}{figure.102}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

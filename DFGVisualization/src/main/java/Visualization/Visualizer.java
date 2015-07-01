@@ -22,8 +22,8 @@ public class Visualizer {
     private String executionPlan;
 
     //TODO: Examine why this can print output data before the actual job does
-    public void visualizeBarChart(int id){
-        PApplet sketch = new BarChartSketch(getDataSet(id));
+    public void visualizeBarChart(int id, String title, String xlabel, String ylabel){
+        PApplet sketch = new BarChartSketch(getDataSet(id), title, xlabel, ylabel);
         new DisplayFrame(sketch).setVisible(true);
     }
 
@@ -32,8 +32,8 @@ public class Visualizer {
         new DisplayFrame(sketch).setVisible(true);
     }
 
-    public void visualizeScatterPlot(int id){
-        PApplet sketch = new ScatterplotSketch(getDataSet(id));
+    public void visualizeScatterPlot(int id, String title, String xlabel, String ylabel){
+        PApplet sketch = new ScatterplotSketch(getDataSet(id), title, xlabel, ylabel);
         new DisplayFrame(sketch).setVisible(true);
     }
 
