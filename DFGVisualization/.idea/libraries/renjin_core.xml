@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="renjin-core">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../External Libraries/renjin-core-0.7.1535.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
