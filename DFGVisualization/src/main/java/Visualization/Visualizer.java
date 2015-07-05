@@ -23,6 +23,8 @@ public class Visualizer {
 
     //TODO: Examine why this can print output data before the actual job does
     public void visualizeBarChart(int id, String title, String xlabel, String ylabel){
+        System.out.println("!!!!!!!!!!!!DATA IN VISUALIZER!!!!!!!!!!!!!!!");
+        System.out.println(dataSets.get(0).getData());
         PApplet sketch = new BarChartSketch(getDataSet(id), title, xlabel, ylabel);
         new DisplayFrame(sketch).setVisible(true);
     }
@@ -65,7 +67,7 @@ public class Visualizer {
      * @param id the provided dataset id
      * @return the dataset with the desired id
      */
-    private InSituDataSet getDataSet(int id){
+    public InSituDataSet getDataSet(int id){
         for(InSituDataSet i : dataSets){
             if(i.getId() == id){
                 return i;

@@ -28,7 +28,7 @@ public class Census {
 
         //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         Visualizer visualizer = new Visualizer();
-        InSituCollector totalsCollector = new InSituCollector(visualizer);
+        InSituCollector totalsCollector = new InSituCollector(env, visualizer);
         totalsCollector.collect(1, totals, String.class, Integer.class);
         visualizer.visualizeBarChart(1, "Census Income Categories", "Category", "Count");
         //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

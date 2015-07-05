@@ -28,7 +28,7 @@ public class Conditional {
 
         //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         Visualizer visualizer = new Visualizer();
-        InSituCollector totalsCollector = new InSituCollector(visualizer);
+        InSituCollector totalsCollector = new InSituCollector(env, visualizer);
         ////////////////////////id  data   classes
         totalsCollector.collect(1, totals, String.class, Integer.class);
         totalsCollector.collectPlan(env.getExecutionPlan());

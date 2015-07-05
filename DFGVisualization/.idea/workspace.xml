@@ -2,53 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c96af5c-725b-468a-a9ce-305f93204e70" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\.idea\libraries\JyNI_2_7_alpha_2_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\.idea\libraries\RCaller_2_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\.idea\libraries\RCaller_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\.idea\libraries\jython_standalone_2_7_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\.idea\libraries\renjin_core.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\.idea\libraries\renjin_script_engine.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\.idea\libraries\renjin_script_engine_0_7_0_RC7.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\.idea\libraries\renjin_studio_0_7_1535.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\resources\Generic\salaries.csv" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\src\main\java\Examples\Census.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\src\main\java\Visualization\RTest.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\target\classes\Examples\Census$Counter.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\target\classes\Examples\Census.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\target\classes\Generic\salaries.csv" afterPath="" />
       <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\DFGVisualization\target\classes\Visualization\RTest.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\Documentation\examples.tex" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\Documentation\figures\Census_Conditional.PNG" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\Documentation\figures\degree_freq_lesmis.PNG" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\Documentation\figures\edge_weights_lesmis.PNG" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\Documentation\figures\konect_lesmis_degdist.PNG" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\Documentation\figures\konect_lesmis_edgeweight.PNG" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\Documentation\future.tex" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\Documentation\implementation.tex" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Jake\Documents\GitHub\data-flow-visualization\Documentation\mapreducepatterns.tex" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Visualization/Numerical/BarChartSketch.class" afterPath="$PROJECT_DIR$/target/classes/Visualization/Numerical/BarChartSketch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Examples/Census.class" afterPath="$PROJECT_DIR$/target/classes/Examples/Census.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Examples/Conditional.class" afterPath="$PROJECT_DIR$/target/classes/Examples/Conditional.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Examples/GraphAnalysis$EdgeLister.class" afterPath="$PROJECT_DIR$/target/classes/Examples/GraphAnalysis$EdgeLister.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Examples/GraphAnalysis$GraphParser.class" afterPath="$PROJECT_DIR$/target/classes/Examples/GraphAnalysis$GraphParser.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Examples/GraphAnalysis$WeightLister.class" afterPath="$PROJECT_DIR$/target/classes/Examples/GraphAnalysis$WeightLister.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Examples/GraphAnalysis.class" afterPath="$PROJECT_DIR$/target/classes/Examples/GraphAnalysis.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Visualization/Numerical/ScatterplotSketch.class" afterPath="$PROJECT_DIR$/target/classes/Visualization/Numerical/ScatterplotSketch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/DataRecording/InSituCollector.class" afterPath="$PROJECT_DIR$/target/classes/DataRecording/InSituCollector.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Examples/TextAnalysis.class" afterPath="$PROJECT_DIR$/target/classes/Examples/TextAnalysis.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Visualization/Visualizer.class" afterPath="$PROJECT_DIR$/target/classes/Visualization/Visualizer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Documentation/thesis.pdf" afterPath="$PROJECT_DIR$/../Documentation/thesis.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Documentation/thesis.synctex.gz" afterPath="$PROJECT_DIR$/../Documentation/thesis.synctex.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Visualization/Numerical/BarChartSketch.java" afterPath="$PROJECT_DIR$/src/main/java/Visualization/Numerical/BarChartSketch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Examples/Census.java" afterPath="$PROJECT_DIR$/src/main/java/Examples/Census.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Examples/Conditional.java" afterPath="$PROJECT_DIR$/src/main/java/Examples/Conditional.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Examples/GraphAnalysis.java" afterPath="$PROJECT_DIR$/src/main/java/Examples/GraphAnalysis.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Visualization/Numerical/ScatterplotSketch.java" afterPath="$PROJECT_DIR$/src/main/java/Visualization/Numerical/ScatterplotSketch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/DataRecording/InSituCollector.java" afterPath="$PROJECT_DIR$/src/main/java/DataRecording/InSituCollector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Examples/TextAnalysis.java" afterPath="$PROJECT_DIR$/src/main/java/Examples/TextAnalysis.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Visualization/Visualizer.java" afterPath="$PROJECT_DIR$/src/main/java/Visualization/Visualizer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Documentation/references.bib" afterPath="$PROJECT_DIR$/../Documentation/references.bib" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Documentation/stateoftheart.tex" afterPath="$PROJECT_DIR$/../Documentation/stateoftheart.tex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Documentation/examples.tex" afterPath="$PROJECT_DIR$/../Documentation/examples.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Documentation/thesis.aux" afterPath="$PROJECT_DIR$/../Documentation/thesis.aux" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Documentation/thesis.lof" afterPath="$PROJECT_DIR$/../Documentation/thesis.lof" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Documentation/thesis.out" afterPath="$PROJECT_DIR$/../Documentation/thesis.out" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Documentation/thesis.tex" afterPath="$PROJECT_DIR$/../Documentation/thesis.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Documentation/thesis.toc" afterPath="$PROJECT_DIR$/../Documentation/thesis.toc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Documentation/usagescenarios.tex" afterPath="$PROJECT_DIR$/../Documentation/usagescenarios.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Visualizer.iws" />
@@ -76,21 +55,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Conditional.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Examples/Conditional.java">
+      <file leaf-file-name="Visualizer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Visualization/Visualizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1173">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="68" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="496" max-vertical-offset="1224">
+              <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Census.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Examples/Census.java">
+      <file leaf-file-name="InSituCollector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/DataRecording/InSituCollector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73368144" vertical-offset="186" max-vertical-offset="1258">
-              <caret line="44" column="80" selection-start-line="44" selection-start-column="80" selection-end-line="44" selection-end-column="80" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2360" max-vertical-offset="4828">
+              <caret line="179" column="13" selection-start-line="179" selection-start-column="13" selection-end-line="179" selection-end-column="13" />
+              <folding>
+                <element signature="e#6803#6804#0" expanded="true" />
+                <element signature="e#6843#6844#0" expanded="true" />
+                <element signature="docComment;method#parseUnknownTuple#0;class#InSituCollector#0" expanded="false" />
+                <element signature="method#parseUnknownTuple#0;class#InSituCollector#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GraphAnalysis.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Examples/GraphAnalysis.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.05954466" vertical-offset="816" max-vertical-offset="1496">
+              <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,31 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ScatterplotSketch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Visualization/Numerical/ScatterplotSketch.java">
+      <file leaf-file-name="out.moreno_lesmis_lesmis" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/Graphs/moreno_lesmis/out.moreno_lesmis_lesmis">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1292">
-              <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Visualizer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Visualization/Visualizer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1190">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GraphAnalysis.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Examples/GraphAnalysis.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="1343">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4403">
+              <caret line="253" column="7" selection-start-line="253" selection-start-column="7" selection-end-line="253" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -131,28 +105,8 @@
       <file leaf-file-name="BarChartSketch.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Visualization/Numerical/BarChartSketch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="623" max-vertical-offset="1564">
-              <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="out.moreno_lesmis_lesmis" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/Graphs/moreno_lesmis/out.moreno_lesmis_lesmis">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="4301" max-vertical-offset="4403">
-              <caret line="253" column="7" selection-start-line="253" selection-start-column="7" selection-end-line="253" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LineChartSketch.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Visualization/Numerical/LineChartSketch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="1360">
-              <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1581">
+              <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -166,9 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/DataRecording/WordCount.java" />
-        <option value="$PROJECT_DIR$/src/DataRecording/Logger.java" />
-        <option value="$PROJECT_DIR$/src/Data/DataSet.java" />
         <option value="$PROJECT_DIR$/resources/Apriori/trivial.csv" />
         <option value="$PROJECT_DIR$/testing/Logging/WordCount.java" />
         <option value="$PROJECT_DIR$/testing/Logging/Apriori.java" />
@@ -208,15 +159,18 @@
         <option value="$PROJECT_DIR$/src/main/java/Visualization/Numerical/BarChart.java" />
         <option value="$PROJECT_DIR$/src/main/java/Visualization/Numerical/RBarChart.java" />
         <option value="$PROJECT_DIR$/src/main/java/Visualization/PythonTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/DataRecording/InSituCollector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Examples/Conditional.java" />
         <option value="$PROJECT_DIR$/src/main/java/Visualization/RTest.java" />
         <option value="$PROJECT_DIR$/resources/Generic/salaries.csv" />
-        <option value="$PROJECT_DIR$/src/main/java/Examples/Census.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Visualization/Numerical/ScatterplotSketch.java" />
         <option value="$PROJECT_DIR$/src/main/java/Visualization/Numerical/BarChartSketch.java" />
         <option value="$PROJECT_DIR$/src/main/java/Visualization/Visualizer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataRecording/DataWrite.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Examples/TextAnalysis.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Examples/Conditional.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Examples/Census.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataRecording/DirectoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/DataRecording/InSituCollector.java" />
         <option value="$PROJECT_DIR$/src/main/java/Examples/GraphAnalysis.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Visualization/Numerical/ScatterplotSketch.java" />
       </list>
     </option>
   </component>
@@ -254,20 +208,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Visualizer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DFGVisualization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -339,22 +279,8 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Visualizer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DFGVisualization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -373,36 +299,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Visualizer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DFGVisualization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Visualization" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -425,40 +321,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Visualization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Numerical" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Visualizer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DFGVisualization" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataRecording" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -496,6 +358,20 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Visualizer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DFGVisualization" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Problems" />
       </pane>
@@ -509,7 +385,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../External Libraries/renjin-core-0.7.1535.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../d20srd" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -565,28 +441,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="JobGraphTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Visualizing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Visualizing.JobGraphTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="DFGVisualization" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="RTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -639,6 +493,28 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="Examples.GraphAnalysis" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="DFGVisualization" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="DirectoryTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="DataRecording.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="DataRecording.DirectoryTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -897,18 +773,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Conditional" />
-      <item index="1" class="java.lang.String" itemvalue="Application.JobGraphTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.RTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Census" />
-      <item index="4" class="java.lang.String" itemvalue="Application.GraphAnalysis" />
+      <item index="1" class="java.lang.String" itemvalue="Application.RTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Census" />
+      <item index="3" class="java.lang.String" itemvalue="Application.GraphAnalysis" />
+      <item index="4" class="java.lang.String" itemvalue="Application.DirectoryTest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.GraphAnalysis" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Census" />
-        <item index="2" class="java.lang.String" itemvalue="Application.RTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Conditional" />
-        <item index="4" class="java.lang.String" itemvalue="Application.JobGraphTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.DirectoryTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Census" />
+        <item index="3" class="java.lang.String" itemvalue="Application.RTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Conditional" />
       </list>
     </recent_temporary>
   </component>
@@ -948,6 +824,7 @@
       <workItem from="1435619413077" duration="18188000" />
       <workItem from="1435765550105" duration="4249000" />
       <workItem from="1435794274520" duration="358000" />
+      <workItem from="1435796299204" duration="14375000" />
     </task>
     <task id="LOCAL-00001" summary="Basic structural changes">
       <created>1428360509679</created>
@@ -1007,7 +884,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="372631000" />
+    <option name="totallyTimeSpent" value="387006000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1036,6 +913,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961586" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1044,6 +922,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2416357" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17082785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1053,13 +932,11 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39900866" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39900866" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2416357" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32961586" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1120,7 +997,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1141,7 +1018,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="1360">
           <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#299#300#0" expanded="false" />
+            <element signature="e#334#335#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1381,13 +1262,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Examples/TextAnalysis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1207">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="57" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testing/Logging/WordCount.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="895" max-vertical-offset="2363">
@@ -1434,15 +1308,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="1394">
           <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Examples/Conditional.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1173">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="68" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#299#300#0" expanded="false" />
+            <element signature="e#334#335#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1456,25 +1326,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Visualization/Visualizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1190">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataRecording/InSituCollector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32749563" vertical-offset="0" max-vertical-offset="3604">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="docComment;method#parseUnknownTuple#0;class#InSituCollector#0" expanded="false" />
-            <element signature="method#parseUnknownTuple#0;class#InSituCollector#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/Graphs/moreno_lesmis/out.moreno_lesmis_lesmis">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4403">
@@ -1483,34 +1334,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Examples/GraphAnalysis.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Visualization/Numerical/ScatterplotSketch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="1343">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.32020548" vertical-offset="408" max-vertical-offset="1292">
+          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Visualization/Numerical/BarChartSketch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="623" max-vertical-offset="1564">
-          <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="1581">
+          <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Visualization/Numerical/ScatterplotSketch.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Examples/Conditional.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1292">
-          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.21671018" vertical-offset="225" max-vertical-offset="1173">
+          <caret line="30" column="67" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Examples/TextAnalysis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="152" max-vertical-offset="1207">
+          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Examples/Census.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73368144" vertical-offset="186" max-vertical-offset="1258">
-          <caret line="44" column="80" selection-start-line="44" selection-start-column="80" selection-end-line="44" selection-end-column="80" />
+        <state vertical-scroll-proportion="0.332" vertical-offset="344" max-vertical-offset="1258">
+          <caret line="30" column="67" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Visualization/Visualizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="496" max-vertical-offset="1224">
+          <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataRecording/InSituCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2360" max-vertical-offset="4828">
+          <caret line="179" column="13" selection-start-line="179" selection-start-column="13" selection-end-line="179" selection-end-column="13" />
+          <folding>
+            <element signature="e#6803#6804#0" expanded="true" />
+            <element signature="e#6843#6844#0" expanded="true" />
+            <element signature="docComment;method#parseUnknownTuple#0;class#InSituCollector#0" expanded="false" />
+            <element signature="method#parseUnknownTuple#0;class#InSituCollector#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Examples/GraphAnalysis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.05954466" vertical-offset="816" max-vertical-offset="1496">
+          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

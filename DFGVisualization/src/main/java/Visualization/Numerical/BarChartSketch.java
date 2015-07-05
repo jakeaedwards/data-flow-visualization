@@ -25,7 +25,7 @@ public class BarChartSketch extends PApplet{
     BarChart barChart;
 
     public void setup(){
-        size(500,550);
+        size(500,500);
 
         barChart = new BarChart(this);
         barChart.setData(buildData());
@@ -42,7 +42,7 @@ public class BarChartSketch extends PApplet{
         //barChart.setValueFormat("#%");
         barChart.setBarLabels(buildLabels());
         barChart.showCategoryAxis(true);
-        barChart.setCategoryAxisLabel("\n\n" + xLabel);
+        barChart.setCategoryAxisLabel("\n" + xLabel);
         barChart.setValueAxisLabel(yLabel + "\n");
 
         // Bar colours and appearance
@@ -50,13 +50,13 @@ public class BarChartSketch extends PApplet{
         barChart.setBarGap(4);
 
         // Bar layout
-        barChart.transposeAxes(true);
+        barChart.transposeAxes(false);
     }
 
     public void draw(){
         background(255);
                      //xor, yor, dimensions
-        barChart.draw(15,45,width-30,height-130);
+        barChart.draw(45,45,width-100,height-130);
 
         // Draw a title over the top of the chart.
         fill(120);
@@ -67,6 +67,7 @@ public class BarChartSketch extends PApplet{
     private float[] buildData(){
         float[] data = new float[dataSet.getData().size()];
 
+        System.out.println(dataSet.getData().toString());
         for(int i = 0; i < data.length; i++){
             System.out.println(dataSet.getData().get(i).getField(1));
             Integer val = dataSet.getData().get(i).getField(1);

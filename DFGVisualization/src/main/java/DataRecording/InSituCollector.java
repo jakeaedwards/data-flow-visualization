@@ -2,8 +2,10 @@ package DataRecording;
 
 import Data.InSituDataSet;
 import Visualization.Visualizer;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.flink.api.java.DataSet;
+import org.apache.flink.api.java.ExecutionEnvironment;
 import org.apache.flink.api.java.tuple.*;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FSDataOutputStream;
@@ -13,6 +15,7 @@ import org.apache.hadoop.fs.Path;
 import java.io.*;
 
 import java.nio.file.FileSystems;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -25,9 +28,11 @@ import java.util.regex.Pattern;
 public class InSituCollector{
 
     private static Visualizer visualizer;
+    private static ExecutionEnvironment env;
 
-    public InSituCollector(Visualizer visualizer) {
+    public InSituCollector(ExecutionEnvironment env, Visualizer visualizer) {
         this.visualizer = visualizer;
+        this.env = env;
     }
 
     /**
@@ -35,6 +40,7 @@ public class InSituCollector{
      * the contained data and then reading it into a new dataset which has the InSituCollector's ExecutionEnvironment
      * @param data External DataSet to be collected
      */
+    /*
     public void collect(int id, DataSet data, Class... c){
 
         //Initialize local data set
@@ -76,8 +82,11 @@ public class InSituCollector{
                         }
                     }
                 }
+                System.out.println("!!!!!!!!!!ADDING DATA!!!!!!!!!!");
+                visualizer.addData(new InSituDataSet(id, dataSet));
+                System.out.println("!!!!!!!!!!DATA ADDED!!!!!!!!!!!");
+                System.out.println("DATA: " + visualizer.getDataSet(id).getData());
                 dir.deleteOnExit();
-                visualizer.addData(new InSituDataSet(id,dataSet));
             }
             else{
                 //Write dataset to HDFS
@@ -110,6 +119,68 @@ public class InSituCollector{
         }
         catch(IOException e){
             System.out.println("Problem with the filesystem in the collector");
+            e.printStackTrace();
+        }
+    }
+    */
+
+    public void collect(int id, DataSet data, Class... c) throws Exception{
+
+        String outputPath = "C:\\Users\\Jake\\Desktop";
+        ArrayList<Tuple> dataSet = new ArrayList<>();
+
+        write(data, outputPath);
+        read(id, dataSet, outputPath, c);
+
+    }
+
+    private void write(DataSet data, String outputPath) throws Exception{
+
+        //Create output directory
+        File outputDir = new File(outputPath + "\\TestOutput");
+        FileUtils.forceMkdir(outputDir);
+
+        //Write external data set to CSV
+        data.writeAsCsv(outputDir.getPath(), org.apache.flink.core.fs.FileSystem.WriteMode.OVERWRITE);
+        env.execute("Test");
+
+
+    }
+
+    public void read(int id, ArrayList dataSet, String outputPath, Class... c){
+
+        //Read data originally from external data set into internal one
+        File dir = new File(outputPath + "\\TestOutput");
+        File[] directoryListing = dir.listFiles();
+        BufferedReader reader = null;
+        String line;
+
+        for (File file : directoryListing) {
+            try {
+                reader = new BufferedReader(new FileReader(file.getPath()));
+                while ((line = reader.readLine()) != null) {
+                    Tuple addedTuple = parseTuple(line, c);
+                    dataSet.add(addedTuple);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                if (reader != null) {
+                    try {
+                        reader.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+        visualizer.addData(new InSituDataSet(id, dataSet));
+        System.out.println("DATA: " + visualizer.getDataSet(id).getData());
+
+        try {
+            FileUtils.deleteDirectory(dir);
+        }
+        catch (IOException e) {
             e.printStackTrace();
         }
     }

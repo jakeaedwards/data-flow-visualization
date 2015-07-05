@@ -49,20 +49,38 @@ As discussed in Chapter 3, a bar chart is the most appropriate chart to be appli
 \paragraph{Les Misérables}
 Firstly, we will examine a graph representing data extracted from the novel "Les Misérables" by Victor Hugo. Representing only a single work rather than a corpus of texts, this data set is relatively small. This enables us to examine the features of network data in general, and also those visualizations which relate to layout and will only be applicable with sufficiently few nodes. Within this network, each node represents a character in the narrative of the plot, and the edges represent a meeting between two characters. Each edge is weighted with an integer, representing the number of distinct times that the characters appear together. In summary, the graph is undirected and weighted.
 
-%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% 
 \begin{figure}
 	\centering
-	\label{fig:edgeweightslesmis}
-	\includegraphics[scale=0.7]{edge_weights_lesmis.png}
-	\caption{A bar chart showing edge weights in the Les Misérables Graph}
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\label{fig:edgeweightslesmis}
+		\includegraphics[scale=0.5]{edge_weights_lesmis_inverted.png}
+		\caption{A bar chart showing edge weights in the Les Miserables network}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\label{fig:edgeweightskonect}
+		\includegraphics[scale=0.9]{konect_lesmis_edgeweight.png}
+		\caption{A bar chart showing edge weights from KONECT}
+	\end{minipage}
 \end{figure}
-%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% 
 \begin{figure}
 	\centering
-	\label{fig:degreefreqlesmis}
-	\includegraphics[scale=0.7]{degree_freq_lesmis.png}
-	\caption{A scatter plot showing degree frequency in the Les Misérables Graph}
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\label{fig:edgeweightslesmis}
+		\includegraphics[scale=0.5]{degree_freq_lesmis.png}
+		\caption{A scatter plot showing degree frequency in the Les Miserables network}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\label{fig:edgeweightskonect}
+		\includegraphics[scale=0.9]{konect_lesmis_degdist.png}
+		\caption{A scatter plot showing degree frequency from KONECT}
+	\end{minipage}
 \end{figure}
-%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%

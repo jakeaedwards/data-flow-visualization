@@ -29,20 +29,21 @@ public class GraphAnalysis {
         DataSet<Tuple1<Integer>> degrees = degreeCounts.project(1);
         DataSet<Tuple2<Integer, Integer>> degreeFreq = degrees.flatMap(new WeightLister()).groupBy(0).sum(1);
 
-        degreeFreq.print();
+        edgeWeightFreq.print();
 
         //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         Visualizer visualizer = new Visualizer();
-        InSituCollector collector = new InSituCollector(visualizer);
+        InSituCollector collector = new InSituCollector(env, visualizer);
         ////////////////////////id  data   classes
-       // collector.collect(1, edgeWeightFreq, Integer.class, Integer.class);
+        collector.collect(1, edgeWeightFreq, Integer.class, Integer.class);
         collector.collect(2, degreeFreq, Integer.class, Integer.class);
         //collector.collectPlan(env.getExecutionPlan());
         //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        edgeWeightFreq.print();
 
         env.execute("Graph Analysis");
 
-        //visualizer.visualizeBarChart(1, "Edge Weight Frequency", "Weight", "Count");
+        visualizer.visualizeBarChart(1, "Edge Weight Frequency", "Weight", "Frequency");
         visualizer.visualizeScatterPlot(2, "Degree Frequency", "Degree", "Frequency");
     }
 
