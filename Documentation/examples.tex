@@ -84,3 +84,36 @@ Firstly, we will examine a graph representing data extracted from the novel "Les
 	\end{minipage}
 \end{figure}
 %%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Classification}
+\label{sec:classification}
+\INITIAL{A}{s one of the core tasks in exploratory data mining} classification provides a scenario which would very likely rely on in-situ data processing. The data set to be examined is the "Iris Plants Database" \cite{Fisher1936} which first appeared in 1936 as an example of discriminant analysis. It consists of four measurements: the width and length of both the petal and sepal of three different species of iris. Based on its initial use in developing a model which distinguished different iris species, it has since been used as a standard test case for various classification techniques. If this data is examined from the perspective of an analyst with limited prior knowledge of the features of the data (apart from the species included) visualizations can be used to limit potential classification methods. 
+
+\paragraph{Scatter Plot}
+A basic visualization of this data such as in Figure \ref{fig:sepal_clustering} immediately indicates that there are two distinct clusters in the data set.  Additionally, it can be seen that some of the points in the scatter plot have darker colouring than others. This indicates identical records in the source data set, with darker points indicating more duplicates. Because axis scaling is based on the values present in the data set rather than some pre-determined range, they are well distributed across the layout of the plot at the expense of what is arguably an unorthodox axis origin. The two cluster shown isolate on of the three species in the data set, but do not separate the remaining two visually. This is somewhat interesting, but is limited in that only two variables are seen at once, perhaps hiding some relationship that exists between another combination of our iris features. As we expect three classes of data within the set, it follows that we should hope to see three approximately separate clusters in one such comparison.
+
+%%%%%%%%%%%%%%%%%%
+\begin{figure}
+	\centering
+	\label{fig:sepal_clustering}
+	\includegraphics[scale=0.7]{sepal_clustering.png}
+	\caption{A scatterplot showing iris sepal data}
+\end{figure}
+%%%%%%%%%%%%%%%%%%
+
+\paragraph{Matrix Plot}
+A standard method for examining the relationship between multiple variables is to simply visualize each combination in a grid, in this case as a scatter plot matrix. Such a visualization can be seen in Figure \ref{fig:scatterplot_matrix}. While the fine grain details in such a visualization are somewhat more obscured in comparison to the individual scatter plot, we can now easily obtain an approximate idea of the relationships between each variable in our data set. The matrix is composed of a square grid with dimensions equal to the number of variables to be compared, with the main diagonal of the grid representing the variables themselves. The remaining squares in the matrix are filled with scatter plots; where the x-axis of each represents the variable with which it shares a column, and the y-axis the variable with which it shares a row. The relative size of the plots will of course be scaled to the number of variables present, but may be impractical with larger numbers of variables. The labeling and titles are less important here as we are focused on broad visual patterns more than specific statistic, similar to the case with spark lines. Also, because labels for the variables do not exist in the Flink data set being analyzed in this case, placeholder names are given to each variable. It is assumed that either the user is aware of the order in which they were provided to the collector and can infer their semantic meaning, or that the specific variable names themselves are unimportant relative to the patterns exhibited.
+
+\paragraph{Classification Method}
+In this case, we can see that across all plots in the matrix only two clearly demarcated clusters exist. This means that regardless of which variables are chosen for comparison, we are unlikely to be able to separate all three species of iris using a simple linear method. An analyst faced with such a figure would be likely to apply a supervised learning method if at all possible, or perhaps a more complex unsupervised method such as a linear principal component analysis. 
+
+%%%%%%%%%%%%%%%%%%
+\begin{figure}
+	\centering
+	\label{fig:scatterplot_matrix}
+	\includegraphics[scale=0.7]{scatterplot_matrix.png}
+	\caption{A scatterplot matrix showing iris data across all variables}
+\end{figure}
+%%%%%%%%%%%%%%%%%%

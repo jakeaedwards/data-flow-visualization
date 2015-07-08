@@ -175,7 +175,6 @@ public class InSituCollector{
             }
         }
         visualizer.addData(new InSituDataSet(id, dataSet));
-        System.out.println("DATA: " + visualizer.getDataSet(id).getData());
 
         try {
             FileUtils.deleteDirectory(dir);

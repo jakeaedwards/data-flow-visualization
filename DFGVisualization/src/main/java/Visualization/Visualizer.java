@@ -5,6 +5,7 @@ import Visualization.Graphs.Graphs;
 import Visualization.Graphs.JobGraphSketch;
 import Visualization.Numerical.BarChartSketch;
 import Visualization.Numerical.LineChartSketch;
+import Visualization.Numerical.MatrixSketch;
 import Visualization.Numerical.ScatterplotSketch;
 import Visualization.Text.WordCloudSketch;
 import org.apache.flink.api.java.tuple.Tuple;
@@ -23,7 +24,6 @@ public class Visualizer {
 
     //TODO: Examine why this can print output data before the actual job does
     public void visualizeBarChart(int id, String title, String xlabel, String ylabel){
-        System.out.println("!!!!!!!!!!!!DATA IN VISUALIZER!!!!!!!!!!!!!!!");
         System.out.println(dataSets.get(0).getData());
         PApplet sketch = new BarChartSketch(getDataSet(id), title, xlabel, ylabel);
         new DisplayFrame(sketch).setVisible(true);
@@ -36,6 +36,11 @@ public class Visualizer {
 
     public void visualizeScatterPlot(int id, String title, String xlabel, String ylabel){
         PApplet sketch = new ScatterplotSketch(getDataSet(id), title, xlabel, ylabel);
+        new DisplayFrame(sketch).setVisible(true);
+    }
+
+    public void visualizeMatrix(int id){
+        PApplet sketch = new MatrixSketch(getDataSet(id));
         new DisplayFrame(sketch).setVisible(true);
     }
 

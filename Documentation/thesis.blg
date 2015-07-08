@@ -1,12 +1,11 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
-The style file: IEEEtranSA.bst
+The style file: ieeetr.bst
 Database file #1: references.bib
 Warning--I didn't find a database entry for "IEEEexample:BSTcontrol"
--- IEEEtranSA.bst version 1.13 (2008/09/30) by Michael Shell.
--- http://www.michaelshell.org/tex/ieeetran/bibtex/
--- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-** Sorting Alpha version - not for normal IEEE work.
-Warning--missing publisher in Few2006
-
-Done.
-(There were 2 warnings)
+Warning--can't use both volume and number fields in Deleuze1987
+Warning--can't use both volume and number fields in VanHam2009
+Warning--empty publisher in Few2006
+Warning--can't use both volume and number fields in Wattenberg2008
+Warning--can't use both author and editor fields in Miner2012
+Warning--empty journal in Richthofer2013
+(There were 7 warnings)
