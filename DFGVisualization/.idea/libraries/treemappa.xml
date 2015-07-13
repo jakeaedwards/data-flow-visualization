@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="treemappa">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../External Libraries/treemappa.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
