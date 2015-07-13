@@ -1,26 +1,30 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Anscombe's Quartet \cite {Shoresh2012}}}{4}{figure.11}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces The map used by John Snow to determine the source of a cholera outbreak \cite {Tufle1983}}}{5}{figure.15}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces An executing operator as visualized in IBM's System S \cite {Pauw2010}}}{7}{figure.24}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Anscombe's Quartet \cite {Shoresh2012}}}{4}{figure.10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The map used by John Snow to determine the source of a cholera outbreak \cite {Tufle1983}}}{5}{figure.14}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces A generic data flow graph \cite {Ho2008}}}{7}{figure.20}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces An executing operator as visualized in IBM's System S \cite {Pauw2010}}}{9}{figure.26}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces A pie chart showing proportions of wine varieties \cite {Few2007}}}{10}{figure.31}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces A bar chart showing proportions of wine varieties \cite {Few2007}}}{10}{figure.32}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces A word cloud as presented in "Tausend Plateaus: Kapitalismus und Schizophrenie" \cite {Deleuze1987}}}{13}{figure.40}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces A phrase net visualizing "X of Y" in the old testament \cite {VanHam2009}}}{14}{figure.43}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces A visualization of edge weight distribution \cite {KONECT}}}{15}{figure.49}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces A temporal visualization of edge growth \cite {KONECT}}}{15}{figure.50}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces A visualization of cumulative distribution \cite {KONECT}}}{16}{figure.51}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces A pie chart showing proportions of wine varieties \cite {Few2007}}}{12}{figure.33}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces A bar chart showing proportions of wine varieties \cite {Few2007}}}{12}{figure.34}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces A word cloud as presented in "Tausend Plateaus: Kapitalismus und Schizophrenie" \cite {Deleuze1987}}}{15}{figure.42}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces A phrase net visualizing "X of Y" in the old testament \cite {VanHam2009}}}{16}{figure.45}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces A visualization of edge weight distribution \cite {KONECT}}}{17}{figure.51}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces A temporal visualization of edge growth \cite {KONECT}}}{17}{figure.52}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces A visualization of cumulative distribution \cite {KONECT}}}{18}{figure.53}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces A bar chart showing census income category proportions}}{27}{figure.93}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces A bar chart showing edge weights in the Les Miserables network}}{28}{figure.97}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces A bar chart showing edge weights from KONECT}}{28}{figure.98}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces A scatter plot showing degree frequency in the Les Miserables network}}{29}{figure.99}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces A scatter plot showing degree frequency from KONECT}}{29}{figure.100}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces A scatterplot showing iris sepal data}}{30}{figure.103}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces A scatterplot matrix showing iris data across all variables}}{32}{figure.106}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces A bar chart showing census income category proportions}}{29}{figure.96}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces A line chart showing the highest earners by age}}{31}{figure.99}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces A line chart showing the lowest earners by age}}{31}{figure.100}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces A bar chart showing edge weights in the Les Miserables network}}{32}{figure.104}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces A bar chart showing edge weights from KONECT}}{32}{figure.105}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces A bar chart showing edge weight distribution in the wikipedia conflict graph}}{33}{figure.107}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces A scatter plot showing degree frequency in the Les Miserables network}}{34}{figure.108}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces A scatter plot showing degree frequency from KONECT}}{34}{figure.109}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces A scatterplot showing iris sepal data}}{35}{figure.112}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces A scatterplot matrix showing iris data across all variables}}{36}{figure.115}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces A UML diagram of the core classes}}{34}{figure.110}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces A UML diagram of the core classes}}{38}{figure.119}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

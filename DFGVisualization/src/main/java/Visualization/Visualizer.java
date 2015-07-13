@@ -7,6 +7,7 @@ import Visualization.Numerical.BarChartSketch;
 import Visualization.Numerical.LineChartSketch;
 import Visualization.Numerical.MatrixSketch;
 import Visualization.Numerical.ScatterplotSketch;
+import Visualization.Text.TreeMapSketch;
 import Visualization.Text.WordCloudSketch;
 import org.apache.flink.api.java.tuple.Tuple;
 import java.util.ArrayList;
@@ -22,15 +23,18 @@ public class Visualizer {
     private String QUEUE_NAME = "queue";
     private String executionPlan;
 
-    //TODO: Examine why this can print output data before the actual job does
     public void visualizeBarChart(int id, String title, String xlabel, String ylabel){
-        System.out.println(dataSets.get(0).getData());
         PApplet sketch = new BarChartSketch(getDataSet(id), title, xlabel, ylabel);
         new DisplayFrame(sketch).setVisible(true);
     }
 
-    public void visualizeLineChart(int id){
-        PApplet sketch = new LineChartSketch(getDataSet(id));
+    public void visualizeTreeMap(int id){
+        PApplet sketch = new TreeMapSketch(getDataSet(id));
+        new DisplayFrame(sketch).setVisible(true);
+    }
+
+    public void visualizeLineChart(int id, String title, String xlabel, String ylabel){
+        PApplet sketch = new LineChartSketch(getDataSet(id), title, xlabel, ylabel);
         new DisplayFrame(sketch).setVisible(true);
     }
 

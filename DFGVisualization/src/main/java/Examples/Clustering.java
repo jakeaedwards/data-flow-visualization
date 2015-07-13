@@ -23,6 +23,7 @@ public class Clustering {
         collector.collect(1, iris, Float.class, Float.class, Float.class, Float.class, String.class);
 
         visualizer.visualizeScatterPlot(1, "", "Sepal Length", "Sepal Width");
+        visualizer.visualizeLineChart(1, "", "Sepal Length", "Sepal Width");
         visualizer.visualizeMatrix(1);
 
         iris.print();

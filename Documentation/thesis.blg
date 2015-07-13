@@ -1,6 +1,10 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
 The style file: ieeetr.bst
 Database file #1: references.bib
+Repeated entry---line 251 of file references.bib
+ : @inproceedings{Olston2008a
+ :                           ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "IEEEexample:BSTcontrol"
 Warning--can't use both volume and number fields in Deleuze1987
 Warning--can't use both volume and number fields in VanHam2009
@@ -8,4 +12,4 @@ Warning--empty publisher in Few2006
 Warning--can't use both volume and number fields in Wattenberg2008
 Warning--can't use both author and editor fields in Miner2012
 Warning--empty journal in Richthofer2013
-(There were 7 warnings)
+(There was 1 error message)

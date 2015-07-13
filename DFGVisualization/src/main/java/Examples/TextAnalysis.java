@@ -30,6 +30,7 @@ public class TextAnalysis {
         //counts.print();
 
         visualizer.visualizeWordCloud(1);
+        visualizer.visualizeTreeMap(2);
         env.execute("Text Analysis");
 }
 

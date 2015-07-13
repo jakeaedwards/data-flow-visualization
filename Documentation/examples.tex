@@ -31,56 +31,95 @@ The first two lines create a visualizer and in-situ collector, respectively. The
 %%%%%%%%%%%%%%%%%%
 \begin{figure}
 	\centering
-	\label{fig:conditional}
 	\includegraphics[scale=0.7]{Census_Conditional.png}
 	\caption{A bar chart showing census income category proportions}
+	\label{fig:conditional}
 \end{figure}
 %%%%%%%%%%%%%%%%%%
 
 \paragraph{Bar Chart}
 As discussed in Chapter 3, a bar chart is the most appropriate chart to be applied in the case of category comparison. We can see immediately when looking at Figure \ref{fig:conditional} that those who make less than \$50,000 are outnumbered by a rate of roughly 3:1 (in fact, the true proportion is 3.15:1). Given the limited input that is provided in the call to the visualizer, we achieve adequate results in the design of the chart. The labeling is clear and well formatted given the provided input. Even without the provision of labels from the method call, someone with an approximately accurate estimate about the outcome would be able to read the chart without labels. Of course, because we cannot know before the  program is run what values to expect, there are some limitations to the way in which we format the results. A good example of this is the x axis. If we desired axis value differences of less or more than 5,000 or a starting point other than 0 it is not a trivial change to make. However, because the purpose of this type of visualization is focused on getting a sense of data in the in-situ context rather than performing detailed visual analysis, it could be argued that such changes are unnecessary.
 
+\paragraph{filtering}
+With such a simple analysis task, it isn't unlikely that the developer performing the analysis would also perform some basic drill-down type analyses on the categories in question. In this case, we will filter each of the two income categories and split the records by age. It is of course expected that we will see some kind of trend from year to year in age, rather than strong variance over short sequences. As such, we will apply a line chart as opposed to another bar chart to visualize our expected approximately linear relationship. Figure \ref{fig:rich_line} shows the resulting line chart for our filtered set of high income earners. Semantically this shows us an interesting trend in the ages at which people seem to first reach a high income status, and conversely when they age into a lower bracket. More importantly however for an exploratory or in-situ analysis, we see that the data seems to make sense. "Spikes" in the line such as seen between age 40 and 60 are not dramatic enough to strongly indicate a problem in data quality, and in fact the overall bell curve shape of the plot indicates that the sample size for this data set  was large enough to reveal a pattern. Of course, a detailed analysis would be required to verify this with statistical significance but for exploratory purposes this is a good start. We can also compare this chart with the records from the opposite filter, as seen in Figure \ref{fig:poor_line}. This comparison allows us to identify interesting crossover points in the two trends that might be interesting for a detailed analysis. In this case, an interesting point for investigation might be around age 40 where a plateau exists for high earners and the trend for low earners is seemingly unaffected. 
+
+%%%%%%%%%%%%%%%%%%
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.7]{rich_earners_line.png}
+	\caption{A line chart showing the highest earners by age}
+	\label{fig:rich_line}
+\end{figure}
+%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.7]{poor_income_earners.png}
+	\caption{A line chart showing the lowest earners by age}
+	\label{fig:poor_line}
+\end{figure}
+%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Network Analysis}
 \label{sec:network}
-\INITIAL{N}{etwork data sets are ubiquitous} in many fields, as was briefly discussed in Chapter 3. We will examine some of the basic analyses identified by the KONECT project \cite{Kunegis2013}, and use one of the datasets they have provided in order to enable simple comparison of results and reproduction of visualizations which have been proven useful.
+\INITIAL{N}{etwork data sets are ubiquitous} in many fields, as was briefly discussed in Chapter 3. We will examine some of the basic analyses identified by the KONECT project \cite{Kunegis2013}, and use the datasets they have provided in order to enable simple comparison of results and reproduction of visualizations which have been proven useful.
 
 \paragraph{Les Misérables}
 Firstly, we will examine a graph representing data extracted from the novel "Les Misérables" by Victor Hugo. Representing only a single work rather than a corpus of texts, this data set is relatively small. This enables us to examine the features of network data in general, and also those visualizations which relate to layout and will only be applicable with sufficiently few nodes. Within this network, each node represents a character in the narrative of the plot, and the edges represent a meeting between two characters. Each edge is weighted with an integer, representing the number of distinct times that the characters appear together. In summary, the graph is undirected and weighted.
 
-%%%%%%%%%%%%%%%%%% 
-\begin{figure}
-	\centering
-	\begin{minipage}{0.45\textwidth}
-		\centering
-		\label{fig:edgeweightslesmis}
-		\includegraphics[scale=0.5]{edge_weights_lesmis_inverted.png}
-		\caption{A bar chart showing edge weights in the Les Miserables network}
-	\end{minipage}\hfill
-	\begin{minipage}{0.45\textwidth}
-		\centering
-		\label{fig:edgeweightskonect}
-		\includegraphics[scale=0.9]{konect_lesmis_edgeweight.png}
-		\caption{A bar chart showing edge weights from KONECT}
-	\end{minipage}
-\end{figure}
-%%%%%%%%%%%%%%%%%%
+\paragraph{Edge Weights}
+Analyzing edge weights is one of the most common tasks that can be performed in network analysis. It is also one of the default analyses provided for all graphs within the KONECT data set, and has been replicated here in the same format to demonstrate that past useful results are replicable. The edge weight frequency graph as generated through this work is seen in Figure \ref{fig:edgeweightslesmis} and that avaiable through KONECT is seen in Figure \ref{fig:edgeweightskonect}. Each shows the distribution of edge weights in this graph, which in this case forms an approximately smooth decreasing curve. This is sensible for the graph in question, indicating that there are more character within Les Misérables who appear very infrequently, and thus encounter few other characters, than there are major characters for whom the opposite is true. In many situations, this kind of trend in edge weights may seem like an obvious conclusion, but there exist many scenarios where this is not the case beyond simply detecting errors in the data itself. 
 
 %%%%%%%%%%%%%%%%%% 
 \begin{figure}
 	\centering
 	\begin{minipage}{0.45\textwidth}
 		\centering
+		\includegraphics[scale=0.5]{edge_weights_lesmis_inverted.png}
+		\caption{A bar chart showing edge weights in the Les Miserables network}
 		\label{fig:edgeweightslesmis}
-		\includegraphics[scale=0.5]{degree_freq_lesmis.png}
-		\caption{A scatter plot showing degree frequency in the Les Miserables network}
 	\end{minipage}\hfill
 	\begin{minipage}{0.45\textwidth}
 		\centering
+		\includegraphics[scale=0.9]{konect_lesmis_edgeweight.png}
+		\caption{A bar chart showing edge weights from KONECT}
 		\label{fig:edgeweightskonect}
+	\end{minipage}
+\end{figure}
+%%%%%%%%%%%%%%%%%%
+
+\paragraph{Wikipedia Conflicts}
+An example of a graph which displays a very different trend is the Wikipedia conflict graph \cite{konect:2014:wikiconflict}. This dataset was originally extracted for the purposes of examining structural similarities in social network graph data \cite{konect:brandes09}, and represents wikipedia users as nodes. Each edge in the graph represents an interaction between two users in conflict, an edit war being the typical example, with graph weights representing the nature of the interaction. Negative weights are associated with negative interactions, and the opposite for positive weightings. Examining Figure \ref{fig:wiki_conf} shows that we see an approximate bell-curve, with a gap in the center indicating that no neutral interactions were coded. It should be noted that due to the increase in the number of categories, the automatic formatting of the x-axis has caused the labels to run together somewhat, but the overall trend and important values are still easily identifiable. 
+
+%%%%%%%%%%%%%%%%%%
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.5]{conflict_edgeweights.png}
+	\caption{A bar chart showing edge weight distribution in the wikipedia conflict graph}
+	\label{fig:wiki_conf}
+\end{figure}
+%%%%%%%%%%%%%%%%%%
+
+\paragraph{Degree Distribution}
+Though edge weights are obviously specific to weighted graphs, there are other straightforward methods for assessing the structural elements of network data that apply to all graphs. A very common method of this is the calculation of degree distribution. Once again, a side by side comparison of the result generated by this solution and that given by KONECT is shown in Figure \ref{fig:degfreqlesmis} and Figure \ref{fig:degfreqlesmis} respectively. Here, the difference in the results of each visualization is stronger because of axis scaling. The KONECT visualization uses logarithmic scaling for both axes, but due to the general purpose design of the scatterplot visualization used in this work normal scaling is applied. Due to the limited size of this graph in particular normal scaling actually provides a clearer picture of where exactly points sit, but as the data set size is scaled up the number of points minimizes the effect that scaling has on legibility. 
+
+%%%%%%%%%%%%%%%%%% 
+\begin{figure}
+	\centering
+	\begin{minipage}{0.45\textwidth}
+		\centering
+		\includegraphics[scale=0.5]{degree_freq_lesmis.png}
+		\caption{A scatter plot showing degree frequency in the Les Miserables network}
+		\label{fig:degfreqlesmis}
+	\end{minipage}\hfill
+	\begin{minipage}{0.45\textwidth}
+		\centering
 		\includegraphics[scale=0.9]{konect_lesmis_degdist.png}
 		\caption{A scatter plot showing degree frequency from KONECT}
+		\label{fig:degfreqkonect}
 	\end{minipage}
 \end{figure}
 %%%%%%%%%%%%%%%%%%
@@ -97,9 +136,9 @@ A basic visualization of this data such as in Figure \ref{fig:sepal_clustering} 
 %%%%%%%%%%%%%%%%%%
 \begin{figure}
 	\centering
-	\label{fig:sepal_clustering}
 	\includegraphics[scale=0.7]{sepal_clustering.png}
 	\caption{A scatterplot showing iris sepal data}
+	\label{fig:sepal_clustering}
 \end{figure}
 %%%%%%%%%%%%%%%%%%
 
@@ -112,8 +151,8 @@ In this case, we can see that across all plots in the matrix only two clearly de
 %%%%%%%%%%%%%%%%%%
 \begin{figure}
 	\centering
-	\label{fig:scatterplot_matrix}
 	\includegraphics[scale=0.7]{scatterplot_matrix.png}
 	\caption{A scatterplot matrix showing iris data across all variables}
+	\label{fig:scatterplot_matrix}
 \end{figure}
 %%%%%%%%%%%%%%%%%%

@@ -75,6 +75,7 @@ public class Graphs extends PApplet {
         g = new DirectedGraph(this);
 
         // define some nodes
+
         Node n1 = new Node("1","1",padding,padding, this);
         Node n2 = new Node("2","2",padding,height-padding, this);
         Node n3 = new Node("3","3",width-padding,height-padding, this);

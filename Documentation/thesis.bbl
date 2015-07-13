@@ -8,6 +8,9 @@ N.~Shoresh and B.~Wong, ``{Points of view: Data exploration},'' {\em Nature
 E.~Tufte, ``{The Visual Display of Quantitative Information},'' {\em CT
   Graphics, Cheshire}, 2001.
 
+\bibitem{Ho2008}
+R.~Ho, ``{Hadoop Map/Reduce Implementation},'' 2008.
+
 \bibitem{Pauw2010}
 W.~D. Pauw, M.~Leţia, B.~Gedik, and H.~Andrade, ``{Visual debugging for stream
   processing applications},'' {\em Runtime Verification}, pp.~18--35, 2010.
@@ -68,6 +71,18 @@ S.~Klasky, H.~Abbasi, J.~Logan, M.~Parashar, K.~Schwan, A.~Shoshani, M.~Wolf,
   J.~Wu, W.~Yu, and F.~Zheng, ``{In Situ Data Processing for Extreme-Scale
   Computing},'' in {\em SciDAC Conference}, 2011.
 
+\bibitem{Gates2009}
+A.~F. Gates, O.~Natkovich, S.~Chopra, P.~Kamath, S.~M. Narayanamurthy,
+  C.~Olston, R.~Benjaminn, S.~Srinavasan, and U.~Srivastava, ``{Building a
+  High-Level Dataflow System on top of Map-Reduce: The Pig Experience},'' {\em
+  Vldb '09}, pp.~1--12, 2009.
+
+\bibitem{Olston2008a}
+C.~Olston, B.~Reed, U.~Srivastava, R.~Kumar, and A.~Tomkins, ``{Pig Latin: A
+  Not-So-Foreign Language for Data Processing},'' in {\em Proceedings of the
+  2008 ACM SIGMOD international conference on Management of data - SIGMOD '08},
+  p.~1099, 2008.
+
 \bibitem{Robbins2005}
 N.~Robbins, {\em {Creating More Effective Graphs}}.
 \newblock Hoboken: John Wiley \& Sons, 2005.
@@ -104,6 +119,13 @@ C.~Blake and C.~Merz, ``{UCI Repository of machine learning databases},'' 1998.
 \bibitem{Kohavi1996}
 R.~Kohavi, ``{Scaling Up the Accuracy of Naive-Bayes Classifiers: a
   Decision-Tree Hybrid},'' in {\em KDD-96 Proceedings}, pp.~202--207, 1996.
+
+\bibitem{konect:2014:wikiconflict}
+``Wikipedia conflict network dataset -- {KONECT},'' Oct. 2014.
+
+\bibitem{konect:brandes09}
+U.~Brandes and J.~Lerner, ``Structural similarity: Spectral methods for relaxed
+  blockmodeling,'' {\em J. Classification}, vol.~27, no.~3, pp.~279--306, 2010.
 
 \bibitem{Fisher1936}
 R.~Fisher, ``{The Use of Multiple Measurements in Taxonomic Problems},'' {\em

@@ -2,37 +2,36 @@
 \BOOKMARK [0][]{conform.0}{Acknowledgements}{}% 2
 \BOOKMARK [0][]{tableofcontents.0}{Table of Contents}{}% 3
 \BOOKMARK [0][]{chapter*.2}{List of Figures}{}% 4
-\BOOKMARK [0][]{chapter*.3}{List of Abbreviations}{}% 5
-\BOOKMARK [0][]{chapter.4}{Introduction}{}% 6
-\BOOKMARK [1][]{section.5}{Motivation}{chapter.4}% 7
-\BOOKMARK [1][]{section.8}{Structure of this Thesis}{chapter.4}% 8
-\BOOKMARK [0][]{chapter.9}{Related Work}{}% 9
-\BOOKMARK [1][]{section.10}{Visualization of Data}{chapter.9}% 10
-\BOOKMARK [1][]{section.19}{In-Situ Processing}{chapter.9}% 11
-\BOOKMARK [1][]{section.22}{Visualization of Data Flow Graphs}{chapter.9}% 12
-\BOOKMARK [0][]{chapter.27}{Visualizations}{}% 13
-\BOOKMARK [1][]{section.28}{Numerical Data}{chapter.27}% 14
-\BOOKMARK [1][]{section.38}{Text Data}{chapter.27}% 15
-\BOOKMARK [1][]{section.44}{Graph Data}{chapter.27}% 16
-\BOOKMARK [1][]{section.53}{Summary}{chapter.27}% 17
-\BOOKMARK [0][]{chapter.54}{MapReduce Patterns}{}% 18
-\BOOKMARK [1][]{section.55}{Summarization Patterns}{chapter.54}% 19
-\BOOKMARK [1][]{section.59}{Filtering Patterns}{chapter.54}% 20
-\BOOKMARK [1][]{section.65}{Data Organization Patterns}{chapter.54}% 21
-\BOOKMARK [1][]{section.71}{Join Patterns}{chapter.54}% 22
-\BOOKMARK [1][]{section.76}{Meta Patterns}{chapter.54}% 23
-\BOOKMARK [1][]{section.80}{Summary}{chapter.54}% 24
-\BOOKMARK [0][]{chapter.81}{Examples}{}% 25
-\BOOKMARK [1][]{section.82}{Census Data Analysis}{chapter.81}% 26
-\BOOKMARK [1][]{section.95}{Network Analysis}{chapter.81}% 27
-\BOOKMARK [1][]{section.101}{Classification}{chapter.81}% 28
-\BOOKMARK [0][]{chapter.107}{Implementation}{}% 29
-\BOOKMARK [1][]{section.108}{Overview}{chapter.107}% 30
-\BOOKMARK [1][]{section.111}{Data Collection}{chapter.107}% 31
-\BOOKMARK [1][]{section.119}{Visualization}{chapter.107}% 32
-\BOOKMARK [0][]{chapter.125}{Future Work}{}% 33
-\BOOKMARK [1][]{section.126}{Visualizations}{chapter.125}% 34
-\BOOKMARK [1][]{section.133}{Distribution}{chapter.125}% 35
-\BOOKMARK [0][]{appendix.138}{Implementation}{}% 36
-\BOOKMARK [1][]{section.139}{My Algorithm}{appendix.138}% 37
-\BOOKMARK [0][]{appendix*.146}{Bibliography}{}% 38
+\BOOKMARK [0][]{chapter.3}{Introduction}{}% 5
+\BOOKMARK [1][]{section.4}{Motivation}{chapter.3}% 6
+\BOOKMARK [1][]{section.7}{Structure of this Thesis}{chapter.3}% 7
+\BOOKMARK [0][]{chapter.8}{Related Work}{}% 8
+\BOOKMARK [1][]{section.9}{Visualization of Data}{chapter.8}% 9
+\BOOKMARK [1][]{section.18}{In-Situ Processing}{chapter.8}% 10
+\BOOKMARK [1][]{section.24}{Visualization of Data Flow Graphs}{chapter.8}% 11
+\BOOKMARK [0][]{chapter.29}{Visualizations}{}% 12
+\BOOKMARK [1][]{section.30}{Numerical Data}{chapter.29}% 13
+\BOOKMARK [1][]{section.40}{Text Data}{chapter.29}% 14
+\BOOKMARK [1][]{section.46}{Graph Data}{chapter.29}% 15
+\BOOKMARK [1][]{section.55}{Summary}{chapter.29}% 16
+\BOOKMARK [0][]{chapter.56}{MapReduce Patterns}{}% 17
+\BOOKMARK [1][]{section.57}{Summarization Patterns}{chapter.56}% 18
+\BOOKMARK [1][]{section.61}{Filtering Patterns}{chapter.56}% 19
+\BOOKMARK [1][]{section.67}{Data Organization Patterns}{chapter.56}% 20
+\BOOKMARK [1][]{section.73}{Join Patterns}{chapter.56}% 21
+\BOOKMARK [1][]{section.79}{Meta Patterns}{chapter.56}% 22
+\BOOKMARK [1][]{section.83}{Summary}{chapter.56}% 23
+\BOOKMARK [0][]{chapter.84}{Examples}{}% 24
+\BOOKMARK [1][]{section.85}{Census Data Analysis}{chapter.84}% 25
+\BOOKMARK [1][]{section.101}{Network Analysis}{chapter.84}% 26
+\BOOKMARK [1][]{section.110}{Classification}{chapter.84}% 27
+\BOOKMARK [0][]{chapter.116}{Implementation}{}% 28
+\BOOKMARK [1][]{section.117}{Overview}{chapter.116}% 29
+\BOOKMARK [1][]{section.120}{Data Collection}{chapter.116}% 30
+\BOOKMARK [1][]{section.126}{Visualization}{chapter.116}% 31
+\BOOKMARK [0][]{chapter.134}{Future Work}{}% 32
+\BOOKMARK [1][]{section.135}{Visualizations}{chapter.134}% 33
+\BOOKMARK [1][]{section.142}{Distribution}{chapter.134}% 34
+\BOOKMARK [0][]{appendix.147}{Implementation}{}% 35
+\BOOKMARK [1][]{section.148}{My Algorithm}{appendix.147}% 36
+\BOOKMARK [0][]{appendix*.155}{Bibliography}{}% 37

@@ -41,7 +41,7 @@ public class JobGraphTest {
 
         //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         Visualizer visualizer = new Visualizer();
-        InSituCollector inSituCollector = new InSituCollector(visualizer);
+        InSituCollector inSituCollector = new InSituCollector(env, visualizer);
         inSituCollector.collect(1, counts, String.class, Integer.class);
         inSituCollector.collectPlan(env.getExecutionPlan());
         System.out.println(env.getExecutionPlan());

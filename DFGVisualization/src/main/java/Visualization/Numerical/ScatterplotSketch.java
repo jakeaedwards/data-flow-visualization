@@ -65,9 +65,16 @@ public class ScatterplotSketch extends PApplet {
         ArrayList<PVector> data = new ArrayList();
 
         for(int i = 0; i < dataSet.getData().size(); i++){
-            Float xval = dataSet.getData().get(i).getField(0);
-            Float yval = dataSet.getData().get(i).getField(1);
-            data.add(new PVector(xval, yval));
+            if(dataSet.getData().get(i).getField(0).getClass() == Float.class) {
+                Float xVal = dataSet.getData().get(i).getField(0);
+                Float yVal = dataSet.getData().get(i).getField(1);
+                data.add(new PVector(xVal, yVal));
+            }
+            else{
+                Float xVal = Float.parseFloat((String)dataSet.getData().get(i).getField(0));
+                Float yVal = Float.parseFloat((String)dataSet.getData().get(i).getField(1));
+                data.add(new PVector(xVal, yVal));
+            }
         }
 
         return data;
