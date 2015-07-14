@@ -124,33 +124,72 @@ public class InSituCollector{
     }
     */
 
+    /**
+     * Collects a dataset taken from an external job graph and creates a local copy. This is achieved through storing
+     * the contained data and then reading it into a new dataset which has the InSituCollector's ExecutionEnvironment
+     * @param data External DataSet to be collected
+     */
     public void collect(int id, DataSet data, Class... c) throws Exception{
 
-        String outputPath = "C:\\Users\\Jake\\Desktop";
-        ArrayList<Tuple> dataSet = new ArrayList<>();
-
-        write(data, outputPath);
-        read(id, dataSet, outputPath, c);
-
+        if (org.apache.flink.core.fs.FileSystem.getLocalFileSystem().isDistributedFS()) {
+            clusterCollect(id, data, c);
+        }
+        else{
+            localCollect(id, data, c);
+        }
     }
 
-    private void write(DataSet data, String outputPath) throws Exception{
+    public void clusterCollect(int id, DataSet data, Class... c) throws Exception{
+        ArrayList<Tuple> dataSet = new ArrayList<>();
 
-        //Create output directory
-        File outputDir = new File(outputPath + "\\TestOutput");
+        //Write dataset to HDFS
+        FileSystem hdfs = FileSystem.get(new Configuration());
+        Path workingDir = hdfs.getWorkingDirectory();
+        Path outputPath = new Path("/CollectorOutput");
+        outputPath = Path.mergePaths(workingDir, outputPath);
+
+        if(hdfs.exists(outputPath)){
+            hdfs.delete(outputPath, true); //Delete existing Directory
+        }
+
+        hdfs.mkdirs(outputPath);     //Create new Directory
+
+        byte[] writtenData = data.toString().getBytes();
+        FSDataOutputStream outputStream = hdfs.create(outputPath);
+        outputStream.write(writtenData);
+        outputStream.close();
+
+        //Read data back into new dataset
+        BufferedReader reader = new BufferedReader(new InputStreamReader(hdfs.open(outputPath)));
+        String line;
+
+        while ((line = reader.readLine())!= null){
+            Tuple addedTuple = parseTuple(line, c);
+            dataSet.add(addedTuple);
+        }
+
+        visualizer.addData(new InSituDataSet(id, dataSet));
+    }
+
+    /**
+     * Performs the collect operation assuming a local (Non-HDFS) filesystem
+     * @param id ID of the dataset as provided by the user
+     * @param data The data being collected
+     * @param c The classes of the collected data tuples
+     * @throws Exception
+     */
+    public void localCollect(int id, DataSet data, Class... c) throws Exception{
+        ArrayList<Tuple> dataSet = new ArrayList<>();
+
+        File outputDir = new File("TestOutput");
         FileUtils.forceMkdir(outputDir);
 
         //Write external data set to CSV
         data.writeAsCsv(outputDir.getPath(), org.apache.flink.core.fs.FileSystem.WriteMode.OVERWRITE);
-        env.execute("Test");
-
-
-    }
-
-    public void read(int id, ArrayList dataSet, String outputPath, Class... c){
+        env.execute("Write");
 
         //Read data originally from external data set into internal one
-        File dir = new File(outputPath + "\\TestOutput");
+        File dir = new File("TestOutput");
         File[] directoryListing = dir.listFiles();
         BufferedReader reader = null;
         String line;

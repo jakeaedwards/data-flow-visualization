@@ -26,7 +26,7 @@ public class Census {
         // group by category and sum
         DataSet<Tuple2<String, Integer>> totals = data.flatMap(new Counter()).groupBy(0).sum(1);
 
-        DataSet<Tuple2<String,String>> ages = env.readCsvFile("C:\\Users\\Jake\\Documents\\GitHub\\data-flow-visualization\\DFGVisualization\\resources\\Generic\\salaries.csv")
+        DataSet<Tuple2<String,String>> ages = env.readCsvFile("resources\\Generic\\salaries.csv")
                                                 .includeFields(true, false, false, false, false, false, false, false, false, false, false, false, false, false, true)
                                                 .types(String.class, String.class);
 
