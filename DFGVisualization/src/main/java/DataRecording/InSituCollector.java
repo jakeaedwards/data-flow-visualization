@@ -8,7 +8,8 @@ import org.apache.flink.api.java.DataSet;
 import org.apache.flink.api.java.ExecutionEnvironment;
 import org.apache.flink.api.java.tuple.*;
 import org.apache.hadoop.conf.Configuration;
-import org.apache.hadoop.fs.FSDataOutputStream;
+import org.apache.hadoop.fs.FSDataInputStream;
+import org.apache.hadoop.fs.FileStatus;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 
@@ -29,6 +30,8 @@ public class InSituCollector{
 
     private static Visualizer visualizer;
     private static ExecutionEnvironment env;
+
+    private static String writeDir = "hdfs:///datasets/jedwards/writeOutput";
 
     public InSituCollector(ExecutionEnvironment env, Visualizer visualizer) {
         this.visualizer = visualizer;
@@ -137,39 +140,39 @@ public class InSituCollector{
         else{
             localCollect(id, data, c);
         }
+
     }
 
     public void clusterCollect(int id, DataSet data, Class... c) throws Exception{
-        ArrayList<Tuple> dataSet = new ArrayList<>();
 
-        //Write dataset to HDFS
-        FileSystem hdfs = FileSystem.get(new Configuration());
-        Path workingDir = hdfs.getWorkingDirectory();
-        Path outputPath = new Path("/CollectorOutput");
-        outputPath = Path.mergePaths(workingDir, outputPath);
+        data.writeAsCsv(writeDir);
+        env.execute("Write");
 
-        if(hdfs.exists(outputPath)){
-            hdfs.delete(outputPath, true); //Delete existing Directory
-        }
-
-        hdfs.mkdirs(outputPath);     //Create new Directory
-
-        byte[] writtenData = data.toString().getBytes();
-        FSDataOutputStream outputStream = hdfs.create(outputPath);
-        outputStream.write(writtenData);
-        outputStream.close();
 
         //Read data back into new dataset
-        BufferedReader reader = new BufferedReader(new InputStreamReader(hdfs.open(outputPath)));
+        Configuration conf = new Configuration();
+        conf.addResource(new Path("/hadoop/projects/hadoop-1.0.4/conf/core-site.xml"));
+        conf.addResource(new Path("/hadoop/projects/hadoop-1.0.4/conf/hdfs-site.xml"));
+        FileSystem fs = FileSystem.get(conf);
+
+        File dir = new File(writeDir);
+        ArrayList<Tuple> dataSet = new ArrayList<>();
+        FSDataInputStream inputStream;
         String line;
 
-        while ((line = reader.readLine())!= null){
-            Tuple addedTuple = parseTuple(line, c);
-            dataSet.add(addedTuple);
+        FileStatus[] status = fs.listStatus(new Path("hdfs:///datasets/jedwards/writeOutput"));
+        for (int i=0;i<status.length;i++){
+            inputStream = fs.open(status[i].getPath());
+            while ((line = inputStream.readLine())!= null){
+                Tuple addedTuple = parseTuple(line, c);
+                dataSet.add(addedTuple);
+            }
         }
 
         visualizer.addData(new InSituDataSet(id, dataSet));
+        dir.deleteOnExit();
     }
+
 
     /**
      * Performs the collect operation assuming a local (Non-HDFS) filesystem
@@ -181,7 +184,7 @@ public class InSituCollector{
     public void localCollect(int id, DataSet data, Class... c) throws Exception{
         ArrayList<Tuple> dataSet = new ArrayList<>();
 
-        File outputDir = new File("TestOutput");
+        File outputDir = new File("CollectorWrite");
         FileUtils.forceMkdir(outputDir);
 
         //Write external data set to CSV
@@ -189,7 +192,7 @@ public class InSituCollector{
         env.execute("Write");
 
         //Read data originally from external data set into internal one
-        File dir = new File("TestOutput");
+        File dir = new File("CollectorWrite");
         File[] directoryListing = dir.listFiles();
         BufferedReader reader = null;
         String line;

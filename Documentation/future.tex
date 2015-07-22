@@ -25,19 +25,18 @@ As opposed to the case with Renjin however, a compatibility layer has been devel
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Distribution}
-\label{sec:distribution}
-\INITIAL{D}{istribution in analysis systems} following the general mapreduce model all operate very similarly in concept. This means that generally speaking, we can expect the dataset to be mapped into a set of key-value pairs which are then partitioned across a cluster in a uniformly distributed way. Because we may want to examine the intermediate dataset at a point prior to a reduce operation which would centralize the dataset, we must collect it piecemeal from each node in the cluster. This is achieved by sending the datasets from each node in the cluster to the visualizer for summary. 
+\section{Real-Time Results}
+\label{sec:realtime}
+\INITIAL{D}{istribution in analysis systems} following the general mapreduce model all operate very similarly in concept. This means that generally speaking, we can expect the dataset to be mapped into a set of key-value pairs which are then partitioned across a cluster in a uniformly distributed way. Because we may want to examine the intermediate dataset at a point prior to a reduce operation which would centralize the dataset, we must collect it piecemeal from each node in the cluster. This could be achieved by sending the datasets from each node in the cluster to the visualizer for summary. 
 
 \paragraph{Message Passing}
-Message passing allows us to invoke a send message call from each in-situ data collector operating on a shard of the complete data set, and then receiving it in the visualizer. The visualizer can perform whichever operations are needed in order to merge the datasets considering the original locations and timing in order to generate useful output. 
+Message passing could allow us to invoke a send message call from each in-situ data collector operating on a shard of the complete data set, and then receive it in the visualizer. The visualizer can perform whichever operations are needed in order to merge the datasets considering the original locations and timing in order to generate useful output. Many simple frameworks for message passing such as RabbitMQ are being used with major Apache projects and would be simple to include within this work without introducing additional dependencies or platform requirements. Additionally, as briefly mentioned in Chapter 4, some simple design patterns already exist for message passing in Map-Reduce jobs \cite{Lin2010}.
 
-\paragraph{Patterns?}
-I'm not sure yet if a specific pattern will apply.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Interface}
+\label{sec:interface}
+\INITIAL{T}{hough it does not present a research problem}, a major improvement to usability of this visualization method would be the inclusion of some kind of interactive interface. Because each of the visualized and collected datasets are indexed within the visualizer, they can be kept for offline access and organized for manipulation or organization by users. Such a user interface could appear in a similar fashion to the web interface provided for visualizing the flink execution plan. It would be simple to add interactivity and user input, which could potentially even be expanded to allow for the deeper analysis provided by som of the discussed methods such as phrase nets and word trees.
 
-\paragraph{RabbitMQ}
-So far arbitrary.
-
-\paragraph{Specifics}
-Implementation details such as server locale etc.
-
+\paragraph{Javascript}
+While there are many limitations to the available visualization tools and libraries in Java, visualization is a much more common task in web based applications and thus visualization libraries built for the web are much more robust in general. Because the visualization classes in this work are mainly used for data formatting and are not particularly coupled to Java, the change to using a robust javascript library such as D3 over the processing tools used here would be simple.

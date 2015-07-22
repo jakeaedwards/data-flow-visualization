@@ -18,20 +18,23 @@ public class TreeMapSketch extends PApplet{
 
     public void setup() {
 
-        size(500,500);
+        size(1000,800);
         smooth();
         noLoop();
 
-        // Create an empty treemap.
+        // Create an empty treemap
         pTreeMappa = new PTreeMappa(this);
 
         // Load the data and build the treemap.
-        pTreeMappa.readData("C:\\Users\\Jake\\Documents\\GitHub\\data-flow-visualization\\DFGVisualization\\resources\\Generic\\life.csv");
+        pTreeMappa.readData("C:\\Users\\Jake\\Documents\\GitHub\\data-flow-visualization\\DFGVisualization\\resources\\Generic\\treemap_alt.csv");
+
+        pTreeMappa.getTreeMapPanel().setBranchMaxTextSizes(15);
     }
 
     public void draw() {
 
         background(255);
+
 
         // Get treemappa to draw itself.
         pTreeMappa.draw();

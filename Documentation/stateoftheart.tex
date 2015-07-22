@@ -82,9 +82,10 @@ IBM research has developed a stream processing system known as \emph{System S}, 
 %%%%%%%%%%%%%%%%%%
 \begin{figure}
 	\centering
-	\label{fig:systemsop}
 	\includegraphics[scale=0.5]{SystemSOperator.png}
-	\caption{An executing operator as visualized in IBM's System S \cite{Pauw2010}}
+	\caption{An executing operator as visualized in IBM's System S 
+	\cite{Pauw2010}}
+	\label{fig:systemsop}	
 \end{figure}
 %%%%%%%%%%%%%%%%%%
 
@@ -93,4 +94,17 @@ This type of visualization exists primarily to support debugging after some fail
 
 \paragraph{Lipstick}
 Lipstick \cite{Amsterdamer2011}, a workflow provenance model framework built for use with Pig takes a similar approach to that of IBM. Lipstick examines the internals of modules within a data flow in order to determine dependencies between parts of a flow. This approach is used for very much the same debugging cases which are expected within System S, with the addition of an added feature allowing developers to query a dependency graph. These queries allow developers to change parameters of the tuples in the graph in order to undertake "what-if" style analyses. Beyond the analysis options introduced through the querying capabilities of Lipstick however, the added visualization features are relatively simple. Like in System S, single operations change colour to indicate status and the tuples being passed to and from operations are identified. In this case the key difference is that the widget for selecting single tuples from System S is replaced with a simple integer iindicating the quantity of tuples moving through a flow. The exploratory capabilities here are left for queries made against the graphs generated in Lipstick.
+
+\paragraph{Flink Plan Visualizer}
+The approach taken by Flink in visualizing the execution of a job is focused less on the provenance on data and operations and more on the organization of the execution plan as decided by the internal optimizer. Depending on the input sizes and other variable factors in a job, the same program may be executed very differently so that optimal performance can be achieved. Because the development API and the way that programs are executed are independent of one another, it is important that a developer have a mechanism through which they can see the execution order as determined by the optimizer. This is provided through the Flink execution plan visualizer \cite{ApacheSoftwareFoundation2014}, which developers can access through their browsers. A form is provided in which users can submit the execution plan in a JSON format (easily extracted from a running job through the development API), at which point it will be neatly rendered on their screen in a format similar to the example shown in FIgure \ref{fig:flinkplan}.
+
+%%%%%%%%%%%%%%%%%%
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.4]{flink_plan.png}
+	\caption{An execution plan as seen in the Flink execution plan visualizer	\cite{ApacheSoftwareFoundation2014}}
+	\label{fig:flinkplan}	
+\end{figure}
+%%%%%%%%%%%%%%%%%%
+
 

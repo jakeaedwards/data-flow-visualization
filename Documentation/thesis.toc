@@ -3,120 +3,130 @@
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.4}
 \contentsline {paragraph}{Intermediate data sets}{1}{paragraph*.5}
 \contentsline {paragraph}{Directed Acyclic Graphs}{1}{paragraph*.6}
-\contentsline {section}{\numberline {1.2}Structure of this Thesis}{2}{section.7}
-\contentsline {chapter}{\numberline {2}Related Work}{3}{chapter.8}
-\contentsline {section}{\numberline {2.1}Visualization of Data}{3}{section.9}
-\contentsline {paragraph}{Tufte}{3}{paragraph*.11}
-\contentsline {paragraph}{Chart Junk}{4}{paragraph*.12}
-\contentsline {paragraph}{Data-rich Visualizations}{4}{paragraph*.13}
-\contentsline {paragraph}{Dashboards}{6}{paragraph*.15}
-\contentsline {paragraph}{Dashboard constraints}{6}{paragraph*.16}
-\contentsline {paragraph}{Evaluation of Visualizations}{6}{paragraph*.17}
-\contentsline {section}{\numberline {2.2}In-Situ Processing}{6}{section.18}
-\contentsline {paragraph}{DFGs}{7}{paragraph*.19}
-\contentsline {paragraph}{Pig}{7}{paragraph*.21}
-\contentsline {paragraph}{Flink}{8}{paragraph*.22}
-\contentsline {paragraph}{System Differences}{8}{paragraph*.23}
-\contentsline {section}{\numberline {2.3}Visualization of Data Flow Graphs}{8}{section.24}
-\contentsline {paragraph}{IBM System S}{8}{paragraph*.25}
-\contentsline {paragraph}{Retrospective Debugging}{9}{paragraph*.27}
-\contentsline {paragraph}{Lipstick}{9}{paragraph*.28}
-\contentsline {chapter}{\numberline {3}Visualizations}{11}{chapter.29}
-\contentsline {section}{\numberline {3.1}Numerical Data}{11}{section.30}
-\contentsline {paragraph}{Category Comparison}{11}{paragraph*.31}
-\contentsline {paragraph}{Pie Chart}{12}{paragraph*.32}
-\contentsline {paragraph}{Pie Replacement}{13}{paragraph*.35}
-\contentsline {paragraph}{Correlation}{13}{paragraph*.36}
-\contentsline {paragraph}{Non-linear Relationships}{13}{paragraph*.37}
-\contentsline {paragraph}{Trends}{13}{paragraph*.38}
-\contentsline {paragraph}{Summary Statistics}{13}{paragraph*.39}
-\contentsline {section}{\numberline {3.2}Text Data}{14}{section.40}
-\contentsline {paragraph}{Word Clouds}{14}{paragraph*.41}
-\contentsline {paragraph}{Word Trees}{14}{paragraph*.43}
-\contentsline {paragraph}{Phrase Nets}{14}{paragraph*.44}
-\contentsline {section}{\numberline {3.3}Graph Data}{15}{section.46}
-\contentsline {paragraph}{Graphs in DAG Systems}{15}{paragraph*.47}
-\contentsline {paragraph}{KONECT}{15}{paragraph*.48}
-\contentsline {paragraph}{Distributions}{16}{paragraph*.49}
-\contentsline {paragraph}{Cumulative Degree Distribution}{16}{paragraph*.50}
-\contentsline {paragraph}{Layout}{17}{paragraph*.54}
-\contentsline {section}{\numberline {3.4}Summary}{18}{section.55}
-\contentsline {chapter}{\numberline {4}MapReduce Patterns}{19}{chapter.56}
-\contentsline {section}{\numberline {4.1}Summarization Patterns}{19}{section.57}
-\contentsline {paragraph}{Numerical Summary}{19}{paragraph*.58}
-\contentsline {paragraph}{Inverted Index}{20}{paragraph*.59}
-\contentsline {paragraph}{Counting}{20}{paragraph*.60}
-\contentsline {section}{\numberline {4.2}Filtering Patterns}{20}{section.61}
-\contentsline {paragraph}{Sampling}{21}{paragraph*.62}
-\contentsline {paragraph}{Filtering}{21}{paragraph*.63}
-\contentsline {paragraph}{Bloom Filtering}{21}{paragraph*.64}
-\contentsline {paragraph}{Top N}{21}{paragraph*.65}
-\contentsline {paragraph}{Distinct}{22}{paragraph*.66}
-\contentsline {section}{\numberline {4.3}Data Organization Patterns}{22}{section.67}
-\contentsline {paragraph}{Structured to Hierarchical}{22}{paragraph*.68}
-\contentsline {paragraph}{Partitioning}{22}{paragraph*.69}
-\contentsline {paragraph}{Binning}{22}{paragraph*.70}
-\contentsline {paragraph}{Sorting}{22}{paragraph*.71}
-\contentsline {paragraph}{Shuffling}{23}{paragraph*.72}
-\contentsline {section}{\numberline {4.4}Join Patterns}{23}{section.73}
-\contentsline {paragraph}{Reduce Side Join}{23}{paragraph*.74}
-\contentsline {paragraph}{Replicated Join}{24}{paragraph*.75}
-\contentsline {paragraph}{Composite Join}{24}{paragraph*.76}
-\contentsline {paragraph}{Cartesian Product}{24}{paragraph*.77}
-\contentsline {paragraph}{Visualizing Joins}{24}{paragraph*.78}
-\contentsline {section}{\numberline {4.5}Meta Patterns}{25}{section.79}
-\contentsline {paragraph}{Job Chaining}{25}{paragraph*.80}
-\contentsline {paragraph}{Chain Folding}{26}{paragraph*.81}
-\contentsline {paragraph}{Job Merging}{26}{paragraph*.82}
-\contentsline {section}{\numberline {4.6}Summary}{26}{section.83}
-\contentsline {chapter}{\numberline {5}Examples}{27}{chapter.84}
-\contentsline {section}{\numberline {5.1}Census Data Analysis}{27}{section.85}
-\contentsline {paragraph}{Demographic Data}{27}{paragraph*.86}
-\contentsline {paragraph}{Conditional Split}{28}{paragraph*.87}
-\contentsline {paragraph}{Split Computation}{28}{paragraph*.88}
-\contentsline {paragraph}{}{28}{paragraph*.89}
-\contentsline {paragraph}{Visualization Code}{28}{paragraph*.95}
-\contentsline {paragraph}{Bar Chart}{29}{paragraph*.97}
-\contentsline {paragraph}{filtering}{30}{paragraph*.98}
-\contentsline {section}{\numberline {5.2}Network Analysis}{30}{section.101}
-\contentsline {paragraph}{Les Mis\IeC {\'e}rables}{30}{paragraph*.102}
-\contentsline {paragraph}{Edge Weights}{32}{paragraph*.103}
-\contentsline {paragraph}{Wikipedia Conflicts}{32}{paragraph*.106}
-\contentsline {section}{\numberline {5.3}Classification}{33}{section.110}
-\contentsline {paragraph}{Scatter Plot}{33}{paragraph*.111}
-\contentsline {paragraph}{Matrix Plot}{34}{paragraph*.113}
-\contentsline {paragraph}{Classification Method}{35}{paragraph*.114}
-\contentsline {chapter}{\numberline {6}Implementation}{37}{chapter.116}
-\contentsline {section}{\numberline {6.1}Overview}{37}{section.117}
-\contentsline {paragraph}{Visualization Classes}{37}{paragraph*.118}
-\contentsline {section}{\numberline {6.2}Data Collection}{38}{section.120}
-\contentsline {paragraph}{Tuples}{38}{paragraph*.121}
-\contentsline {paragraph}{Data Collector}{38}{paragraph*.122}
-\contentsline {paragraph}{Collect Method}{38}{paragraph*.123}
-\contentsline {paragraph}{Type Erasure}{39}{paragraph*.124}
-\contentsline {paragraph}{Data Sets}{39}{paragraph*.125}
-\contentsline {section}{\numberline {6.3}Visualization}{40}{section.126}
-\contentsline {paragraph}{Factory Pattern}{40}{paragraph*.127}
-\contentsline {paragraph}{Processing}{40}{paragraph*.128}
-\contentsline {paragraph}{Libraries}{40}{paragraph*.129}
-\contentsline {paragraph}{Swing}{41}{paragraph*.130}
-\contentsline {paragraph}{Visualization Class}{41}{paragraph*.131}
-\contentsline {paragraph}{Adjusting Visualizations}{41}{paragraph*.132}
-\contentsline {paragraph}{Presentation of Visualizations}{41}{paragraph*.133}
-\contentsline {chapter}{\numberline {7}Future Work}{43}{chapter.134}
-\contentsline {section}{\numberline {7.1}Visualizations}{43}{section.135}
-\contentsline {paragraph}{Grammar of Graphics}{43}{paragraph*.136}
-\contentsline {paragraph}{Libraries}{43}{paragraph*.137}
-\contentsline {paragraph}{R \& ggplot}{44}{paragraph*.138}
-\contentsline {paragraph}{R in Java}{44}{paragraph*.139}
-\contentsline {paragraph}{Python}{44}{paragraph*.140}
-\contentsline {paragraph}{JyNi}{45}{paragraph*.141}
-\contentsline {section}{\numberline {7.2}Distribution}{45}{section.142}
-\contentsline {paragraph}{Message Passing}{45}{paragraph*.143}
-\contentsline {paragraph}{Patterns?}{45}{paragraph*.144}
-\contentsline {paragraph}{RabbitMQ}{45}{paragraph*.145}
-\contentsline {paragraph}{Specifics}{45}{paragraph*.146}
-\contentsline {chapter}{\numberline {A}Implementation}{47}{appendix.147}
-\contentsline {section}{\numberline {A.1}My Algorithm}{47}{section.148}
-\contentsline {paragraph}{}{47}{paragraph*.149}
-\contentsline {chapter}{\nonumberline Bibliography}{49}{appendix*.155}
+\contentsline {paragraph}{Data Set Visualizations}{2}{paragraph*.7}
+\contentsline {section}{\numberline {1.2}Structure of this Thesis}{2}{section.8}
+\contentsline {chapter}{\numberline {2}Related Work}{3}{chapter.9}
+\contentsline {section}{\numberline {2.1}Visualization of Data}{3}{section.10}
+\contentsline {paragraph}{Tufte}{3}{paragraph*.12}
+\contentsline {paragraph}{Chart Junk}{4}{paragraph*.13}
+\contentsline {paragraph}{Data-rich Visualizations}{4}{paragraph*.14}
+\contentsline {paragraph}{Dashboards}{6}{paragraph*.16}
+\contentsline {paragraph}{Dashboard constraints}{6}{paragraph*.17}
+\contentsline {paragraph}{Evaluation of Visualizations}{6}{paragraph*.18}
+\contentsline {section}{\numberline {2.2}In-Situ Processing}{6}{section.19}
+\contentsline {paragraph}{DFGs}{7}{paragraph*.20}
+\contentsline {paragraph}{Pig}{7}{paragraph*.22}
+\contentsline {paragraph}{Flink}{8}{paragraph*.23}
+\contentsline {paragraph}{System Differences}{8}{paragraph*.24}
+\contentsline {section}{\numberline {2.3}Visualization of Data Flow Graphs}{8}{section.25}
+\contentsline {paragraph}{IBM System S}{8}{paragraph*.26}
+\contentsline {paragraph}{Retrospective Debugging}{9}{paragraph*.28}
+\contentsline {paragraph}{Lipstick}{9}{paragraph*.29}
+\contentsline {paragraph}{Flink Plan Visualizer}{9}{paragraph*.30}
+\contentsline {chapter}{\numberline {3}Visualizations}{11}{chapter.32}
+\contentsline {section}{\numberline {3.1}Numerical Data}{11}{section.33}
+\contentsline {paragraph}{Category Comparison}{11}{paragraph*.34}
+\contentsline {paragraph}{Pie Chart}{12}{paragraph*.35}
+\contentsline {paragraph}{Pie Replacement}{13}{paragraph*.38}
+\contentsline {paragraph}{Correlation}{13}{paragraph*.39}
+\contentsline {paragraph}{Non-linear Relationships}{13}{paragraph*.40}
+\contentsline {paragraph}{Trends}{13}{paragraph*.41}
+\contentsline {paragraph}{Summary Statistics}{13}{paragraph*.42}
+\contentsline {section}{\numberline {3.2}Text Data}{14}{section.43}
+\contentsline {paragraph}{Word Clouds}{14}{paragraph*.44}
+\contentsline {paragraph}{Phrase Nets}{14}{paragraph*.46}
+\contentsline {paragraph}{Word Trees}{15}{paragraph*.48}
+\contentsline {section}{\numberline {3.3}Graph Data}{16}{section.50}
+\contentsline {paragraph}{Graphs in DAG Systems}{17}{paragraph*.51}
+\contentsline {paragraph}{KONECT}{17}{paragraph*.52}
+\contentsline {paragraph}{Distributions}{17}{paragraph*.53}
+\contentsline {paragraph}{Cumulative Degree Distribution}{18}{paragraph*.54}
+\contentsline {paragraph}{Layout}{19}{paragraph*.58}
+\contentsline {section}{\numberline {3.4}Summary}{19}{section.59}
+\contentsline {chapter}{\numberline {4}MapReduce Patterns}{21}{chapter.60}
+\contentsline {section}{\numberline {4.1}Summarization Patterns}{21}{section.61}
+\contentsline {paragraph}{Numerical Summary}{21}{paragraph*.62}
+\contentsline {paragraph}{Inverted Index}{22}{paragraph*.63}
+\contentsline {paragraph}{Counting}{22}{paragraph*.64}
+\contentsline {section}{\numberline {4.2}Filtering Patterns}{22}{section.65}
+\contentsline {paragraph}{Sampling}{23}{paragraph*.66}
+\contentsline {paragraph}{Filtering}{23}{paragraph*.67}
+\contentsline {paragraph}{Bloom Filtering}{23}{paragraph*.68}
+\contentsline {paragraph}{Top N}{23}{paragraph*.69}
+\contentsline {paragraph}{Distinct}{24}{paragraph*.70}
+\contentsline {section}{\numberline {4.3}Data Organization Patterns}{24}{section.71}
+\contentsline {paragraph}{Structured to Hierarchical}{24}{paragraph*.72}
+\contentsline {paragraph}{Partitioning}{24}{paragraph*.73}
+\contentsline {paragraph}{Binning}{24}{paragraph*.74}
+\contentsline {paragraph}{Sorting}{24}{paragraph*.75}
+\contentsline {paragraph}{Shuffling}{25}{paragraph*.76}
+\contentsline {section}{\numberline {4.4}Join Patterns}{25}{section.77}
+\contentsline {paragraph}{Reduce Side Join}{25}{paragraph*.78}
+\contentsline {paragraph}{Replicated Join}{26}{paragraph*.79}
+\contentsline {paragraph}{Composite Join}{26}{paragraph*.80}
+\contentsline {paragraph}{Cartesian Product}{26}{paragraph*.81}
+\contentsline {paragraph}{Visualizing Joins}{26}{paragraph*.82}
+\contentsline {section}{\numberline {4.5}Meta Patterns}{27}{section.83}
+\contentsline {paragraph}{Job Chaining}{27}{paragraph*.84}
+\contentsline {paragraph}{Chain Folding}{28}{paragraph*.85}
+\contentsline {paragraph}{Job Merging}{28}{paragraph*.86}
+\contentsline {section}{\numberline {4.6}Summary}{28}{section.87}
+\contentsline {paragraph}{Use Cases}{29}{paragraph*.88}
+\contentsline {paragraph}{Other Patterns}{29}{paragraph*.89}
+\contentsline {chapter}{\numberline {5}Applications}{31}{chapter.91}
+\contentsline {section}{\numberline {5.1}Census Data Analysis}{31}{section.92}
+\contentsline {paragraph}{Demographic Data}{31}{paragraph*.93}
+\contentsline {paragraph}{Conditional Split}{32}{paragraph*.94}
+\contentsline {paragraph}{Split Computation}{32}{paragraph*.95}
+\contentsline {paragraph}{}{32}{paragraph*.96}
+\contentsline {paragraph}{Visualization Code}{32}{paragraph*.102}
+\contentsline {paragraph}{Bar Chart}{33}{paragraph*.104}
+\contentsline {paragraph}{filtering}{34}{paragraph*.105}
+\contentsline {section}{\numberline {5.2}Network Analysis}{34}{section.108}
+\contentsline {paragraph}{Les Mis\IeC {\'e}rables}{34}{paragraph*.109}
+\contentsline {paragraph}{Edge Weights}{36}{paragraph*.110}
+\contentsline {paragraph}{Wikipedia Conflicts}{36}{paragraph*.113}
+\contentsline {paragraph}{Degree Distribution}{37}{paragraph*.115}
+\contentsline {section}{\numberline {5.3}Classification}{39}{section.118}
+\contentsline {paragraph}{Scatter Plot}{39}{paragraph*.119}
+\contentsline {paragraph}{Matrix Plot}{40}{paragraph*.121}
+\contentsline {paragraph}{Classification Method}{41}{paragraph*.122}
+\contentsline {section}{\numberline {5.4}Custom Applications}{41}{section.124}
+\contentsline {paragraph}{Treemaps}{41}{paragraph*.125}
+\contentsline {paragraph}{Specific Implementations}{41}{paragraph*.126}
+\contentsline {paragraph}{Input Format}{43}{paragraph*.127}
+\contentsline {chapter}{\numberline {6}Implementation}{45}{chapter.129}
+\contentsline {section}{\numberline {6.1}Overview}{45}{section.130}
+\contentsline {paragraph}{Visualization Classes}{45}{paragraph*.131}
+\contentsline {section}{\numberline {6.2}Data Collection}{46}{section.133}
+\contentsline {paragraph}{Tuples}{46}{paragraph*.134}
+\contentsline {paragraph}{Data Collector}{46}{paragraph*.135}
+\contentsline {paragraph}{Collect Method}{46}{paragraph*.136}
+\contentsline {paragraph}{Type Erasure}{47}{paragraph*.137}
+\contentsline {paragraph}{Data Sets}{47}{paragraph*.138}
+\contentsline {section}{\numberline {6.3}Visualization}{48}{section.139}
+\contentsline {paragraph}{Factory Pattern}{48}{paragraph*.140}
+\contentsline {paragraph}{Processing}{48}{paragraph*.141}
+\contentsline {paragraph}{Libraries}{48}{paragraph*.142}
+\contentsline {paragraph}{Swing}{49}{paragraph*.143}
+\contentsline {paragraph}{Visualization Class}{49}{paragraph*.144}
+\contentsline {paragraph}{Adjusting Visualizations}{49}{paragraph*.145}
+\contentsline {section}{\numberline {6.4}Usage}{49}{section.146}
+\contentsline {paragraph}{Order of Events}{50}{paragraph*.147}
+\contentsline {chapter}{\numberline {7}Future Work}{51}{chapter.148}
+\contentsline {section}{\numberline {7.1}Visualizations}{51}{section.149}
+\contentsline {paragraph}{Grammar of Graphics}{51}{paragraph*.150}
+\contentsline {paragraph}{Libraries}{51}{paragraph*.151}
+\contentsline {paragraph}{R \& ggplot}{52}{paragraph*.152}
+\contentsline {paragraph}{R in Java}{52}{paragraph*.153}
+\contentsline {paragraph}{Python}{52}{paragraph*.154}
+\contentsline {paragraph}{JyNi}{53}{paragraph*.155}
+\contentsline {section}{\numberline {7.2}Real-Time Results}{53}{section.156}
+\contentsline {paragraph}{Message Passing}{53}{paragraph*.157}
+\contentsline {section}{\numberline {7.3}Interface}{53}{section.158}
+\contentsline {paragraph}{Javascript}{54}{paragraph*.159}
+\contentsline {chapter}{\numberline {8}Conclusion}{55}{chapter.160}
+\contentsline {section}{\numberline {A.1}Collection Code}{57}{section.162}
+\contentsline {paragraph}{HDFS Collect Method}{57}{paragraph*.163}
+\contentsline {paragraph}{Local Collect Method}{58}{paragraph*.195}
+\contentsline {chapter}{\nonumberline Bibliography}{59}{appendix*.241}

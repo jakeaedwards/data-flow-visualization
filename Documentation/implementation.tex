@@ -68,5 +68,9 @@ Each visualization class can vary greatly, as their only requirements are that t
 \paragraph{Adjusting Visualizations}
 The currently implemented visualizations have a certain degree of adaptability built in. For example, axes and overall size of elements will scale based on the data set to be visualized. However, there are some features which are not automatically determined. An example of this would be the use of logarithmic axis scaling. Though it is plausible that a generic enough visualization could be developed for most cases, it is likely that there will always be an edge case based on the usage scenario in which a user will have specific demands of the chart. In such cases, it will be required that the user modify the code in the visualization class itself such that their needs are met. Alternatively, a second modified version of the visualization could be created so that either could be generated alternatively in the same execution of an analysis program. 
 
-\paragraph{Presentation of Visualizations}
-PDF collection.
+\section{Usage}
+\label{usage}
+\INITIAL{F}{rom the user perspective} implementing a data flow which uses visualizations as described in this work is very simple. As described in Chapter 5 one must ensure that the visualizer and collector objects are instantiated, following which collection and visualization can be performed at will.
+
+\paragraph{Order of Events}
+During the collection phase, a data sink task is generated when the data from the job flow is written to the file system. After this task, an execution call is made on the environment to ensure that no further writes are made before the data is read into the visualizer independent of the original flow itself. Because the optimizer will generate plans in a way which is unpredictable to a user, there is no way of guaranteeing the order of operations which will occur before the visualization itself becomes available. However, because the visualization task runs without using Map-Reduce once the data is obtained in most cases it is performed quickly relative to the rest of the job flow. Additionally, because the data collection step necessitates an execution step, the following Map-Reduce operations are even more likely to be more expensive than the visualization itself.

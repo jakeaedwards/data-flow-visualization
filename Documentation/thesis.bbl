@@ -15,6 +15,9 @@ R.~Ho, ``{Hadoop Map/Reduce Implementation},'' 2008.
 W.~D. Pauw, M.~Leţia, B.~Gedik, and H.~Andrade, ``{Visual debugging for stream
   processing applications},'' {\em Runtime Verification}, pp.~18--35, 2010.
 
+\bibitem{ApacheSoftwareFoundation2014}
+{Apache Software Foundation}, ``{Optimizer Plan Visualization Tool},'' 2014.
+
 \bibitem{Few2007}
 S.~Few, ``{Save the Pies for Dessert},'' {\em Visual Business Intelligence
   Newsletter}, pp.~1--14, 2007.
@@ -28,6 +31,11 @@ G.~Deleuze, P.~Guattari, and F.~Guattari, {\em {A thousand plateaus: Capitalism
 F.~{Van Ham}, M.~Wattenberg, and F.~B. Vi\'{e}gas, ``{Mapping text with phrase
   nets},'' in {\em IEEE Transactions on Visualization and Computer Graphics},
   vol.~15, pp.~1169--1176, 2009.
+
+\bibitem{Wattenberg2008}
+M.~Wattenberg and F.~B. Vi\'{e}gas, ``{The word tree, an interactive visual
+  concordance},'' in {\em IEEE Transactions on Visualization and Computer
+  Graphics}, vol.~14, pp.~1221--1228, 2008.
 
 \bibitem{KONECT}
 KONECT, ``{Konect network dataset}.''
@@ -87,11 +95,6 @@ C.~Olston, B.~Reed, U.~Srivastava, R.~Kumar, and A.~Tomkins, ``{Pig Latin: A
 N.~Robbins, {\em {Creating More Effective Graphs}}.
 \newblock Hoboken: John Wiley \& Sons, 2005.
 
-\bibitem{Wattenberg2008}
-M.~Wattenberg and F.~B. Vi\'{e}gas, ``{The word tree, an interactive visual
-  concordance},'' in {\em IEEE Transactions on Visualization and Computer
-  Graphics}, vol.~14, pp.~1221--1228, 2008.
-
 \bibitem{Kunegis2013}
 J.~Kunegis, ``{KONECT - The Koblenz Network Collection},'' in {\em WWW 2013
   Companion}, 2013.
@@ -113,6 +116,10 @@ M.~Islam, A.~K. Huang, M.~Battisha, M.~Chiang, S.~Srinivasan, C.~Peters,
   Scalable Workflow Execution Engines and Technologies - SWEET '12}, pp.~1--10,
   ACM Press, 2012.
 
+\bibitem{Lin2010}
+J.~Lin and M.~Schatz, ``{Design Patterns for Efficient Graph Algorithms in
+  MapReduce},'' {\em Mlg}, pp.~78--85, 2010.
+
 \bibitem{Blake1998}
 C.~Blake and C.~Merz, ``{UCI Repository of machine learning databases},'' 1998.
 
@@ -130,6 +137,36 @@ U.~Brandes and J.~Lerner, ``Structural similarity: Spectral methods for relaxed
 \bibitem{Fisher1936}
 R.~Fisher, ``{The Use of Multiple Measurements in Taxonomic Problems},'' {\em
   Annals of Eugenics}, vol.~7, no.~2, pp.~179--188, 1936.
+
+\bibitem{Shneiderman1992}
+B.~Shneiderman, ``{Tree visualization with tree-maps: 2-d space-filling
+  approach},'' 1992.
+
+\bibitem{Bederson2002}
+B.~B. Bederson, B.~Shneiderman, and M.~Wattenberg, ``{Ordered and quantum
+  treemaps: Making effective use of 2D space to display hierarchies},'' {\em
+  ACM Transactions on Graphics}, vol.~21, no.~4, pp.~833--854, 2002.
+
+\bibitem{Schreck2006}
+T.~Schreck, D.~Keim, and F.~Mansmann, ``{Regular TreeMap Layouts for Visual
+  Analysis of Hierarchical Data},'' in {\em Spring Conference on Computer
+  Graphics}, 2006.
+
+\bibitem{Wood2008}
+J.~Wood and J.~Dykes, ``{Spatially ordered treemaps},'' in {\em IEEE
+  Transactions on Visualization and Computer Graphics}, vol.~14,
+  pp.~1348--1355, 2008.
+
+\bibitem{Slingsby2009}
+A.~Slingsby, J.~Dykes, and J.~Wood, ``{Configuring hierarchical layouts to
+  address research questions},'' in {\em IEEE Transactions on Visualization and
+  Computer Graphics}, vol.~15, pp.~977--984, 2009.
+
+\bibitem{PlaisantCFekete2008}
+J.~D. G.~G. {Plaisant C Fekete}, ``{Promoting Insight Based Evaluation of
+  Visualization: From Contest to Benchmark Repository},'' {\em IEEE transaction
+  on visualization and computer graphics}, vol.~14, no.~May, pp.~120--134,
+  2008.
 
 \bibitem{Wilkinson2005}
 L.~Wilkinson, {\em {The Grammar of Graphics}}.

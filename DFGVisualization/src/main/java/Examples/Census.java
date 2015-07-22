@@ -21,12 +21,14 @@ public class Census {
         final ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
 
         // get input data
-        DataSet<Tuple1<String>> data = getCSVDataSet(env);
+        DataSet<Tuple1<String>> data = env.readCsvFile(args[0])
+                .includeFields(false, false, false, false, false, false, false, false, false, false, false, false, false, false, true)
+                .types(String.class);
 
         // group by category and sum
         DataSet<Tuple2<String, Integer>> totals = data.flatMap(new Counter()).groupBy(0).sum(1);
 
-        DataSet<Tuple2<String,String>> ages = env.readCsvFile("resources\\Generic\\salaries.csv")
+        DataSet<Tuple2<String,String>> ages = env.readCsvFile(args[0])
                                                 .includeFields(true, false, false, false, false, false, false, false, false, false, false, false, false, false, true)
                                                 .types(String.class, String.class);
 
@@ -42,15 +44,16 @@ public class Census {
         Visualizer visualizer = new Visualizer();
         InSituCollector totalsCollector = new InSituCollector(env, visualizer);
         totalsCollector.collect(1, totals, String.class, Integer.class);
-        totalsCollector.collect(2, richTotals, Float.class, Float.class);
-        totalsCollector.collect(3, poorTotals, Float.class, Float.class);
+        //totalsCollector.collect(2, richTotals, Float.class, Float.class);
+        //totalsCollector.collect(3, poorTotals, Float.class, Float.class);
         visualizer.visualizeBarChart(1, "Census Income Categories", "Category", "Count");
-        visualizer.visualizeLineChart(2, ">50K Income Earners", "Age", "Count");
-        visualizer.visualizeLineChart(3, "<=50K Income Earners", "Age", "Count");
+        //visualizer.visualizeLineChart(2, ">50K Income Earners", "Age", "Count");
+        //visualizer.visualizeLineChart(3, "<=50K Income Earners", "Age", "Count");
         //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
         // emit result
-        richTotals.print();
+        richTotals.writeAsCsv("hdfs:///datasets/jedwards/jobOutput");
+        //richTotals.print();
 
         // execute program
         env.execute("Conditional");
@@ -85,14 +88,4 @@ public class Census {
         }
     }
 
-    private static DataSet<Tuple1<String>> getCSVDataSet(ExecutionEnvironment env) {
-
-        DataSet<Tuple1<String>> source = env.readCsvFile("C:\\Users\\Jake\\Documents\\GitHub\\data-flow-visualization\\DFGVisualization\\resources\\Generic\\salaries.csv")
-                .includeFields(false, false, false, false, false, false, false, false, false, false, false, false, false, false, true)
-                .types(String.class);
-
-        //39, State-gov, 77516, Bachelors, 13, Never-married, Adm-clerical, Not-in-family, White, Male, 2174, 0, 40, United-States, <=50K
-
-        return source;
-    }
 }

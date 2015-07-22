@@ -67,11 +67,8 @@ The most commonly encountered form of text visualization is a word cloud. Word c
 \end{figure}
 %%%%%%%%%%%%%%%%%%
 
-\paragraph{Word Trees}
-\cite{Wattenberg2008}
-
 \paragraph{Phrase Nets}
-Phrase nets \cite{VanHam2009} represent data to some extent in the same fashion as a word cloud, with the size and colour of a word representing it's frequency in the text overall. The added benefit of a phrase net is that it also shows the relationship between words, providing greater context in later stage analyses. Rather than words floating on their own, they are connected by arrows in a directed graph. The arrows are formed based on a predefined relationship between the two and weighted in the same fashion as the words themselves, based on the frequency with which the relationship occurs. Figure \ref{fig:phrasenet} shows a phrase net built using the old testament, which connects two words X and Y based on occurences of the phrase "X of Y" in the text.
+Phrase nets \cite{VanHam2009} represent data to some extent in the same fashion as a word cloud, with the size and colour of a word representing it's frequency in the text overall. The added benefit of a phrase net is that it also shows the relationship between words, providing greater context in later stage analyses. Rather than words floating on their own, they are connected by arrows in a directed graph. The arrows are formed based on a predefined relationship between the two and weighted in the same fashion as the words themselves, based on the frequency with which the relationship occurs. Figure \ref{fig:phrasenet} shows a phrase net built using the old testament, which connects two words X and Y based on occurences of the phrase "X of Y" in the text. The obvious complication introduced in this approach is the requirement for a pre-defined relationship. Some simple relationships can be assumed to exist in most text data sets, but similar to a list of stop words it is likely that these relationships will become less useful the more commonly occurring they are. In such a case, we need to obtain a more useful relationship either through user input or some kind of natural language processing techniques. Neither case is particularly well suited for in-situ analyses, requiring significant knowledge of the data at hand or potentially complex meta-analysis respectively. 
 
 %%%%%%%%%%%%%%%%%%
 \begin{figure}
@@ -79,6 +76,18 @@ Phrase nets \cite{VanHam2009} represent data to some extent in the same fashion 
 	\includegraphics[scale=0.7]{phrase_net.png}
 	\caption{A phrase net visualizing "X of Y" in the old testament \cite{VanHam2009}}
 	\label{fig:phrasenet}
+\end{figure}
+%%%%%%%%%%%%%%%%%%
+
+\paragraph{Word Trees}
+A somewhat more precise visualization of text data is the word tree\cite{Wattenberg2008}. Given a specific pre-selected word, a word tree visualizes the connections that this root word has to other words in different sentences or phrases. As seen in Figure \ref{fig:wordtree}, a branch is drawn from the root word to each word which immediately follows it in the original data. Likewise, from each of these words the possible children are shown given the prior two words in a phrase. Each word in this tree is drawn at a larger size based on the number of times it follows the previous word. This provides much more context for analyzing an individual word very quickly, particularly in cases such as sentiment analysis where the tone of branching phrases and their weights can quickly identify positive or negative emotion in the data set. A word tree also offers the possibility of interaction, as a user can click any of the child nodes and generate a new tree based on this word. The specificity of this visualization also introduces technical challenges and practical issues for in-situ analysis; in particular the initial input from a user and interactivity (in cases where this is implemented). The initial input from a user implies that some knowledge of the data set's details are known beforehand to the extent that specific phrases or words are of interest and have been identified, which is likely not the case. More importantly, the method through which these trees are dynamically drawn based on the selection of any node requires re-drawing of the tree and the generation of a new set of sub-trees. This begins to shift the implementation problem from visualization and exploration towards NLP and analysis, and depending on the size of the data set in question introduces a not insignificant overhead in terms of processing. 
+
+%%%%%%%%%%%%%%%%%%
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.7]{word_tree.png}
+	\caption{A word tree visualizing occurrences of "love the" in the King James Bible \cite{Wattenberg2008}}
+	\label{fig:wordtree}
 \end{figure}
 %%%%%%%%%%%%%%%%%%
 

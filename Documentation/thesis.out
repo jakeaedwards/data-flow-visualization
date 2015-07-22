@@ -4,34 +4,37 @@
 \BOOKMARK [0][]{chapter*.2}{List of Figures}{}% 4
 \BOOKMARK [0][]{chapter.3}{Introduction}{}% 5
 \BOOKMARK [1][]{section.4}{Motivation}{chapter.3}% 6
-\BOOKMARK [1][]{section.7}{Structure of this Thesis}{chapter.3}% 7
-\BOOKMARK [0][]{chapter.8}{Related Work}{}% 8
-\BOOKMARK [1][]{section.9}{Visualization of Data}{chapter.8}% 9
-\BOOKMARK [1][]{section.18}{In-Situ Processing}{chapter.8}% 10
-\BOOKMARK [1][]{section.24}{Visualization of Data Flow Graphs}{chapter.8}% 11
-\BOOKMARK [0][]{chapter.29}{Visualizations}{}% 12
-\BOOKMARK [1][]{section.30}{Numerical Data}{chapter.29}% 13
-\BOOKMARK [1][]{section.40}{Text Data}{chapter.29}% 14
-\BOOKMARK [1][]{section.46}{Graph Data}{chapter.29}% 15
-\BOOKMARK [1][]{section.55}{Summary}{chapter.29}% 16
-\BOOKMARK [0][]{chapter.56}{MapReduce Patterns}{}% 17
-\BOOKMARK [1][]{section.57}{Summarization Patterns}{chapter.56}% 18
-\BOOKMARK [1][]{section.61}{Filtering Patterns}{chapter.56}% 19
-\BOOKMARK [1][]{section.67}{Data Organization Patterns}{chapter.56}% 20
-\BOOKMARK [1][]{section.73}{Join Patterns}{chapter.56}% 21
-\BOOKMARK [1][]{section.79}{Meta Patterns}{chapter.56}% 22
-\BOOKMARK [1][]{section.83}{Summary}{chapter.56}% 23
-\BOOKMARK [0][]{chapter.84}{Examples}{}% 24
-\BOOKMARK [1][]{section.85}{Census Data Analysis}{chapter.84}% 25
-\BOOKMARK [1][]{section.101}{Network Analysis}{chapter.84}% 26
-\BOOKMARK [1][]{section.110}{Classification}{chapter.84}% 27
-\BOOKMARK [0][]{chapter.116}{Implementation}{}% 28
-\BOOKMARK [1][]{section.117}{Overview}{chapter.116}% 29
-\BOOKMARK [1][]{section.120}{Data Collection}{chapter.116}% 30
-\BOOKMARK [1][]{section.126}{Visualization}{chapter.116}% 31
-\BOOKMARK [0][]{chapter.134}{Future Work}{}% 32
-\BOOKMARK [1][]{section.135}{Visualizations}{chapter.134}% 33
-\BOOKMARK [1][]{section.142}{Distribution}{chapter.134}% 34
-\BOOKMARK [0][]{appendix.147}{Implementation}{}% 35
-\BOOKMARK [1][]{section.148}{My Algorithm}{appendix.147}% 36
-\BOOKMARK [0][]{appendix*.155}{Bibliography}{}% 37
+\BOOKMARK [1][]{section.8}{Structure of this Thesis}{chapter.3}% 7
+\BOOKMARK [0][]{chapter.9}{Related Work}{}% 8
+\BOOKMARK [1][]{section.10}{Visualization of Data}{chapter.9}% 9
+\BOOKMARK [1][]{section.19}{In-Situ Processing}{chapter.9}% 10
+\BOOKMARK [1][]{section.25}{Visualization of Data Flow Graphs}{chapter.9}% 11
+\BOOKMARK [0][]{chapter.32}{Visualizations}{}% 12
+\BOOKMARK [1][]{section.33}{Numerical Data}{chapter.32}% 13
+\BOOKMARK [1][]{section.43}{Text Data}{chapter.32}% 14
+\BOOKMARK [1][]{section.50}{Graph Data}{chapter.32}% 15
+\BOOKMARK [1][]{section.59}{Summary}{chapter.32}% 16
+\BOOKMARK [0][]{chapter.60}{MapReduce Patterns}{}% 17
+\BOOKMARK [1][]{section.61}{Summarization Patterns}{chapter.60}% 18
+\BOOKMARK [1][]{section.65}{Filtering Patterns}{chapter.60}% 19
+\BOOKMARK [1][]{section.71}{Data Organization Patterns}{chapter.60}% 20
+\BOOKMARK [1][]{section.77}{Join Patterns}{chapter.60}% 21
+\BOOKMARK [1][]{section.83}{Meta Patterns}{chapter.60}% 22
+\BOOKMARK [1][]{section.87}{Summary}{chapter.60}% 23
+\BOOKMARK [0][]{chapter.91}{Applications}{}% 24
+\BOOKMARK [1][]{section.92}{Census Data Analysis}{chapter.91}% 25
+\BOOKMARK [1][]{section.108}{Network Analysis}{chapter.91}% 26
+\BOOKMARK [1][]{section.118}{Classification}{chapter.91}% 27
+\BOOKMARK [1][]{section.124}{Custom Applications}{chapter.91}% 28
+\BOOKMARK [0][]{chapter.129}{Implementation}{}% 29
+\BOOKMARK [1][]{section.130}{Overview}{chapter.129}% 30
+\BOOKMARK [1][]{section.133}{Data Collection}{chapter.129}% 31
+\BOOKMARK [1][]{section.139}{Visualization}{chapter.129}% 32
+\BOOKMARK [1][]{section.146}{Usage}{chapter.129}% 33
+\BOOKMARK [0][]{chapter.148}{Future Work}{}% 34
+\BOOKMARK [1][]{section.149}{Visualizations}{chapter.148}% 35
+\BOOKMARK [1][]{section.156}{Real-Time Results}{chapter.148}% 36
+\BOOKMARK [1][]{section.158}{Interface}{chapter.148}% 37
+\BOOKMARK [0][]{chapter.160}{Conclusion}{}% 38
+\BOOKMARK [1][]{section.162}{Collection Code}{chapter.160}% 39
+\BOOKMARK [0][]{appendix*.241}{Bibliography}{}% 40

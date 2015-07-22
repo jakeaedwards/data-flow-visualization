@@ -408,3 +408,92 @@ year = {2005}
   year      = {2010},
   pages     = {279-306},
 }
+@misc{ApacheSoftwareFoundation2014,
+author = {{Apache Software Foundation}},
+booktitle = {flink.apache.org},
+title = {{Optimizer Plan Visualization Tool}},
+url = {https://flink.apache.org/news/2014/01/26/optimizer\_plan\_visualization\_tool.html},
+urldate = {7/18/2015},
+year = {2014}
+}
+@inproceedings{Slingsby2009,
+abstract = {We explore the effects of selecting alternative layouts in hierarchical displays that show multiple aspects of large multivariate datasets, including spatial and temporal characteristics. Hierarchical displays of this type condition a dataset by multiple discrete variable values, creating nested graphical summaries of the resulting subsets in which size, shape and colour can be used to show subset properties. These 'small multiples' are ordered by the conditioning variable values and are laid out hierarchically using dimensional stacking. Crucially, we consider the use of different layouts at different hierarchical levels, so that the coordinates of the plane can be used more effectively to draw attention to trends and anomalies in the data. We argue that these layouts should be informed by the type of conditioning variable and by the research question being explored. We focus on space-filling rectangular layouts that provide data-dense and rich overviews of data to address research questions posed in our exploratory analysis of spatial and temporal aspects of property sales in London. We develop a notation ('HiVE') that describes visualisation and layout states and provides reconfiguration operators, demonstrate its use for reconfiguring layouts to pursue research questions and provide guidelines for this process. We demonstrate how layouts can be related through animated transitions to reduce the cognitive load associated with their reconfiguration whilst supporting the exploratory process.},
+author = {Slingsby, Aidan and Dykes, Jason and Wood, Jo},
+booktitle = {IEEE Transactions on Visualization and Computer Graphics},
+keywords = {Geovisualization,exploratory,guidelines,hierarchical,layout,notation},
+number = {6},
+pages = {977--984},
+title = {{Configuring hierarchical layouts to address research questions}},
+volume = {15},
+year = {2009}
+}
+@inproceedings{Schreck2006,
+abstract = {Hierarchical relationships play an utmost important role in many application$\backslash$ndomains. The appropriate visualization of hierarchically structured$\backslash$ndata sets can contribute towards supporting the data analyst in effectively$\backslash$nanalyzing hierarchic structures using visualization as a user friendly$\backslash$nmeans to communicate information. Information Visualization has contributed$\backslash$na number of useful techniques for visualization of hierarchically$\backslash$nstructured data sets. Yet, the support for certain regularity requirements$\backslash$nas arising from many data element types has to be improved. In this$\backslash$npaper, we analyze an existing variant of the popular TreeMap family$\backslash$nof hierarchical layout algorithms, and we introduce a novel TreeMap$\backslash$nalgorithm supporting space efficient layout of hierarchical data$\backslash$nsets providing global regular layouts. We detail our algorithm, and$\backslash$nwe present applications on a real-world data set as well as experiments$\backslash$nperformed on a synthetic data set, showing its applicability and$\backslash$nusefulness.},
+author = {Schreck, Tobias and Keim, DA and Mansmann, F},
+booktitle = {Spring Conference on Computer Graphics},
+keywords = {2006,acm siggraph,april 20-22,casta papiernicka,data,graphics,in,regular treemap layouts for,sccg,slovak republic,spring conference on computer,st publ,visual analysis of hierarchical},
+title = {{Regular TreeMap Layouts for Visual Analysis of Hierarchical Data}},
+url = {http://www.gris.informatik.tu-darmstadt.de/~tschreck/docs/sccg06.pdf},
+year = {2006}
+}
+@inproceedings{Wood2008,
+abstract = {Existing treemap layout algorithms suffer to some extent from poor or inconsistent mappings between data order and visual ordering in their representation, reducing their cognitive plausibility. While attempts have been made to quantify this mismatch, and algorithms proposed to minimize inconsistency, solutions provided tend to concentrate on one-dimensional ordering. We propose extensions to the existing squarified layout algorithm that exploit the two-dimensional arrangement of treemap nodes more effectively. Our proposed spatial squarified layout algorithm provides a more consistent arrangement of nodes while maintaining low aspect ratios. It is suitable for the arrangement of data with a geographic component and can be used to create tessellated cartograms for geovisualization. Locational consistency is measured and visualized and a number of layout algorithms are compared. CIELab color space and displacement vector overlays are used to assess and emphasize the spatial layout of treemap nodes. A case study involving locations of tagged photographs in the Flickr database is described.},
+author = {Wood, Jo and Dykes, Jason},
+booktitle = {IEEE Transactions on Visualization and Computer Graphics},
+doi = {10.1109/TVCG.2008.165},
+file = {:C$\backslash$:/Users/Jake/Documents/Thesis References/wood\_spatially\_2008.pdf:pdf},
+isbn = {1077-2626 VO - 14},
+issn = {10772626},
+keywords = {CIELab,Cartograms,Geographic information,Geovisualization,Tree structures,Treemaps},
+number = {6},
+pages = {1348--1355},
+pmid = {18988983},
+title = {{Spatially ordered treemaps}},
+volume = {14},
+year = {2008}
+}
+@article{Lin2010,
+abstract = {Graphs are analyzed in many important contexts, includ- ing ranking search results based on the hyperlink struc- ture of the world wide web, module detection of protein- protein interaction networks, and privacy analysis of social networks. Many graphs of interest are dicult to analyze because of their large size, often spanning millions of vertices and billions of edges. As such, researchers have increasingly turned to distributed solutions. In particular, MapReduce has emerged as an enabling technology for large-scale graph processing. However, existing best practices for MapReduce graph algorithms have signi cant shortcomings that limit performance, especially with respect to partitioning, serial- izing, and distributing the graph. In this paper, we present three design patterns that address these issues and can be used to accelerate a large class of graph algorithms based on message passing, exempli ed by PageRank. Experiments show that the application of our design patterns reduces the running time of PageRank on a web graph with 1.4 billion edges by 69\%},
+author = {Lin, Jimmy and Schatz, Michael},
+doi = {10.1145/1830252.1830263},
+file = {:C$\backslash$:/Users/Jake/Documents/Thesis References/graphAlgo in mapReduce paper p78-lin.pdf:pdf},
+isbn = {9781450302142},
+journal = {Mlg},
+pages = {78--85},
+title = {{Design Patterns for Efficient Graph Algorithms in MapReduce}},
+year = {2010}
+}
+@article{Bederson2002,
+abstract = {Treemaps, a space-filling method of visualizing large hierarchical data sets, are receiving increasing attention. Several algorithms have been proposed to create more useful displays by controlling the aspect ratios of the rectangles that make up a treemap. While these algorithms do improve visibility of small items in a single layout, they introduce instability over time in the display of dynamically changing data, fail to preserve order of the underlying data, and create layouts that are difficult to visually search. In addition, continuous treemap algorithms are not suitable for displaying quantum-sized objects within them, such as images. This paper introduces several new treemap algorithms, which address these shortcomings. In addition, we show a new application of these treemaps, using them to present groups of images. The ordered treemap algorithms ensure that items near each other in the given order will be near each other in the treemap layout. Using experimental evidence from Monte Carlo trials, we show that compared to other layout algorithms ordered treemaps are more stable while maintaining relatively favorable aspect ratios of the constituent rectangles. A second test set uses stock market data. The quantum treemap algorithms modify the layout of the continuous treemap algorithms to generate rectangles that are integral multiples of an input object size. The quantum treemap algorithm has been applied to PhotoMesa, an application that supports browsing of large numbers of images.},
+author = {Bederson, Benjamin B. and Shneiderman, Ben and Wattenberg, Martin},
+doi = {10.1145/571647.571649},
+file = {:C$\backslash$:/Users/Jake/Documents/Thesis References/treemaps.pdf:pdf},
+isbn = {0730-0301},
+issn = {07300301},
+journal = {ACM Transactions on Graphics},
+number = {4},
+pages = {833--854},
+title = {{Ordered and quantum treemaps: Making effective use of 2D space to display hierarchies}},
+volume = {21},
+year = {2002}
+}
+@article{PlaisantCFekete2008,
+author = {{Plaisant C Fekete}, J D Grinstein G},
+file = {:C$\backslash$:/Users/Jake/Documents/Thesis References/InfoViz\_Contest.pdf:pdf},
+journal = {IEEE transaction on visualization and computer graphics},
+number = {May},
+pages = {120--134},
+title = {{Promoting Insight Based Evaluation of Visualization: From Contest to Benchmark Repository}},
+volume = {14},
+year = {2008}
+}
+@misc{Shneiderman1992,
+abstract = {this paper deals with a two-dimensional (2-d) space-filling approach in which each node is a rectangle whose area is proportional to some attribute such as node size. Research on relationships between 2-d images and their representation in tree structures has focussed on node and link representations of 2-d images. This work includes quad-trees (Samet, 1989) and their variants which are important in image processing. The goal of quad trees is to provide a tree representation for storage compression and efficient operations on bit-mapped images. XY-trees (Nagy \& Seth, 1984) are a traditional tree representation of two-dimensional layouts found in newspaper, magazine, or book pages. Related concepts include k-d trees (Bentley and Freidman, 1979), which are often explained with the help of a},
+author = {Shneiderman, Ben},
+booktitle = {ACM Transactions on Graphics},
+number = {1},
+pages = {92--99},
+title = {{Tree visualization with tree-maps: 2-d space-filling approach}},
+volume = {11},
+year = {1992}
+}
