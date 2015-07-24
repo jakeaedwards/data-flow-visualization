@@ -112,21 +112,25 @@
 \contentsline {paragraph}{Visualization Class}{49}{paragraph*.144}
 \contentsline {paragraph}{Adjusting Visualizations}{49}{paragraph*.145}
 \contentsline {section}{\numberline {6.4}Usage}{49}{section.146}
-\contentsline {paragraph}{Order of Events}{50}{paragraph*.147}
-\contentsline {chapter}{\numberline {7}Future Work}{51}{chapter.148}
-\contentsline {section}{\numberline {7.1}Visualizations}{51}{section.149}
-\contentsline {paragraph}{Grammar of Graphics}{51}{paragraph*.150}
-\contentsline {paragraph}{Libraries}{51}{paragraph*.151}
-\contentsline {paragraph}{R \& ggplot}{52}{paragraph*.152}
-\contentsline {paragraph}{R in Java}{52}{paragraph*.153}
-\contentsline {paragraph}{Python}{52}{paragraph*.154}
-\contentsline {paragraph}{JyNi}{53}{paragraph*.155}
-\contentsline {section}{\numberline {7.2}Real-Time Results}{53}{section.156}
-\contentsline {paragraph}{Message Passing}{53}{paragraph*.157}
-\contentsline {section}{\numberline {7.3}Interface}{53}{section.158}
-\contentsline {paragraph}{Javascript}{54}{paragraph*.159}
-\contentsline {chapter}{\numberline {8}Conclusion}{55}{chapter.160}
-\contentsline {section}{\numberline {A.1}Collection Code}{57}{section.162}
-\contentsline {paragraph}{HDFS Collect Method}{57}{paragraph*.163}
-\contentsline {paragraph}{Local Collect Method}{58}{paragraph*.195}
-\contentsline {chapter}{\nonumberline Bibliography}{59}{appendix*.241}
+\contentsline {paragraph}{Order of Events}{50}{paragraph*.148}
+\contentsline {paragraph}{Performance}{50}{paragraph*.149}
+\contentsline {chapter}{\numberline {7}Future Work}{53}{chapter.150}
+\contentsline {section}{\numberline {7.1}Visualizations}{53}{section.151}
+\contentsline {paragraph}{Grammar of Graphics}{53}{paragraph*.152}
+\contentsline {paragraph}{Libraries}{53}{paragraph*.153}
+\contentsline {paragraph}{R \& ggplot}{54}{paragraph*.154}
+\contentsline {paragraph}{R in Java}{54}{paragraph*.155}
+\contentsline {paragraph}{Python}{54}{paragraph*.156}
+\contentsline {paragraph}{JyNi}{55}{paragraph*.157}
+\contentsline {section}{\numberline {7.2}Real-Time Results}{55}{section.158}
+\contentsline {paragraph}{Message Passing}{55}{paragraph*.159}
+\contentsline {section}{\numberline {7.3}Interface}{55}{section.160}
+\contentsline {paragraph}{Javascript}{56}{paragraph*.161}
+\contentsline {section}{\numberline {7.4}Automation}{56}{section.162}
+\contentsline {paragraph}{Automatic Collection}{56}{paragraph*.163}
+\contentsline {paragraph}{Automatic Visualization}{56}{paragraph*.164}
+\contentsline {chapter}{\numberline {8}Conclusion}{59}{chapter.165}
+\contentsline {section}{\numberline {A.1}Collection Code}{61}{section.167}
+\contentsline {paragraph}{HDFS Collect Method}{61}{paragraph*.168}
+\contentsline {paragraph}{Local Collect Method}{62}{paragraph*.200}
+\contentsline {chapter}{\nonumberline Bibliography}{63}{appendix*.246}

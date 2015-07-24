@@ -32,12 +32,7 @@ public class ScatterplotSketch extends PApplet {
         // Both x and y data set here.
         scatterplot = new XYChart(this);
 
-        /*
-        scatterplot.setData(new float[] {1900, 1910, 1920, 1930, 1940, 1950,
-                        1960, 1970, 1980, 1990, 2000},
-                new float[] { 6322,  6489,  6401, 7657, 9649, 9767,
-                        12167, 15154, 18200, 23124, 28645});
-        */
+        
         scatterplot.setData(buildData());
 
         // Axis formatting and labels.

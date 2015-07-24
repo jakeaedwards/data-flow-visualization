@@ -94,23 +94,29 @@ Another method which is focused on reducing the I/O costs incurred by jobs is jo
 \INITIAL{E}{ach of the previously} presented patterns provides a solution to some of the most commonly encountered problems in a data flow graph based analysis scenario. After examining each it quickly becomes clear that while many are directly analysis based, such as counting or filtering, we also see many patterns which are much less reliant (and have less affect) on the visualizable features of the underlying data. These patterns are, by definition, solutions to some of the most commonly encountered tasks in MapReduce analysis. Demonstrating that visualizations are either generally not useful in each case or are attainable using the solution presented in this work serves to demonstrate that this work can be applied to the most commonly encountered analysis tasks and provide the desired outcomes. 
 
 \paragraph{Use Cases}
-Table \ref{tbl:usages} shows a visual summary of the core visualizations discussed in the previous chapter as matched with the Map Reduce pattern types with which they are likely to be applied. Numerical summary and counting of course both imply category comparisons, which indicate bar charts and line charts being applied depending on expected trends in the data set or a constant dimension such as time. Inverted indexes as a summarization pattern is of course excluded, because this is not a task for which visual analysis of the data would be relevant. Filtering of course can also be applied to categorical data sets, but also provides a more likely application scenario for scatter plots. When filtering data points, visualizing to determine if those records that have been filtered out remove a cluster or reduce noise on a scatter plot is a very common visualization task. Data organization and join patterns are not particularly well suited for analysis using standard visualizations, for different reasons. Visualizing data which has been structured through an organization pattern is heavily dependent on the structure of the outgoing data (XML, JSON, etc.) and will rely on some custom logic and processing in almost all cases. Joins suffer the opposite problem, where the basic exploratory information one would want to extract from a join operation itself is almost always limited to cardinality, and it is probably most efficient to simply output a summary statistic rather than render any kind of visualization. Meta patterns of course relate to program flow, and as such encompass any of the previous pattern types and their related visualizations. 
+Table \ref{tbl:patterns} shows a visual summary of the core visualizations discussed in the previous chapter as matched with the Map Reduce pattern types with which they are likely to be applied. Numerical summary and counting of course both imply category comparisons, which indicate bar charts and line charts being applied depending on expected trends in the data set or a constant dimension such as time. Inverted indexes as a summarization pattern is of course excluded, because this is not a task for which visual analysis of the data would be relevant. Filtering of course can also be applied to categorical data sets, but also provides a more likely application scenario for scatter plots. When filtering data points, visualizing to determine if those records that have been filtered out remove a cluster or reduce noise on a scatter plot is a very common visualization task. Data organization and join patterns are not particularly well suited for analysis using standard visualizations, for different reasons. Visualizing data which has been structured through an organization pattern is heavily dependent on the structure of the outgoing data (XML, JSON, etc.) and will rely on some custom logic and processing in almost all cases. Joins suffer the opposite problem, where the basic exploratory information one would want to extract from a join operation itself is almost always limited to cardinality, and it is probably most efficient to simply output a summary statistic rather than render any kind of visualization. Meta patterns of course relate to program flow, and as such encompass any of the previous pattern types and their related visualizations. 
 
 \paragraph{Other Patterns}
 Other design patterns in the realm of Map-Reduce problems have been introduced, but generally these are related to specific problem domains such as graph processing algorithms or tasks such as message passing and optimization \cite{Lin2010}. Though these patterns are useful, they are not particularly applicable to in-situ analysis and thus focus is placed exclusively on the patterns presented in this chapter as being the most applicable. The next chapter serves to illustrate this further with the use of visualizations applied to analysis jobs that fit many of the patterns and categories previously described, and some additional discussion of difficulties and potential for custom visualizations. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{table}[]
 \centering
-\caption{Most applicable visualizations for each pattern-category task}
-\label{tbl:usages}
-\begin{tabular}{l|llll}
-                  & Bar Chart & Line Chart & Scatter Plot & Custom \\ \hline
-Summarization     & \checkmark& \checkmark &              &        \\
-Filtering         & \checkmark& \checkmark & \checkmark   &        \\
-Data Organization &           &            &              & \checkmark \\
-Joins             &           &            &              & \checkmark       \\
-Meta Patterns     & \checkmark& \checkmark & \checkmark   & \checkmark      
+\caption{Table showing pattern categories and applicable visualizations}
+\label{tbl:patterns}
+\begin{tabular}{llllll}
+\multicolumn{1}{l|}{}                & Summarization & Filtering & Organizational & Joins     & Meta Patterns \\ \hline
+\multicolumn{1}{l|}{Bar Chart}       & \checkmark    & \checkmark&                &           & \checkmark    \\
+\multicolumn{1}{l|}{Pie Chart}       & \checkmark    & \checkmark&                &           & \checkmark    \\
+\multicolumn{1}{l|}{Line Chart}      & \checkmark    & \checkmark&                &           & \checkmark    \\
+\multicolumn{1}{l|}{Scatter Plot}    &               & \checkmark&                &           & \checkmark    \\
+\multicolumn{1}{l|}{Word Cloud}      &               & \checkmark&                &           & \checkmark    \\
+\multicolumn{1}{l|}{Word Tree}       &               & \checkmark&                &           & \checkmark    \\
+\multicolumn{1}{l|}{Phrase Net}      &               & \checkmark&                &           & \checkmark    \\
+\multicolumn{1}{l|}{Network Diagram} &               & \checkmark&                &           & \checkmark    \\
+\multicolumn{1}{l|}{Tree Map}        &               & \checkmark& \checkmark     &           & \checkmark    \\
+\multicolumn{1}{l|}Text Output       & \checkmark    & \checkmark&                & \checkmark& \checkmark   
 \end{tabular}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

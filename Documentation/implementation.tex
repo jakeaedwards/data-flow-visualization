@@ -70,7 +70,19 @@ The currently implemented visualizations have a certain degree of adaptability b
 
 \section{Usage}
 \label{usage}
-\INITIAL{F}{rom the user perspective} implementing a data flow which uses visualizations as described in this work is very simple. As described in Chapter 5 one must ensure that the visualizer and collector objects are instantiated, following which collection and visualization can be performed at will.
+\INITIAL{F}{rom the user perspective} implementing a data flow which uses visualizations as described in this work is very simple. As described in Chapter 5 one must ensure that the visualizer and collector objects are instantiated, following which collection and visualization can be performed at will. A process diagram illustrating the interaction between the different objects involved and the order of operations can be seen in Figure \ref{fig:process}.
+
+%%%%%%%%%%%%%%%%%%
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.8]{process_diagram.png}
+	\caption{A diagram illustrating the visualization process}
+	\label{fig:process}
+\end{figure}
+%%%%%%%%%%%%%%%%%%
 
 \paragraph{Order of Events}
 During the collection phase, a data sink task is generated when the data from the job flow is written to the file system. After this task, an execution call is made on the environment to ensure that no further writes are made before the data is read into the visualizer independent of the original flow itself. Because the optimizer will generate plans in a way which is unpredictable to a user, there is no way of guaranteeing the order of operations which will occur before the visualization itself becomes available. However, because the visualization task runs without using Map-Reduce once the data is obtained in most cases it is performed quickly relative to the rest of the job flow. Additionally, because the data collection step necessitates an execution step, the following Map-Reduce operations are even more likely to be more expensive than the visualization itself.
+
+\paragraph{Performance}
+In terms of added execution time incurred by the visualization process, we add only the time required to write data to the file system and to generate charts. In the case of the write operation, this will of course be executed in linear time with efficiency being dependent on the extent to which the partitioning scheme is balanced. Once data has been provided for consumption by the visualizer, the remaining performance overhead depends on the efficiency of the visualization classes themselves. In the case of those visualizations and charts which have been identified as most important in this work, each was implemented in a way which required no operations with less that linear performance. This means that no standard visualization will be expected to take more execution time than a single data set transformation. In addition, generally the applications of most visualizations will operate on some summary or subset of the original data, meaning we can expect even faster execution. In cases where complex visualization classes (purpose built beyond the general cases described so far in this work) are introduced by a user, the efficiency of the user code will determine any effects on overall runtime. The strong performance of the visualization classes implemented for testing purposes relies on the assumption that certain features were not absolutely necessary for most in-situ analysis scenarios. For example, adding automatic sorting or outlier detection to visualization classes will significantly increase their algorithmic complexities.
