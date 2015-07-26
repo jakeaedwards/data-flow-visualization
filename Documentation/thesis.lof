@@ -14,22 +14,23 @@
 \contentsline {figure}{\numberline {3.6}{\ignorespaces A visualization of edge weight distribution \cite {KONECT}}}{18}{figure.55}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces A temporal visualization of edge growth \cite {KONECT}}}{18}{figure.56}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces A visualization of cumulative distribution \cite {KONECT}}}{19}{figure.57}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces A treemap showing relative folder sizes in a file system \cite {Fry2008}}}{21}{figure.62}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces A bar chart showing census income category proportions}}{33}{figure.103}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces A line chart showing the highest earners by age}}{35}{figure.106}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces A line chart showing the lowest earners by age}}{35}{figure.107}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces A bar chart showing edge weights in the Les Miserables network}}{36}{figure.111}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces A bar chart showing edge weights from KONECT}}{37}{figure.112}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces A bar chart showing edge weight distribution in the wikipedia conflict graph}}{38}{figure.114}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces A scatter plot showing degree frequency in the Les Miserables network}}{38}{figure.116}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces A scatter plot showing degree frequency from KONECT}}{39}{figure.117}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces A scatterplot showing iris sepal data}}{40}{figure.120}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces A scatterplot matrix showing iris data across all variables}}{42}{figure.123}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces A tree map}}{44}{figure.128}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces A bar chart showing census income category proportions}}{34}{figure.109}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces A line chart showing the highest earners by age}}{36}{figure.112}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces A line chart showing the lowest earners by age}}{36}{figure.113}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces A bar chart showing edge weights in the Les Miserables network}}{37}{figure.117}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces A bar chart showing edge weights from KONECT}}{38}{figure.118}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces A bar chart showing edge weight distribution in the wikipedia conflict graph}}{39}{figure.120}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces A scatter plot showing degree frequency in the Les Miserables network}}{39}{figure.122}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces A scatter plot showing degree frequency from KONECT}}{40}{figure.123}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces A scatterplot showing iris sepal data}}{41}{figure.126}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces A scatterplot matrix showing iris data across all variables}}{43}{figure.129}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces A tree map}}{44}{figure.133}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces A UML diagram of the core classes}}{46}{figure.132}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces A diagram illustrating the visualization process}}{50}{figure.147}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces A UML diagram of the core classes}}{46}{figure.137}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces A diagram illustrating the visualization process}}{50}{figure.152}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

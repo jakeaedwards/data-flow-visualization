@@ -42,95 +42,102 @@
 \contentsline {paragraph}{Distributions}{17}{paragraph*.53}
 \contentsline {paragraph}{Cumulative Degree Distribution}{18}{paragraph*.54}
 \contentsline {paragraph}{Layout}{19}{paragraph*.58}
-\contentsline {section}{\numberline {3.4}Summary}{19}{section.59}
-\contentsline {chapter}{\numberline {4}MapReduce Patterns}{21}{chapter.60}
-\contentsline {section}{\numberline {4.1}Summarization Patterns}{21}{section.61}
-\contentsline {paragraph}{Numerical Summary}{21}{paragraph*.62}
-\contentsline {paragraph}{Inverted Index}{22}{paragraph*.63}
-\contentsline {paragraph}{Counting}{22}{paragraph*.64}
-\contentsline {section}{\numberline {4.2}Filtering Patterns}{22}{section.65}
-\contentsline {paragraph}{Sampling}{23}{paragraph*.66}
-\contentsline {paragraph}{Filtering}{23}{paragraph*.67}
-\contentsline {paragraph}{Bloom Filtering}{23}{paragraph*.68}
-\contentsline {paragraph}{Top N}{23}{paragraph*.69}
-\contentsline {paragraph}{Distinct}{24}{paragraph*.70}
-\contentsline {section}{\numberline {4.3}Data Organization Patterns}{24}{section.71}
-\contentsline {paragraph}{Structured to Hierarchical}{24}{paragraph*.72}
-\contentsline {paragraph}{Partitioning}{24}{paragraph*.73}
-\contentsline {paragraph}{Binning}{24}{paragraph*.74}
-\contentsline {paragraph}{Sorting}{24}{paragraph*.75}
-\contentsline {paragraph}{Shuffling}{25}{paragraph*.76}
-\contentsline {section}{\numberline {4.4}Join Patterns}{25}{section.77}
-\contentsline {paragraph}{Reduce Side Join}{25}{paragraph*.78}
-\contentsline {paragraph}{Replicated Join}{26}{paragraph*.79}
-\contentsline {paragraph}{Composite Join}{26}{paragraph*.80}
-\contentsline {paragraph}{Cartesian Product}{26}{paragraph*.81}
-\contentsline {paragraph}{Visualizing Joins}{26}{paragraph*.82}
-\contentsline {section}{\numberline {4.5}Meta Patterns}{27}{section.83}
-\contentsline {paragraph}{Job Chaining}{27}{paragraph*.84}
-\contentsline {paragraph}{Chain Folding}{28}{paragraph*.85}
-\contentsline {paragraph}{Job Merging}{28}{paragraph*.86}
-\contentsline {section}{\numberline {4.6}Summary}{28}{section.87}
-\contentsline {paragraph}{Use Cases}{29}{paragraph*.88}
-\contentsline {paragraph}{Other Patterns}{29}{paragraph*.89}
-\contentsline {chapter}{\numberline {5}Applications}{31}{chapter.91}
-\contentsline {section}{\numberline {5.1}Census Data Analysis}{31}{section.92}
-\contentsline {paragraph}{Demographic Data}{31}{paragraph*.93}
-\contentsline {paragraph}{Conditional Split}{32}{paragraph*.94}
-\contentsline {paragraph}{Split Computation}{32}{paragraph*.95}
-\contentsline {paragraph}{}{32}{paragraph*.96}
-\contentsline {paragraph}{Visualization Code}{32}{paragraph*.102}
-\contentsline {paragraph}{Bar Chart}{33}{paragraph*.104}
-\contentsline {paragraph}{filtering}{34}{paragraph*.105}
-\contentsline {section}{\numberline {5.2}Network Analysis}{34}{section.108}
-\contentsline {paragraph}{Les Mis\IeC {\'e}rables}{34}{paragraph*.109}
-\contentsline {paragraph}{Edge Weights}{36}{paragraph*.110}
-\contentsline {paragraph}{Wikipedia Conflicts}{36}{paragraph*.113}
-\contentsline {paragraph}{Degree Distribution}{37}{paragraph*.115}
-\contentsline {section}{\numberline {5.3}Classification}{39}{section.118}
-\contentsline {paragraph}{Scatter Plot}{39}{paragraph*.119}
-\contentsline {paragraph}{Matrix Plot}{40}{paragraph*.121}
-\contentsline {paragraph}{Classification Method}{41}{paragraph*.122}
-\contentsline {section}{\numberline {5.4}Custom Applications}{41}{section.124}
-\contentsline {paragraph}{Treemaps}{41}{paragraph*.125}
-\contentsline {paragraph}{Specific Implementations}{41}{paragraph*.126}
-\contentsline {paragraph}{Input Format}{43}{paragraph*.127}
-\contentsline {chapter}{\numberline {6}Implementation}{45}{chapter.129}
-\contentsline {section}{\numberline {6.1}Overview}{45}{section.130}
-\contentsline {paragraph}{Visualization Classes}{45}{paragraph*.131}
-\contentsline {section}{\numberline {6.2}Data Collection}{46}{section.133}
-\contentsline {paragraph}{Tuples}{46}{paragraph*.134}
-\contentsline {paragraph}{Data Collector}{46}{paragraph*.135}
-\contentsline {paragraph}{Collect Method}{46}{paragraph*.136}
-\contentsline {paragraph}{Type Erasure}{47}{paragraph*.137}
-\contentsline {paragraph}{Data Sets}{47}{paragraph*.138}
-\contentsline {section}{\numberline {6.3}Visualization}{48}{section.139}
-\contentsline {paragraph}{Factory Pattern}{48}{paragraph*.140}
-\contentsline {paragraph}{Processing}{48}{paragraph*.141}
-\contentsline {paragraph}{Libraries}{48}{paragraph*.142}
-\contentsline {paragraph}{Swing}{49}{paragraph*.143}
-\contentsline {paragraph}{Visualization Class}{49}{paragraph*.144}
-\contentsline {paragraph}{Adjusting Visualizations}{49}{paragraph*.145}
-\contentsline {section}{\numberline {6.4}Usage}{49}{section.146}
-\contentsline {paragraph}{Order of Events}{50}{paragraph*.148}
-\contentsline {paragraph}{Performance}{50}{paragraph*.149}
-\contentsline {chapter}{\numberline {7}Future Work}{53}{chapter.150}
-\contentsline {section}{\numberline {7.1}Visualizations}{53}{section.151}
-\contentsline {paragraph}{Grammar of Graphics}{53}{paragraph*.152}
-\contentsline {paragraph}{Libraries}{53}{paragraph*.153}
-\contentsline {paragraph}{R \& ggplot}{54}{paragraph*.154}
-\contentsline {paragraph}{R in Java}{54}{paragraph*.155}
-\contentsline {paragraph}{Python}{54}{paragraph*.156}
-\contentsline {paragraph}{JyNi}{55}{paragraph*.157}
-\contentsline {section}{\numberline {7.2}Real-Time Results}{55}{section.158}
-\contentsline {paragraph}{Message Passing}{55}{paragraph*.159}
-\contentsline {section}{\numberline {7.3}Interface}{55}{section.160}
-\contentsline {paragraph}{Javascript}{56}{paragraph*.161}
-\contentsline {section}{\numberline {7.4}Automation}{56}{section.162}
-\contentsline {paragraph}{Automatic Collection}{56}{paragraph*.163}
-\contentsline {paragraph}{Automatic Visualization}{56}{paragraph*.164}
-\contentsline {chapter}{\numberline {8}Conclusion}{59}{chapter.165}
-\contentsline {section}{\numberline {A.1}Collection Code}{61}{section.167}
-\contentsline {paragraph}{HDFS Collect Method}{61}{paragraph*.168}
-\contentsline {paragraph}{Local Collect Method}{62}{paragraph*.200}
-\contentsline {chapter}{\nonumberline Bibliography}{63}{appendix*.246}
+\contentsline {section}{\numberline {3.4}Hierachical Data}{19}{section.59}
+\contentsline {paragraph}{Hierarchy Features}{20}{paragraph*.60}
+\contentsline {paragraph}{Treemaps}{20}{paragraph*.61}
+\contentsline {paragraph}{Alternative Visualizations}{20}{paragraph*.63}
+\contentsline {section}{\numberline {3.5}Summary}{20}{section.64}
+\contentsline {chapter}{\numberline {4}MapReduce Patterns}{22}{chapter.66}
+\contentsline {section}{\numberline {4.1}Summarization Patterns}{22}{section.67}
+\contentsline {paragraph}{Numerical Summary}{22}{paragraph*.68}
+\contentsline {paragraph}{Inverted Index}{23}{paragraph*.69}
+\contentsline {paragraph}{Counting}{23}{paragraph*.70}
+\contentsline {section}{\numberline {4.2}Filtering Patterns}{23}{section.71}
+\contentsline {paragraph}{Sampling}{24}{paragraph*.72}
+\contentsline {paragraph}{Filtering}{24}{paragraph*.73}
+\contentsline {paragraph}{Bloom Filtering}{24}{paragraph*.74}
+\contentsline {paragraph}{Top N}{24}{paragraph*.75}
+\contentsline {paragraph}{Distinct}{25}{paragraph*.76}
+\contentsline {section}{\numberline {4.3}Data Organization Patterns}{25}{section.77}
+\contentsline {paragraph}{Structured to Hierarchical}{25}{paragraph*.78}
+\contentsline {paragraph}{Partitioning}{25}{paragraph*.79}
+\contentsline {paragraph}{Binning}{25}{paragraph*.80}
+\contentsline {paragraph}{Sorting}{25}{paragraph*.81}
+\contentsline {paragraph}{Shuffling}{26}{paragraph*.82}
+\contentsline {section}{\numberline {4.4}Join Patterns}{26}{section.83}
+\contentsline {paragraph}{Reduce Side Join}{26}{paragraph*.84}
+\contentsline {paragraph}{Replicated Join}{27}{paragraph*.85}
+\contentsline {paragraph}{Composite Join}{27}{paragraph*.86}
+\contentsline {paragraph}{Cartesian Product}{27}{paragraph*.87}
+\contentsline {paragraph}{Visualizing Joins}{27}{paragraph*.88}
+\contentsline {section}{\numberline {4.5}Meta Patterns}{28}{section.89}
+\contentsline {paragraph}{Job Chaining}{28}{paragraph*.90}
+\contentsline {paragraph}{Chain Folding}{29}{paragraph*.91}
+\contentsline {paragraph}{Job Merging}{29}{paragraph*.92}
+\contentsline {section}{\numberline {4.6}Summary}{29}{section.93}
+\contentsline {paragraph}{Use Cases}{30}{paragraph*.94}
+\contentsline {paragraph}{Other Patterns}{30}{paragraph*.95}
+\contentsline {chapter}{\numberline {5}Applications}{32}{chapter.97}
+\contentsline {section}{\numberline {5.1}Census Data Analysis}{32}{section.98}
+\contentsline {paragraph}{Demographic Data}{32}{paragraph*.99}
+\contentsline {paragraph}{Conditional Split}{33}{paragraph*.100}
+\contentsline {paragraph}{Split Computation}{33}{paragraph*.101}
+\contentsline {paragraph}{}{33}{paragraph*.102}
+\contentsline {paragraph}{Visualization Code}{33}{paragraph*.108}
+\contentsline {paragraph}{Bar Chart}{34}{paragraph*.110}
+\contentsline {paragraph}{filtering}{35}{paragraph*.111}
+\contentsline {section}{\numberline {5.2}Network Analysis}{35}{section.114}
+\contentsline {paragraph}{Les Mis\IeC {\'e}rables}{35}{paragraph*.115}
+\contentsline {paragraph}{Edge Weights}{37}{paragraph*.116}
+\contentsline {paragraph}{Wikipedia Conflicts}{37}{paragraph*.119}
+\contentsline {paragraph}{Degree Distribution}{38}{paragraph*.121}
+\contentsline {section}{\numberline {5.3}Classification}{40}{section.124}
+\contentsline {paragraph}{Scatter Plot}{40}{paragraph*.125}
+\contentsline {paragraph}{Matrix Plot}{41}{paragraph*.127}
+\contentsline {paragraph}{Classification Method}{42}{paragraph*.128}
+\contentsline {section}{\numberline {5.4}Custom Applications}{42}{section.130}
+\contentsline {paragraph}{Treemap Implementations}{42}{paragraph*.131}
+\contentsline {paragraph}{Input Format}{42}{paragraph*.132}
+\contentsline {chapter}{\numberline {6}Implementation}{45}{chapter.134}
+\contentsline {section}{\numberline {6.1}Overview}{45}{section.135}
+\contentsline {paragraph}{Visualization Classes}{45}{paragraph*.136}
+\contentsline {section}{\numberline {6.2}Data Collection}{46}{section.138}
+\contentsline {paragraph}{Tuples}{46}{paragraph*.139}
+\contentsline {paragraph}{Data Collector}{46}{paragraph*.140}
+\contentsline {paragraph}{Collect Method}{46}{paragraph*.141}
+\contentsline {paragraph}{Type Erasure}{47}{paragraph*.142}
+\contentsline {paragraph}{Data Sets}{47}{paragraph*.143}
+\contentsline {section}{\numberline {6.3}Visualization}{48}{section.144}
+\contentsline {paragraph}{Factory Pattern}{48}{paragraph*.145}
+\contentsline {paragraph}{Processing}{48}{paragraph*.146}
+\contentsline {paragraph}{Libraries}{48}{paragraph*.147}
+\contentsline {paragraph}{Swing}{49}{paragraph*.148}
+\contentsline {paragraph}{Visualization Class}{49}{paragraph*.149}
+\contentsline {paragraph}{Adjusting Visualizations}{49}{paragraph*.150}
+\contentsline {section}{\numberline {6.4}Usage}{49}{section.151}
+\contentsline {paragraph}{Order of Events}{50}{paragraph*.153}
+\contentsline {paragraph}{Performance}{50}{paragraph*.154}
+\contentsline {chapter}{\numberline {7}Future Work}{52}{chapter.155}
+\contentsline {section}{\numberline {7.1}Visualizations}{52}{section.156}
+\contentsline {paragraph}{Grammar of Graphics}{52}{paragraph*.157}
+\contentsline {paragraph}{Libraries}{52}{paragraph*.158}
+\contentsline {paragraph}{R \& ggplot}{53}{paragraph*.159}
+\contentsline {paragraph}{R in Java}{53}{paragraph*.160}
+\contentsline {paragraph}{Python}{53}{paragraph*.161}
+\contentsline {paragraph}{JyNi}{54}{paragraph*.162}
+\contentsline {section}{\numberline {7.2}Real-Time Results}{54}{section.163}
+\contentsline {paragraph}{Message Passing}{54}{paragraph*.164}
+\contentsline {section}{\numberline {7.3}Interface}{54}{section.165}
+\contentsline {paragraph}{Javascript}{55}{paragraph*.166}
+\contentsline {section}{\numberline {7.4}Automation}{55}{section.167}
+\contentsline {paragraph}{Automatic Collection}{55}{paragraph*.168}
+\contentsline {paragraph}{Automatic Visualization}{55}{paragraph*.169}
+\contentsline {chapter}{\numberline {8}Conclusions}{57}{chapter.170}
+\contentsline {paragraph}{Visualizations}{57}{paragraph*.171}
+\contentsline {paragraph}{Patterns}{57}{paragraph*.172}
+\contentsline {paragraph}{Applications}{58}{paragraph*.173}
+\contentsline {paragraph}{Summary}{58}{paragraph*.174}
+\contentsline {section}{\numberline {A.1}Collection Code}{59}{section.176}
+\contentsline {paragraph}{HDFS Collect Method}{59}{paragraph*.177}
+\contentsline {paragraph}{Local Collect Method}{60}{paragraph*.209}
+\contentsline {chapter}{\nonumberline Bibliography}{61}{appendix*.255}

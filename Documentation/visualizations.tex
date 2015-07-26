@@ -141,21 +141,48 @@ While distributions focus on simple aspects of a network's structure, more compl
 \paragraph{Layout}
 As graphs are of course a form of structural data, visualizing the structure itself is intuitive. With very small graphs this is easy to do, but as graphs grow many problems present themselves. The most obvious issue is the size itself; a graph featuring ten million nodes will be impossible to visualize in a legible way unless it has very particular features which are accounted for beforehand and visualized accordingly. In the case of even relatively small graphs, it is usually necessary to have some kind of structural information about the graph so that node placement can be handled in a sensible way during visualization. Node placement has to consider not only visibility for users, but also semantic issues such as neighbor proximity and edge overlap. Some generic methods for such problems exist, such as force-directed flow algorithms \cite{Didimo2011}, but it is difficult to predict their efficacy in ad-hoc scenarios where the graph's structure is unknown.
  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Hierachical Data}
+\label{sec:hierarchical}
+\INITIAL{W}{hen data is loaded into an analysis system} it is often useful to utilize a hierarchical format in order to avoid performing joins. Of course, a hierarchy can also be modeled as a network data set as it will necessarily be a tree of sorts. However, because the common standards in hierarchical data (JSON, XML, etc.) are so specific and frequently occurring it makes sense that they should be considered in a separate category.
+
+\paragraph{Hierarchy Features}
+The primary difference between a hierarchical data set and a simple tree will almost always be the quantity of meta data contained in elements of a hierarchy. Typically in netwrok analysis, the features of a data set with which we are most interested are exclusively structural; in/out degrees, connectivity, edge weights, etc. With hierarchical data, we are frequently just as concerned with attributes of hierarchy elements as we are with the structure of the hierarchy itself. A good example of this would be a hierarchical file system in which we want to both examine the folder structure as well as features of individual sub-hierarchies such as total disk space, filepaths, and file types therein. 
+
+\paragraph{Treemaps}
+A relatively new visualization which is purpose-built for displaying hierarchies is the tree map. A tree map is a very space efficient method for displaying a hierarchy using a set of nested rectangles. Nesting of course occurs based on levels in the hierarchy being visualized, and layout and coloring can be performed based on features of the data. Though area based visualizations such as mosaic plots have existed for a very long time, the generation of a tree map is dependent on a recursive algorithm for generating tiles. Though the first instance of such an algorithm dates back over 20 years \cite{Shneiderman1992}, attention to the ways in which tree maps could be applied to varying types of data and analyses became much more popular several years later. In displaying hierarchies, the way in which hierarchies were visualized colored and labeled varied strongly depending on how many dimensions were contained in the data and what the purpose of the analysis was \cite{Bederson2002}\cite{Schreck2006}. A basic example treemap can be seen in Figure \ref{fig:treemap_ex}.
+
+%%%%%%%%%%%%%%%%%%
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.8]{treemap_example.png}
+	\caption{A treemap showing relative folder sizes in a file system \cite{Fry2008}}
+	\label{fig:treemap_ex}
+\end{figure}
+%%%%%%%%%%%%%%%%%%
+
+\paragraph{Alternative Visualizations}
+Many alternatives to tree maps for the visualization of hierarchies have been presented, but typically these are all some form of enhancement of modification of the basic tree map format \cite{Slingsby2009}. In most cases, if an analysis requires breaking a hierarchy into its constituent parts for a more specific analysis, a summary data set of another type (Generally numerical) can be extracted and the visualization methods from previous sections can be applied.
+   
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Summary}
 \label{sec:vis_summary}
-\INITIAL{L}{ooking at the scenarios} presented in the previous section, it becomes clear that the vast majority of visualization scenarios which would be encountered during exploratory or in-situ processing can be handled using very basic tools. Specifically, these include bar charts, line charts, scatterplots, and simple mutations of each. 
+\INITIAL{L}{ooking at the scenarios} presented in the previous section, it becomes clear that the vast majority of visualization scenarios which would be encountered during exploratory or in-situ processing can be handled using very basic tools. In Table \ref{tbl:formats} a visual summary is given of the areas in which each of the discussed visualizations is most appropriate. In cases with limited applicability, it is of course important to keep in mind that more complex data formats can typically be reduced so that their features fit well into the more easily visualized data formats.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{table}[]
 \centering
-\caption{Table showing pattern categories and applicable visualizations}
-\label{tbl:patterns}
-\begin{tabular}{llllll}
+\caption{Data formats and applicable visualizations}
+\label{tbl:formats}
+\begin{tabular}{cccccc}
 \multicolumn{1}{l|}{}                & Numerical     & Text      & Network        & Hierarchical   \\ \hline
 \multicolumn{1}{l|}{Bar Chart}       & \checkmark    &           &                &                \\
 \multicolumn{1}{l|}{Pie Chart}       & \checkmark    &           &                &                \\
@@ -166,7 +193,7 @@ As graphs are of course a form of structural data, visualizing the structure its
 \multicolumn{1}{l|}{Phrase Net}      &               & \checkmark&                &                \\
 \multicolumn{1}{l|}{Network Diagram} &               &           & \checkmark     &                \\
 \multicolumn{1}{l|}{Tree Map}        &               &           &                & \checkmark     \\
-\multicolumn{1}{l|}Text Output       & \checkmark    & \checkmark&                &   
+\multicolumn{1}{l|}{Text Output}       & \checkmark    & \checkmark&                &   
 \end{tabular}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

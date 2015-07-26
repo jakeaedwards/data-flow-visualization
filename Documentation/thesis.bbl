@@ -40,6 +40,10 @@ M.~Wattenberg and F.~B. Vi\'{e}gas, ``{The word tree, an interactive visual
 \bibitem{KONECT}
 KONECT, ``{Konect network dataset}.''
 
+\bibitem{Fry2008}
+B.~Fry, {\em {Visualizing data}}.
+\newblock 2008.
+
 \bibitem{Battre2010}
 D.~Battr\'{e}, S.~Ewen, F.~Hueske, and O.~Kao, ``{Nephele / PACTs : A
   Programming Model and Execution Framework for Web-Scale Analytical Processing
@@ -105,6 +109,25 @@ W.~Didimo, G.~Liotta, and S.~Romeao, ``{Topology-Driven Force-Directed
   (U.~Brandes and S.~Cornelsen, eds.), (Konstanz), pp.~165--176, Springer
   Berlin Heidelberg, 2011.
 
+\bibitem{Shneiderman1992}
+B.~Shneiderman, ``{Tree visualization with tree-maps: 2-d space-filling
+  approach},'' 1992.
+
+\bibitem{Bederson2002}
+B.~B. Bederson, B.~Shneiderman, and M.~Wattenberg, ``{Ordered and quantum
+  treemaps: Making effective use of 2D space to display hierarchies},'' {\em
+  ACM Transactions on Graphics}, vol.~21, no.~4, pp.~833--854, 2002.
+
+\bibitem{Schreck2006}
+T.~Schreck, D.~Keim, and F.~Mansmann, ``{Regular TreeMap Layouts for Visual
+  Analysis of Hierarchical Data},'' in {\em Spring Conference on Computer
+  Graphics}, 2006.
+
+\bibitem{Slingsby2009}
+A.~Slingsby, J.~Dykes, and J.~Wood, ``{Configuring hierarchical layouts to
+  address research questions},'' in {\em IEEE Transactions on Visualization and
+  Computer Graphics}, vol.~15, pp.~977--984, 2009.
+
 \bibitem{Miner2012}
 D.~Miner and A.~Shook, {\em {MapReduce Design Patterns}}.
 \newblock Sebastopol: O'Reilly, first edit~ed., 2012.
@@ -138,29 +161,10 @@ U.~Brandes and J.~Lerner, ``Structural similarity: Spectral methods for relaxed
 R.~Fisher, ``{The Use of Multiple Measurements in Taxonomic Problems},'' {\em
   Annals of Eugenics}, vol.~7, no.~2, pp.~179--188, 1936.
 
-\bibitem{Shneiderman1992}
-B.~Shneiderman, ``{Tree visualization with tree-maps: 2-d space-filling
-  approach},'' 1992.
-
-\bibitem{Bederson2002}
-B.~B. Bederson, B.~Shneiderman, and M.~Wattenberg, ``{Ordered and quantum
-  treemaps: Making effective use of 2D space to display hierarchies},'' {\em
-  ACM Transactions on Graphics}, vol.~21, no.~4, pp.~833--854, 2002.
-
-\bibitem{Schreck2006}
-T.~Schreck, D.~Keim, and F.~Mansmann, ``{Regular TreeMap Layouts for Visual
-  Analysis of Hierarchical Data},'' in {\em Spring Conference on Computer
-  Graphics}, 2006.
-
 \bibitem{Wood2008}
 J.~Wood and J.~Dykes, ``{Spatially ordered treemaps},'' in {\em IEEE
   Transactions on Visualization and Computer Graphics}, vol.~14,
   pp.~1348--1355, 2008.
-
-\bibitem{Slingsby2009}
-A.~Slingsby, J.~Dykes, and J.~Wood, ``{Configuring hierarchical layouts to
-  address research questions},'' in {\em IEEE Transactions on Visualization and
-  Computer Graphics}, vol.~15, pp.~977--984, 2009.
 
 \bibitem{PlaisantCFekete2008}
 J.~D. G.~G. {Plaisant C Fekete}, ``{Promoting Insight Based Evaluation of
