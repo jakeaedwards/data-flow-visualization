@@ -14,7 +14,7 @@
 \contentsline {paragraph}{Dashboard constraints}{6}{paragraph*.17}
 \contentsline {paragraph}{Evaluation of Visualizations}{6}{paragraph*.18}
 \contentsline {section}{\numberline {2.2}In-Situ Processing}{6}{section.19}
-\contentsline {paragraph}{DFGs}{7}{paragraph*.20}
+\contentsline {paragraph}{Data Flow Graphs}{7}{paragraph*.20}
 \contentsline {paragraph}{Pig}{7}{paragraph*.22}
 \contentsline {paragraph}{Flink}{8}{paragraph*.23}
 \contentsline {paragraph}{System Differences}{8}{paragraph*.24}
