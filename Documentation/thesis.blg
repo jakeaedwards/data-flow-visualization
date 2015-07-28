@@ -1,18 +1,23 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
-The style file: ieeetr.bst
+The style file: plainnat.bst
 Database file #1: references.bib
 Repeated entry---line 251 of file references.bib
  : @inproceedings{Olston2008a
  :                           ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "IEEEexample:BSTcontrol"
+Warning--to sort, need author or key in Amende2010
+Warning--to sort, need author or key in konect:2014:wikiconflict
+Warning--empty year in Amende2010
 Warning--can't use both volume and number fields in Deleuze1987
+Warning--empty publisher in Few2006
+Warning--empty publisher in Fry2008
+Warning--there's a number but no volume in Gedik2008
+Warning--empty year in KONECT
+Warning--can't use both author and editor fields in Miner2012
+Warning--empty journal in Richthofer2013
+Warning--there's a number but no volume in Richthofer2013
+Warning--can't use both volume and number fields in Slingsby2009
 Warning--can't use both volume and number fields in VanHam2009
 Warning--can't use both volume and number fields in Wattenberg2008
-Warning--empty publisher in Fry2008
-Warning--empty publisher in Few2006
-Warning--can't use both volume and number fields in Slingsby2009
-Warning--can't use both author and editor fields in Miner2012
 Warning--can't use both volume and number fields in Wood2008
-Warning--empty journal in Richthofer2013
 (There was 1 error message)

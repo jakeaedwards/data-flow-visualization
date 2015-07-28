@@ -7,36 +7,36 @@
 \BOOKMARK [1][]{section.8}{Structure of this Thesis}{chapter.3}% 7
 \BOOKMARK [0][]{chapter.9}{Related Work}{}% 8
 \BOOKMARK [1][]{section.10}{Visualization of Data}{chapter.9}% 9
-\BOOKMARK [1][]{section.19}{In-Situ Processing}{chapter.9}% 10
-\BOOKMARK [1][]{section.25}{Visualization of Data Flow Graphs}{chapter.9}% 11
-\BOOKMARK [0][]{chapter.32}{Visualizations}{}% 12
-\BOOKMARK [1][]{section.33}{Numerical Data}{chapter.32}% 13
-\BOOKMARK [1][]{section.43}{Text Data}{chapter.32}% 14
-\BOOKMARK [1][]{section.50}{Graph Data}{chapter.32}% 15
-\BOOKMARK [1][]{section.59}{Hierachical Data}{chapter.32}% 16
-\BOOKMARK [1][]{section.64}{Summary}{chapter.32}% 17
-\BOOKMARK [0][]{chapter.66}{MapReduce Patterns}{}% 18
-\BOOKMARK [1][]{section.67}{Summarization Patterns}{chapter.66}% 19
-\BOOKMARK [1][]{section.71}{Filtering Patterns}{chapter.66}% 20
-\BOOKMARK [1][]{section.77}{Data Organization Patterns}{chapter.66}% 21
-\BOOKMARK [1][]{section.83}{Join Patterns}{chapter.66}% 22
-\BOOKMARK [1][]{section.89}{Meta Patterns}{chapter.66}% 23
-\BOOKMARK [1][]{section.93}{Summary}{chapter.66}% 24
-\BOOKMARK [0][]{chapter.97}{Applications}{}% 25
-\BOOKMARK [1][]{section.98}{Census Data Analysis}{chapter.97}% 26
-\BOOKMARK [1][]{section.114}{Network Analysis}{chapter.97}% 27
-\BOOKMARK [1][]{section.124}{Classification}{chapter.97}% 28
-\BOOKMARK [1][]{section.130}{Custom Applications}{chapter.97}% 29
-\BOOKMARK [0][]{chapter.134}{Implementation}{}% 30
-\BOOKMARK [1][]{section.135}{Overview}{chapter.134}% 31
-\BOOKMARK [1][]{section.138}{Data Collection}{chapter.134}% 32
-\BOOKMARK [1][]{section.144}{Visualization}{chapter.134}% 33
-\BOOKMARK [1][]{section.151}{Usage}{chapter.134}% 34
-\BOOKMARK [0][]{chapter.155}{Future Work}{}% 35
-\BOOKMARK [1][]{section.156}{Visualizations}{chapter.155}% 36
-\BOOKMARK [1][]{section.163}{Real-Time Results}{chapter.155}% 37
-\BOOKMARK [1][]{section.165}{Interface}{chapter.155}% 38
-\BOOKMARK [1][]{section.167}{Automation}{chapter.155}% 39
-\BOOKMARK [0][]{chapter.170}{Conclusions}{}% 40
-\BOOKMARK [1][]{section.176}{Collection Code}{chapter.170}% 41
-\BOOKMARK [0][]{appendix*.255}{Bibliography}{}% 42
+\BOOKMARK [1][]{section.20}{In-Situ Processing}{chapter.9}% 10
+\BOOKMARK [1][]{section.26}{Visualization of Data Flow Graphs}{chapter.9}% 11
+\BOOKMARK [0][]{chapter.33}{Visualizations}{}% 12
+\BOOKMARK [1][]{section.34}{Numerical Data}{chapter.33}% 13
+\BOOKMARK [1][]{section.44}{Text Data}{chapter.33}% 14
+\BOOKMARK [1][]{section.51}{Graph Data}{chapter.33}% 15
+\BOOKMARK [1][]{section.60}{Hierachical Data}{chapter.33}% 16
+\BOOKMARK [1][]{section.65}{Summary}{chapter.33}% 17
+\BOOKMARK [0][]{chapter.67}{MapReduce Patterns}{}% 18
+\BOOKMARK [1][]{section.68}{Summarization Patterns}{chapter.67}% 19
+\BOOKMARK [1][]{section.72}{Filtering Patterns}{chapter.67}% 20
+\BOOKMARK [1][]{section.78}{Data Organization Patterns}{chapter.67}% 21
+\BOOKMARK [1][]{section.84}{Join Patterns}{chapter.67}% 22
+\BOOKMARK [1][]{section.90}{Meta Patterns}{chapter.67}% 23
+\BOOKMARK [1][]{section.94}{Summary}{chapter.67}% 24
+\BOOKMARK [0][]{chapter.98}{Applications}{}% 25
+\BOOKMARK [1][]{section.99}{Census Data Analysis}{chapter.98}% 26
+\BOOKMARK [1][]{section.115}{Network Analysis}{chapter.98}% 27
+\BOOKMARK [1][]{section.125}{Classification}{chapter.98}% 28
+\BOOKMARK [1][]{section.131}{Custom Applications}{chapter.98}% 29
+\BOOKMARK [0][]{chapter.135}{Implementation}{}% 30
+\BOOKMARK [1][]{section.136}{Overview}{chapter.135}% 31
+\BOOKMARK [1][]{section.139}{Data Collection}{chapter.135}% 32
+\BOOKMARK [1][]{section.145}{Visualization}{chapter.135}% 33
+\BOOKMARK [1][]{section.152}{Usage}{chapter.135}% 34
+\BOOKMARK [0][]{chapter.156}{Future Work}{}% 35
+\BOOKMARK [1][]{section.157}{Visualizations}{chapter.156}% 36
+\BOOKMARK [1][]{section.164}{Real-Time Results}{chapter.156}% 37
+\BOOKMARK [1][]{section.166}{Interface}{chapter.156}% 38
+\BOOKMARK [1][]{section.168}{Automation}{chapter.156}% 39
+\BOOKMARK [0][]{chapter.171}{Conclusions}{}% 40
+\BOOKMARK [1][]{section.177}{Collection Code}{chapter.171}% 41
+\BOOKMARK [0][]{appendix*.256}{Bibliography}{}% 42

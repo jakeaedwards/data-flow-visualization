@@ -77,7 +77,7 @@
 %\usepackage{english}
 %\usepackage{babel}
 %\usepackage{supertabular}
-%\usepackage[round]{natbib}
+\usepackage[round]{natbib}
 \usepackage{afterpage}  % das problem mit den groﬂen tabellen
 \usepackage{url}
 \usepackage[sf,sl,outermarks]{titlesec}
@@ -481,7 +481,7 @@ $\spadesuit$
 \begin{titlepage}
 \begin{center}
  
-\includegraphics[height=0.13\textheight]{logo_dima.png}
+\includegraphics[height=0.13\textheight]{logo_dima.pdf}
 \hfill
 \includegraphics[height=0.15\textheight]{logo_it4bi.png}
 \hfill
@@ -715,9 +715,9 @@ Jacob \textsc{Edwards}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\addcontentsline{toc}{chapter}{Bibliography}
-\bibliographystyle{ieeetr}
+\bibliographystyle{plainnat}
 %IEEEtranSA
-\bstctlcite{IEEEexample:BSTcontrol} % load IEEE cite control entry
+%\bstctlcite{IEEEexample:BSTcontrol} % load IEEE cite control entry
 \bibliography{references}
 
 \cleardoublepage
