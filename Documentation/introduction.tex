@@ -10,20 +10,36 @@
 Standard statistics such as minimum, maximum, average, or median may help for simple numeric data. However, text data or (semi-) structured data call for different approaches. Aside from knowing what your raw data looks like at the input stage it is also crucial to understand intermediate data sets, i.e. how the different operations affect the data within the data flow.
 
 \paragraph{Directed Acyclic Graphs}
-It is typical for large scale analysis systems such as Flink \citep{Battre2010}, Pig \citep{Amsterdamer2011}, or IBMs System S \citep{Gedik2008} to represent analysis jobs as a series of individual tasks. These tasks are connected into a data flow which generally takes the form of an directed acyclic graph (DAG), which provides a useful visual metaphor for the ordering and dependencies of each task within a job. While this is adequate for describing the process by which data is analyzed, it leaves much to be desired in terms of describing the data itself. In particular, in cases where execution times are particularly long. Thus far, few systems making use of data flow graphs have invested significantly in the area of visual feedback within these graphs. System S provides basic feedback indicating the status of dataset processing without real feedback regarding data features \citep{Pauw2010}, and Lipstick has evolved from a method of providing provenance models for pig latin queries to providing rudimentary DAG visualization capabilities for Apache Pig in its current development state \citep{Amsterdamer2011}.
+It is typical for large scale analysis systems such as Flink \citep{Battre2010}, Pig \citep{Gates2009}, or IBMs System S \citep{Gedik2008} to represent analysis jobs as a series of individual tasks. These tasks are connected into a data flow which generally takes the form of an directed acyclic graph (DAG), which provides a useful visual metaphor for the ordering and dependencies of each task within a job. While this is adequate for describing the process by which data is analyzed, it leaves much to be desired in terms of describing the data itself. In particular, in cases where execution times are particularly long. Thus far, few systems making use of data flow graphs have invested significantly in the area of visual feedback within these graphs. System S provides basic feedback indicating the status of dataset processing without real feedback regarding data features \citep{Pauw2010}, and Lipstick \citep{Amsterdamer2011} has evolved from a method of providing provenance models for pig latin queries to providing rudimentary DAG visualization capabilities for Apache Pig \citep{Gates2009} in its current development state.
 
 \paragraph{Data Set Visualizations}
-The purpose of this work is to generate visualizations which provide feedback on the intermediate steps within these graphs. These visualizations are proposed in such a way as to be generic enough to suit many types of analysis without modification, and to demonstrate the effects of different operations on the data as well as interesting traits which are inherent to the input data sets in their raw state. Necessarily, to demonstrate this an examination of both common visualizations as well as common analysis tasks are presented, after which the applications of both together are demonstrated and discussed on some representative samples. Additionally, cases where such a solution is either inappropriate or ineffective without modification are presented.
+The purpose of this work is to research suitable visualization techniques for a wide array of common analysis tasks, survey the relevant literature, and create a prototypical method for the implementation of these visualizations in a data flow context. These visualizations are proposed in such a way as to be generic enough to suit many types of analysis without modification, and to demonstrate the effects of different operations on the data as well as interesting traits which are inherent to the input data sets in their raw state. Necessarily, to demonstrate this an examination of both common visualizations as well as common analysis tasks are presented, after which the applications of both together are demonstrated and discussed on some representative samples. Additionally, cases where such a solution is either inappropriate or ineffective without modification are presented.
 
+\paragraph{Scope of Work}
+Though this work aims to be comprehensive, there is of course a limit to the topics which have been addressed. In particular, focus has been placed squarely on the visualization of data sets as they are processed through a data flow; meaning that input, output, and intermediate data sets are discussed but the visualization of the data flow graphs themselves has been omitted. This is due to the relatively extensive work that has already been done to address this facet of data flow visualization. Additionally, as this work is intended to be prototypical there are some clearly beneficial features which have not been implemented thus far. Principle among these features is automation of the visualization process, which in its current form requires explicit action on the part of developers. Additionally, there are many enhancements which could be made to the presentation of visualizations and the robustness of their designs. These areas which have been left unaddressed are discussed in Chapter \ref{sec:futurework}.
 
 \section{Structure of this Thesis}
 
 \begin{description}
-\item[Chapter 2] contains a survey of related work
-\item[Chapter 3] provides an overview of data formats and visualizations
-\item[Chapter 4] examines common Map-Reduce patterns
-\item[Chapter 5] demonstrates applications of this work
-\item[Chapter 6] describes details of the implementation of this work
-\item[Chapter 7] explores potential future improvements
-\item[Chapter 8] summarizes the previous chapters and draws conclusions
+\item[Chapter 2 - Related Work] This chapter provides a survey of the related work. This includes research related to both visualization practices, as well as data analysis platforms. The design of visualizations and reasons for applying them to data sets rather than using statistical summaries is discussed. The data analysis software discussed is examined with focus being placed on pre-existing visualization capabilities and comparison between the systems to demonstrate that the core ideas presented in this work are not limited to a single analysis paradigm.
+\\
+
+\item[Chapter 3 - Visualizations] In this chapter each of the most commonly encountered data formats in data flows is examined. The structure of these data formats is discussed, and some of the most common transformations applied to such data sets are identified. From this, an appropriate set of visualizations which meet the needs of those analyses identified are given along with a discussion of how each visualization can be paired with the desired outcome of the analysis.
+\\
+
+\item[Chapter 4 - Data Flow Patterns] Several common design patterns in analysis programs are discussed in this chapter, providing analysis context during which several different types of transformations may be applied to data sets. As in the previous chapter, each of these design patterns is matched with a set of visualizations which would be appropriate for analyzing the outcome of such an operation.
+\\
+
+\item[Chapter 5 - Applications] Based on the connections between data formats, design patterns, and visualizations which have been discussed in the previous chapters this chapter demonstrates some scenarios in which developers could apply visualizations to their benefit. In each case the context of the data sets and analysis is discussed so that relevant patterns and data formats can be identified, and thus visualizations can be demonstrated in a way which is consistent with the conclusions drawn previously. 
+\\
+
+\item[Chapter 6 - Implementation] This chapter describes details of the implementation of this work. This includes models of both the classes implemented, and the visualization process in the context of an analysis job. Discussion is focused both on the implementation of the classes which perform the collection and visualization of data from within an analysis task, and the classes which represent each of the implemented visualizations. The implemented visualization classes are enumerated in this chapter. 
+\\
+
+\item[Chapter 7 - Future Work] In this chapter those features which have not been implemented due to limitations in scope are discussed. This includes a discussion of possible improvements to the visualization classes available, the possibility of providing visualizations in real-time as a data flow is executed, the addition of a web interface where visualizations could be accessed offline and perhaps in an interactive format, and most importantly the automation of the data visualization process.
+\\
+
+\item[Chapter 8 - Conclusions] The final chapter summarizes the discussion from the previous chapters and examines the conclusions which have been drawn throughout this work. 
+
+
 \end{description}
