@@ -1,6 +1,6 @@
 \chapter{Visualizations}
 \label{sec:visualizations}
-\INITIAL{T}{his section aims} to provide an examination of the methods used to visualize each of the most common types of data in this work. Rather than comprehensively examining all available visualizations, focus will be placed on those data types and structures which are expected to be regularly encountered. These are the data types which are not only most regularly encountered in general, but are particularly applicable to the types of computation scenarios well-suited to analyses in a map-reduce context. 
+\INITIAL{T}{his section aims} to provide an examination of the methods used to visualize each of the most common types of data in this work. Rather than comprehensively examining all available visualizations, focus will be placed on those data types and structures which are expected to be regularly encountered. These are the data types which are not only most regularly encountered in general, but are particularly applicable to the types of computation scenarios well-suited to analyses in a data flow context. 
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -34,7 +34,7 @@ Another option for comparing categories is the pie chart. A pie chart is a circl
 %%%%%%%%%%%%%%%%%%
 
 \paragraph{Pie Replacement}
-For use in visualizing in-situ data processing in particular, we of course cannot reliably predict the proportion or in some cases number of categories in the data set. As such, it is better to assume the worst case and use a visualization which is more consistantly appropriate. Applying a percentage scale to the y-axis of a bar chart will adequately replace the visual part of whole metaphor provided by the pie chart. Aside from this, their tasks are never strongly divergent, so no other modification is necessary. Figure \ref{fig:winebar} visualizes the same data as seen in Figure \ref{fig:winepie}, using a bar chart rather than a pie. In the bar chart, the percentages are very clear and the comparison is much less ambiguous.
+For use in visualizing intermediate data sets during in-situ data processing in particular, we of course cannot reliably predict the proportion or in some cases number of categories in the data set. As such, it is better to assume the worst case and use a visualization which is more consistantly appropriate. Applying a percentage scale to the y-axis of a bar chart will adequately replace the visual part of whole metaphor provided by the pie chart. Aside from this, their tasks are never strongly divergent, so no other modification is necessary. Figure \ref{fig:winebar} visualizes the same data as seen in Figure \ref{fig:winepie}, using a bar chart rather than a pie. In the bar chart, the percentages are very clear and the comparison is much less ambiguous.
 
 \paragraph{Correlation}
 One of the visual analysis tasks which is best suited to human analysis is the assessment of correlation between variables. In a scenario where a data set exists with two variables, we can place each variable along an axis and mark each record as a coordinate point. Such a chart is known as a scatter plot, and suggests correlation (or lack thereof) based on the pattern of points drawn on the plot. In cases where the drawn points slope from the bottom left to the top right of the chart area, we can infer that there is a positive correlation between the two variables. Likewise, a slope from top left to bottom right implies a negative correlation. A line of best fit can be drawn on top of the scatter plot in cases where the slope is not immediately clear, or simply for clarification. 
@@ -103,13 +103,13 @@ A somewhat more precise visualization of text data is the word tree\citep{Watten
 \paragraph{Graphs in DAG Systems}
 
 \paragraph{KONECT}
-The KONECT project \citep{Kunegis2013} at the University of Koblenz-Landau has collected a large set of network datasets and provided tools for their analysis. Their collection demonstrates that a very large number of heterogeneous data sets can be modeled as networks, and further that a generic set of analyses can be applied to these data sets if they are represented in a unified way. Though there is a taxonomy of networks based on their respective features (directed/undirected, weighted/unweighted, etc.) the vast majority of analyses are similar if not identical, and differences typically only affect the way in which analysis is performed rather than the analysis result format. Likewise, each of these analyses can be visualized in a straightforward manner.
+The KONECT project \citep{Kunegis2013} at the University of Koblenz-Landau has collected a large set of graph datasets and provided tools for their analysis. Their collection demonstrates that a very large number of heterogeneous data sets can be modeled as graphs, and further that a generic set of analyses can be applied to these data sets if they are represented in a unified way. Though there is a taxonomy of graphs based on their respective features (directed/undirected, weighted/unweighted, etc.) the vast majority of analyses are similar if not identical, and differences typically only affect the way in which analysis is performed rather than the analysis result format. Likewise, each of these analyses can be visualized in a straightforward manner.
 
 \paragraph{Distributions}
-As networks are at their core build of distinct parts, many of the relevant analyses focus on the distribution of features among the nodes or edges therein. Generally, these analyses consist of generating distributions of features across nodes or edges, and thus each can be visualized similarly. Within weighted graphs, the distribution of weights across edges in the graph provides a good representation of any skew or trends in the weighting. An example of this can be seen in Figure \ref{fig:edgeweight}. In cases where the graph is being generated during the execution of some task rather than being provided as input, such distributions can be visualized as a temporal distribution, representing a rate of change in the overall number of edges or nodes at specific points in time, such as can be seen in Figure \ref{fig:temporaldist}. Of course, these distribution analyses can be focused on other objects within the network, for example degree distributions rather than edge weight distributions. Each type of distribution will reveal some insight into either the nodes or edges of the graph. 
+As graphs are at their core built of distinct parts, many of the relevant analyses focus on similar structural tasks. Generally, these analyses consist of generating distributions of features across nodes or edges, and thus each can be visualized similarly. Within weighted graphs, the distribution of weights across edges in the graph provides a good representation of any skew or trends in the weighting. An example of this can be seen in Figure \ref{fig:edgeweight}. In cases where the graph is being generated during the execution of some task rather than being provided as input, such distributions can be visualized as a temporal distribution, representing a rate of change in the overall number of edges or nodes at specific points in time, such as can be seen in Figure \ref{fig:temporaldist}. Of course, these distribution analyses can be focused on other objects within the network, for example degree distributions rather than edge weight distributions. Each type of distribution will reveal some insight into either the nodes or edges of the graph. 
 
 \paragraph{Cumulative Degree Distribution}
-While distributions focus on simple aspects of a network's structure, more complex details can be extracted from the same basic data. For example, a cumulative degree distribution can be extracted to identify the probability that a randomly selected node will have a degree larger than some integer \emph{n}, as a function of \emph{n}. Such a distribution can be seen in Figure \ref{fig:cumdist}. This figure demonstrates that even as we move to more complex forms of analysis, the structure of the output data is still well suited to our basic forms of visualization. 
+While distributions focus on simple aspects of a graph's structure, more complex details can be extracted from the same basic data. For example, a cumulative degree distribution can be extracted to identify the probability that a randomly selected node will have a degree larger than some integer \emph{n}, as a function of \emph{n}. Such a distribution can be seen in Figure \ref{fig:cumdist}. This figure demonstrates that even as we move to more complex forms of analysis, the structure of the output data is still well suited to our basic forms of visualization. 
 
 %%%%%%%%%%%%%%%%%%
 \begin{figure}
@@ -146,7 +146,7 @@ As graphs are of course a form of structural data, visualizing the structure its
 
 \section{Hierachical Data}
 \label{sec:hierarchical}
-\INITIAL{W}{hen data is loaded into an analysis system} it is often useful to utilize a hierarchical format in order to avoid performing joins. Of course, a hierarchy can also be modeled as a network data set as it will necessarily be a tree of sorts. However, because the common standards in hierarchical data (JSON, XML, etc.) are so specific and frequently occurring it makes sense that they should be considered in a separate category.
+\INITIAL{W}{hen data is loaded into an analysis system} it is often useful to utilize a hierarchical format in order to avoid performing joins. Of course, a hierarchy can also be modeled as a graph data set as it will necessarily be a tree of sorts. However, because the common standards in hierarchical data (JSON, XML, etc.) are so specific and frequently occurring it makes sense that they should be considered in a separate category.
 
 \paragraph{Hierarchy Features}
 The primary difference between a hierarchical data set and a simple tree will almost always be the quantity of meta data contained in elements of a hierarchy. Typically in netwrok analysis, the features of a data set with which we are most interested are exclusively structural; in/out degrees, connectivity, edge weights, etc. With hierarchical data, we are frequently just as concerned with attributes of hierarchy elements as we are with the structure of the hierarchy itself. A good example of this would be a hierarchical file system in which we want to both examine the folder structure as well as features of individual sub-hierarchies such as total disk space, filepaths, and file types therein. 
@@ -183,7 +183,7 @@ Many alternatives to tree maps for the visualization of hierarchies have been pr
 \caption{Data formats and applicable visualizations}
 \label{tbl:formats}
 \begin{tabular}{cccccc}
-\multicolumn{1}{l|}{}                & Numerical     & Text      & Network        & Hierarchical   \\ \hline
+\multicolumn{1}{l|}{}                & Numerical     & Text      & Graph        & Hierarchical   \\ \hline
 \multicolumn{1}{l|}{Bar Chart}       & \checkmark    &           &                &                \\
 \multicolumn{1}{l|}{Pie Chart}       & \checkmark    &           &                &                \\
 \multicolumn{1}{l|}{Line Chart}      & \checkmark    &           &                &                \\
@@ -191,7 +191,7 @@ Many alternatives to tree maps for the visualization of hierarchies have been pr
 \multicolumn{1}{l|}{Word Cloud}      &               & \checkmark&                &                \\
 \multicolumn{1}{l|}{Word Tree}       &               & \checkmark&                &                \\
 \multicolumn{1}{l|}{Phrase Net}      &               & \checkmark&                &                \\
-\multicolumn{1}{l|}{Network Diagram} &               &           & \checkmark     &                \\
+\multicolumn{1}{l|}{Graph Diagram} &               &           & \checkmark     &                \\
 \multicolumn{1}{l|}{Tree Map}        &               &           &                & \checkmark     \\
 \multicolumn{1}{l|}{Text Output}       & \checkmark    & \checkmark&                &   
 \end{tabular}

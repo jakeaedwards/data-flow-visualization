@@ -1,4 +1,4 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{49}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -40,10 +40,21 @@ F~J Anscombe.
 \newblock URL
   \url{https://flink.apache.org/news/2014/01/26/optimizer\_plan\_visualization\_tool.html}.
 
-\bibitem[{Apache Software Foundation}(2015)]{ApacheSoftwareFoundation2015}
+\bibitem[{Apache Software
+  Foundation}(2015{\natexlab{a}})]{ApacheSoftwareFoundation2015}
 {Apache Software Foundation}.
-\newblock {Welcome to Apache Hadoop}, 2015.
+\newblock {Welcome to Apache Hadoop}, 2015{\natexlab{a}}.
 \newblock URL \url{http://hadoop.apache.org/}.
+
+\bibitem[{Apache Software Foundation}(2015{\natexlab{b}})]{Flink2015}
+{Apache Software Foundation}.
+\newblock {Apache Flink}, 2015{\natexlab{b}}.
+\newblock URL \url{http://flink.apache.org/}.
+
+\bibitem[{Apache Software Foundation}(2015{\natexlab{c}})]{Spark2015}
+{Apache Software Foundation}.
+\newblock {Apache Spark}, 2015{\natexlab{c}}.
+\newblock URL \url{https://spark.apache.org/}.
 
 \bibitem[Battr\'{e} et~al.(2010)Battr\'{e}, Ewen, Hueske, and Kao]{Battre2010}
 Dominic Battr\'{e}, Stephan Ewen, Fabian Hueske, and Odej Kao.
@@ -64,6 +75,11 @@ Benjamin~B. Bederson, Ben Shneiderman, and Martin Wattenberg.
 \newblock ISSN 07300301.
 \newblock \doi{10.1145/571647.571649}.
 
+\bibitem[Bernier(2015)]{Bernier2015}
+Dan Bernier.
+\newblock {WordCram}, 2015.
+\newblock URL \url{http://wordcram.org/}.
+
 \bibitem[Blake and Merz(1998)]{Blake1998}
 C~Blake and C~Merz.
 \newblock {UCI Repository of machine learning databases}, 1998.
@@ -72,6 +88,16 @@ C~Blake and C~Merz.
 Ulrik Brandes and J{\"u}rgen Lerner.
 \newblock Structural similarity: Spectral methods for relaxed blockmodeling.
 \newblock \emph{J. Classification}, 27\penalty0 (3):\penalty0 279--306, 2010.
+
+\bibitem[{City University London}(2010)]{CityUniversityLondon2010}
+{City University London}.
+\newblock {TreeMappa}, 2010.
+\newblock URL \url{http://www.treemappa.com/}.
+
+\bibitem[{City University London}(2013)]{CityUniversityLondon2013}
+{City University London}.
+\newblock {giCentre Utilities}, 2013.
+\newblock URL \url{http://www.gicentre.net/software/\#/utils/}.
 
 \bibitem[Deleuze et~al.(1987)Deleuze, Guattari, and Guattari]{Deleuze1987}
 Gilles Deleuze, PF~Guattari, and Felix Guattari.
@@ -117,6 +143,17 @@ Ben Fry.
 \newblock ISBN 978-0-596-51455-6.
 \newblock URL \url{http://dl.acm.org/citation.cfm?id=529269}.
 
+\bibitem[Fry and Reas(2015)]{Fry2015}
+Ben Fry and Casey Reas.
+\newblock {Processing}, 2015.
+\newblock URL \url{https://www.processing.org/}.
+
+\bibitem[Gamma et~al.(1995)Gamma, Helm, Johnson, and Vlissides]{Gamma1995}
+Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides.
+\newblock \emph{{Design Patterns}}.
+\newblock Addison Wesley, Menlo Park, California, 2nd edition, 1995.
+\newblock ISBN 0-201-63361-2.
+
 \bibitem[Gates et~al.(2009)Gates, Natkovich, Chopra, Kamath, Narayanamurthy,
   Olston, Benjaminn, Srinavasan, and Srivastava]{Gates2009}
 Alan~F Gates, Olga Natkovich, Shubham Chopra, Pradeep Kamath, Shravan~M
@@ -157,6 +194,11 @@ Mohammad Islam, Angelo~K. Huang, Mohamed Battisha, Michelle Chiang, Santhosh
   Workflow Execution Engines and Technologies - SWEET '12}, pages 1--10. ACM
   Press, 2012.
 \newblock URL \url{http://dx.doi.org/10.1145/2443416.2443420}.
+
+\bibitem[Kamermans(2011)]{Kamermans2011}
+Mike Kamermans.
+\newblock {Some simple, extensible Processing graph/tree drawing code}, 2011.
+\newblock URL \url{http://www.openprocessing.org/sketch/28055}.
 
 \bibitem[Klasky et~al.(2011)Klasky, Abbasi, Logan, Parashar, Schwan, Shoshani,
   Wolf, Sean, Altintas, Bethel, Luis, Chang, Chen, Childs, Cummings, Docan,
