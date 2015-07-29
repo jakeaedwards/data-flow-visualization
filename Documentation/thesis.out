@@ -1,42 +1,42 @@
 \BOOKMARK [0][]{abstract.0}{Abstract}{}% 1
 \BOOKMARK [0][]{conform.0}{Acknowledgements}{}% 2
 \BOOKMARK [0][]{tableofcontents.0}{Table of Contents}{}% 3
-\BOOKMARK [0][]{chapter*.4}{List of Figures}{}% 4
-\BOOKMARK [0][]{chapter.5}{Introduction}{}% 5
-\BOOKMARK [1][]{section.6}{Motivation}{chapter.5}% 6
-\BOOKMARK [1][]{section.11}{Structure of this Thesis}{chapter.5}% 7
-\BOOKMARK [0][]{chapter.12}{Related Work}{}% 8
-\BOOKMARK [1][]{section.13}{Visualization of Data}{chapter.12}% 9
-\BOOKMARK [1][]{section.23}{In-Situ Processing}{chapter.12}% 10
-\BOOKMARK [1][]{section.30}{Visualization of Data Flow Graphs}{chapter.12}% 11
-\BOOKMARK [0][]{chapter.37}{Visualizations}{}% 12
-\BOOKMARK [1][]{section.38}{Numerical Data}{chapter.37}% 13
-\BOOKMARK [1][]{section.48}{Text Data}{chapter.37}% 14
-\BOOKMARK [1][]{section.55}{Graph Data}{chapter.37}% 15
-\BOOKMARK [1][]{section.64}{Hierachical Data}{chapter.37}% 16
-\BOOKMARK [1][]{section.69}{Summary}{chapter.37}% 17
-\BOOKMARK [0][]{chapter.71}{Data Flow Patterns}{}% 18
-\BOOKMARK [1][]{section.72}{Summarization Patterns}{chapter.71}% 19
-\BOOKMARK [1][]{section.76}{Filtering Patterns}{chapter.71}% 20
-\BOOKMARK [1][]{section.82}{Data Organization Patterns}{chapter.71}% 21
-\BOOKMARK [1][]{section.88}{Join Patterns}{chapter.71}% 22
-\BOOKMARK [1][]{section.94}{Meta Patterns}{chapter.71}% 23
-\BOOKMARK [1][]{section.98}{Summary}{chapter.71}% 24
-\BOOKMARK [0][]{chapter.102}{Applications}{}% 25
-\BOOKMARK [1][]{section.103}{Census Data Analysis}{chapter.102}% 26
-\BOOKMARK [1][]{section.119}{Network Analysis}{chapter.102}% 27
-\BOOKMARK [1][]{section.129}{Classification}{chapter.102}% 28
-\BOOKMARK [1][]{section.135}{Custom Applications}{chapter.102}% 29
-\BOOKMARK [0][]{chapter.139}{Implementation}{}% 30
-\BOOKMARK [1][]{section.140}{Overview}{chapter.139}% 31
-\BOOKMARK [1][]{section.143}{Data Collection}{chapter.139}% 32
-\BOOKMARK [1][]{section.149}{Visualization}{chapter.139}% 33
-\BOOKMARK [1][]{section.163}{Usage}{chapter.139}% 34
-\BOOKMARK [0][]{chapter.167}{Future Work}{}% 35
-\BOOKMARK [1][]{section.168}{Visualizations}{chapter.167}% 36
-\BOOKMARK [1][]{section.175}{Real-Time Results}{chapter.167}% 37
-\BOOKMARK [1][]{section.177}{Interface}{chapter.167}% 38
-\BOOKMARK [1][]{section.179}{Automation}{chapter.167}% 39
-\BOOKMARK [0][]{chapter.182}{Conclusions}{}% 40
-\BOOKMARK [1][]{section.188}{Collection Code}{chapter.182}% 41
-\BOOKMARK [0][]{appendix*.267}{Bibliography}{}% 42
+\BOOKMARK [0][]{chapter*.6}{List of Figures}{}% 4
+\BOOKMARK [0][]{chapter.7}{Introduction}{}% 5
+\BOOKMARK [1][]{section.8}{Motivation}{chapter.7}% 6
+\BOOKMARK [1][]{section.13}{Structure of this Thesis}{chapter.7}% 7
+\BOOKMARK [0][]{chapter.14}{Related Work}{}% 8
+\BOOKMARK [1][]{section.15}{Visualization of Data}{chapter.14}% 9
+\BOOKMARK [1][]{section.25}{In-Situ Processing}{chapter.14}% 10
+\BOOKMARK [1][]{section.32}{Visualization of Data Flow Graphs}{chapter.14}% 11
+\BOOKMARK [0][]{chapter.39}{Visualizations}{}% 12
+\BOOKMARK [1][]{section.40}{Numerical Data}{chapter.39}% 13
+\BOOKMARK [1][]{section.50}{Text Data}{chapter.39}% 14
+\BOOKMARK [1][]{section.57}{Graph Data}{chapter.39}% 15
+\BOOKMARK [1][]{section.66}{Hierachical Data}{chapter.39}% 16
+\BOOKMARK [1][]{section.71}{Summary}{chapter.39}% 17
+\BOOKMARK [0][]{chapter.73}{Data Flow Patterns}{}% 18
+\BOOKMARK [1][]{section.74}{Summarization Patterns}{chapter.73}% 19
+\BOOKMARK [1][]{section.78}{Filtering Patterns}{chapter.73}% 20
+\BOOKMARK [1][]{section.84}{Data Organization Patterns}{chapter.73}% 21
+\BOOKMARK [1][]{section.90}{Join Patterns}{chapter.73}% 22
+\BOOKMARK [1][]{section.96}{Meta Patterns}{chapter.73}% 23
+\BOOKMARK [1][]{section.100}{Summary}{chapter.73}% 24
+\BOOKMARK [0][]{chapter.104}{Applications}{}% 25
+\BOOKMARK [1][]{section.105}{Census Data Analysis}{chapter.104}% 26
+\BOOKMARK [1][]{section.121}{Network Analysis}{chapter.104}% 27
+\BOOKMARK [1][]{section.131}{Classification}{chapter.104}% 28
+\BOOKMARK [1][]{section.137}{Custom Applications}{chapter.104}% 29
+\BOOKMARK [0][]{chapter.141}{Implementation}{}% 30
+\BOOKMARK [1][]{section.142}{Overview}{chapter.141}% 31
+\BOOKMARK [1][]{section.145}{Data Collection}{chapter.141}% 32
+\BOOKMARK [1][]{section.151}{Visualization}{chapter.141}% 33
+\BOOKMARK [1][]{section.165}{Usage}{chapter.141}% 34
+\BOOKMARK [0][]{chapter.169}{Future Work}{}% 35
+\BOOKMARK [1][]{section.170}{Visualizations}{chapter.169}% 36
+\BOOKMARK [1][]{section.177}{Real-Time Results}{chapter.169}% 37
+\BOOKMARK [1][]{section.179}{Interface}{chapter.169}% 38
+\BOOKMARK [1][]{section.181}{Automation}{chapter.169}% 39
+\BOOKMARK [0][]{chapter.184}{Conclusions}{}% 40
+\BOOKMARK [1][]{section.190}{Collection Code}{chapter.184}% 41
+\BOOKMARK [0][]{appendix*.269}{Bibliography}{}% 42

@@ -1,23 +1,26 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
-The style file: plainnat.bst
+The style file: IEEEtranSA.bst
+I couldn't open database file IEEEconf.bib
+---line 376 of file thesis.aux
+ : \bibdata{references,IEEEconf
+ :                             }
+I'm skipping whatever remains of this command
 Database file #1: references.bib
 Repeated entry---line 251 of file references.bib
  : @inproceedings{Olston2008a
  :                           ,
 I'm skipping whatever remains of this entry
-Warning--to sort, need author or key in Amende2010
-Warning--to sort, need author or key in konect:2014:wikiconflict
-Warning--empty year in Amende2010
-Warning--can't use both volume and number fields in Deleuze1987
-Warning--empty publisher in Few2006
-Warning--empty publisher in Fry2008
-Warning--there's a number but no volume in Gedik2008
-Warning--empty year in KONECT
-Warning--can't use both author and editor fields in Miner2012
+Warning--I didn't find a database entry for "IEEEexample:BSTcontrol"
+-- IEEEtranSA.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+** Sorting Alpha version - not for normal IEEE work.
+Warning--to sort, need author, organization, or key in Amende2010
+Warning--to sort, need author, organization, or key in konect:2014:wikiconflict
+Warning--missing publisher in Few2006
+Warning--missing publisher in Fry2008
+Warning--edition ordinal word "First Edit" may be too high (or improper) for conversion in Miner2012
 Warning--empty journal in Richthofer2013
-Warning--there's a number but no volume in Richthofer2013
-Warning--can't use both volume and number fields in Slingsby2009
-Warning--can't use both volume and number fields in VanHam2009
-Warning--can't use both volume and number fields in Wattenberg2008
-Warning--can't use both volume and number fields in Wood2008
-(There was 1 error message)
+
+Done.
+(There were 2 error messages)

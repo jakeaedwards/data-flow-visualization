@@ -13,13 +13,13 @@
 Comparing data across several categories is a task which applies to many different forms of analysis. This is best accomplished through the use of a bar chart. Bar charts display discrete groupings of typically qualitative data such as months, product categories, or ages. Rectangular bars are rendered on the horizontal axis, with the bars' heights reflecting the value assigned to their respective categories. The ordering of the bars is often arbitrary, but in cases where the bars are ordered from highest to lowest incidence the resulting chart is known as a Pareto chart. This can help to reveal trends which exist on top of being used for comparison between two individual categories. In cases where the category values are non-discrete, they can be grouped into discrete bins based on semantically sensible ranges. In this case, the resulting chart is referred to as a histogram.  
 
 \paragraph{Pie Chart}
-Another option for comparing categories is the pie chart. A pie chart is a circle which is divided into wedges representing each category, where the arc length of a wedge reflects the category's assigned value. While these charts are visually appealing, and provide an obvious visual metaphor for parts of a whole, they are generally inferior to a simple bar chart. There are several scenarios in which a pie chart becomes very difficult to read accurately. Primarily, when there are many categories, or when the categories presented are of a very similar size. In such cases, it becomes very difficult to make judgments based on the angles of the various wedges \citep{Robbins2005}. An example of this is shown in Figure \ref{fig:winepie}, in which comparing the blue wedges accurately is quite difficult visually. While it is clear that they are all roughly similar, it is particularly difficult to be certain whether Pinot Grigio and Prosecco have equal quantities, or if one is greater. This could be corrected by adding numerical labels, but the necessity for written numbers implies that a chart may not be better suited to the task than a well formatted simple table. 
+Another option for comparing categories is the pie chart. A pie chart is a circle which is divided into wedges representing each category, where the arc length of a wedge reflects the category's assigned value. While these charts are visually appealing, and provide an obvious visual metaphor for parts of a whole, they are generally inferior to a simple bar chart. There are several scenarios in which a pie chart becomes very difficult to read accurately. Primarily, when there are many categories, or when the categories presented are of a very similar size. In such cases, it becomes very difficult to make judgments based on the angles of the various wedges \cite{Robbins2005}. An example of this is shown in Figure \ref{fig:winepie}, in which comparing the blue wedges accurately is quite difficult visually. While it is clear that they are all roughly similar, it is particularly difficult to be certain whether Pinot Grigio and Prosecco have equal quantities, or if one is greater. This could be corrected by adding numerical labels, but the necessity for written numbers implies that a chart may not be better suited to the task than a well formatted simple table. 
 
 %%%%%%%%%%%%%%%%%%
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.7]{pie_wine.png}
-	\caption{A pie chart showing proportions of wine varieties \citep{Few2007}}
+	\caption{A pie chart showing proportions of wine varieties \cite{Few2007}}
 	\label{fig:winepie}
 \end{figure}
 %%%%%%%%%%%%%%%%%%
@@ -28,7 +28,7 @@ Another option for comparing categories is the pie chart. A pie chart is a circl
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.7]{bar_wine.png}
-	\caption{A bar chart showing proportions of wine varieties \citep{Few2007}}
+	\caption{A bar chart showing proportions of wine varieties \cite{Few2007}}
 	\label{fig:winebar}
 \end{figure}
 %%%%%%%%%%%%%%%%%%
@@ -56,37 +56,37 @@ There are some cases where a visualization more complex than a simple table is u
 \INITIAL{O}{often text data is paired} with some form of numerical summary, and in many cases there is no need for a specific type of visualization for this scenario. This could be true for a data set with products and sales numbers for example, where the product names could easily be switched with an integer key and no analysis value would be lost. However, when there is semantic value which can be extracted from the text we can apply more specific techniques. Particularly, this is true if if we can present the text data itself in such a way that a viewer can assess the basic features of the data more quickly by reading the text than by using a numerical approach.
 
 \paragraph{Word Clouds}
-The most commonly encountered form of text visualization is a word cloud. Word clouds are a specific form of weighted list which were largely propagated through early blogs and websites as a common feature for exploring tags on posts. There are some examples of these visualizations appearing earlier in printed form \citep{Deleuze1987}, but these are generally not for practical analysis purposes. Word clouds can be used to either summarize the frequency with which items occur, or as a categorization method. In a frequency analysis, words within the cloud have their sizes or colours scaled to reflect their associated frequency. Categorization is applied mainly for navigational purposes, with word sizes scaling to the number of subcategories they encompass. Word clouds are often considered sub-optimal for many use cases because they remove context from the analysis and leave too much extraneous information. They still however prove quite practical for identifying flaws or unexpected features of data sets, if not for analysis. 
+The most commonly encountered form of text visualization is a word cloud. Word clouds are a specific form of weighted list which were largely propagated through early blogs and websites as a common feature for exploring tags on posts. There are some examples of these visualizations appearing earlier in printed form \cite{Deleuze1987}, but these are generally not for practical analysis purposes. Word clouds can be used to either summarize the frequency with which items occur, or as a categorization method. In a frequency analysis, words within the cloud have their sizes or colours scaled to reflect their associated frequency. Categorization is applied mainly for navigational purposes, with word sizes scaling to the number of subcategories they encompass. Word clouds are often considered sub-optimal for many use cases because they remove context from the analysis and leave too much extraneous information. They still however prove quite practical for identifying flaws or unexpected features of data sets, if not for analysis. 
 
 %%%%%%%%%%%%%%%%%%
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.7]{tausend_plateaus_tagcloud.jpg}
-	\caption{A word cloud as presented in "Tausend Plateaus: Kapitalismus und Schizophrenie" \citep{Deleuze1987}}
+	\caption{A word cloud as presented in "Tausend Plateaus: Kapitalismus und Schizophrenie" \cite{Deleuze1987}}
 	\label{fig:wordcloud}
 \end{figure}
 %%%%%%%%%%%%%%%%%%
 
 \paragraph{Phrase Nets}
-Phrase nets \citep{VanHam2009} represent data to some extent in the same fashion as a word cloud, with the size and colour of a word representing it's frequency in the text overall. The added benefit of a phrase net is that it also shows the relationship between words, providing greater context in later stage analyses. Rather than words floating on their own, they are connected by arrows in a directed graph. The arrows are formed based on a predefined relationship between the two and weighted in the same fashion as the words themselves, based on the frequency with which the relationship occurs. Figure \ref{fig:phrasenet} shows a phrase net built using the old testament, which connects two words X and Y based on occurences of the phrase "X of Y" in the text. The obvious complication introduced in this approach is the requirement for a pre-defined relationship. Some simple relationships can be assumed to exist in most text data sets, but similar to a list of stop words it is likely that these relationships will become less useful the more commonly occurring they are. In such a case, we need to obtain a more useful relationship either through user input or some kind of natural language processing techniques. Neither case is particularly well suited for in-situ analyses, requiring significant knowledge of the data at hand or potentially complex meta-analysis respectively. 
+Phrase nets \cite{VanHam2009} represent data to some extent in the same fashion as a word cloud, with the size and colour of a word representing it's frequency in the text overall. The added benefit of a phrase net is that it also shows the relationship between words, providing greater context in later stage analyses. Rather than words floating on their own, they are connected by arrows in a directed graph. The arrows are formed based on a predefined relationship between the two and weighted in the same fashion as the words themselves, based on the frequency with which the relationship occurs. Figure \ref{fig:phrasenet} shows a phrase net built using the old testament, which connects two words X and Y based on occurences of the phrase "X of Y" in the text. The obvious complication introduced in this approach is the requirement for a pre-defined relationship. Some simple relationships can be assumed to exist in most text data sets, but similar to a list of stop words it is likely that these relationships will become less useful the more commonly occurring they are. In such a case, we need to obtain a more useful relationship either through user input or some kind of natural language processing techniques. Neither case is particularly well suited for in-situ analyses, requiring significant knowledge of the data at hand or potentially complex meta-analysis respectively. 
 
 %%%%%%%%%%%%%%%%%%
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.7]{phrase_net.png}
-	\caption{A phrase net visualizing "X of Y" in the old testament \citep{VanHam2009}}
+	\caption{A phrase net visualizing "X of Y" in the old testament \cite{VanHam2009}}
 	\label{fig:phrasenet}
 \end{figure}
 %%%%%%%%%%%%%%%%%%
 
 \paragraph{Word Trees}
-A somewhat more precise visualization of text data is the word tree\citep{Wattenberg2008}. Given a specific pre-selected word, a word tree visualizes the connections that this root word has to other words in different sentences or phrases. As seen in Figure \ref{fig:wordtree}, a branch is drawn from the root word to each word which immediately follows it in the original data. Likewise, from each of these words the possible children are shown given the prior two words in a phrase. Each word in this tree is drawn at a larger size based on the number of times it follows the previous word. This provides much more context for analyzing an individual word very quickly, particularly in cases such as sentiment analysis where the tone of branching phrases and their weights can quickly identify positive or negative emotion in the data set. A word tree also offers the possibility of interaction, as a user can click any of the child nodes and generate a new tree based on this word. The specificity of this visualization also introduces technical challenges and practical issues for in-situ analysis; in particular the initial input from a user and interactivity (in cases where this is implemented). The initial input from a user implies that some knowledge of the data set's details are known beforehand to the extent that specific phrases or words are of interest and have been identified, which is likely not the case. More importantly, the method through which these trees are dynamically drawn based on the selection of any node requires re-drawing of the tree and the generation of a new set of sub-trees. This begins to shift the implementation problem from visualization and exploration towards NLP and analysis, and depending on the size of the data set in question introduces a not insignificant overhead in terms of processing. 
+A somewhat more precise visualization of text data is the word tree\cite{Wattenberg2008}. Given a specific pre-selected word, a word tree visualizes the connections that this root word has to other words in different sentences or phrases. As seen in Figure \ref{fig:wordtree}, a branch is drawn from the root word to each word which immediately follows it in the original data. Likewise, from each of these words the possible children are shown given the prior two words in a phrase. Each word in this tree is drawn at a larger size based on the number of times it follows the previous word. This provides much more context for analyzing an individual word very quickly, particularly in cases such as sentiment analysis where the tone of branching phrases and their weights can quickly identify positive or negative emotion in the data set. A word tree also offers the possibility of interaction, as a user can click any of the child nodes and generate a new tree based on this word. The specificity of this visualization also introduces technical challenges and practical issues for in-situ analysis; in particular the initial input from a user and interactivity (in cases where this is implemented). The initial input from a user implies that some knowledge of the data set's details are known beforehand to the extent that specific phrases or words are of interest and have been identified, which is likely not the case. More importantly, the method through which these trees are dynamically drawn based on the selection of any node requires re-drawing of the tree and the generation of a new set of sub-trees. This begins to shift the implementation problem from visualization and exploration towards NLP and analysis, and depending on the size of the data set in question introduces a not insignificant overhead in terms of processing. 
 
 %%%%%%%%%%%%%%%%%%
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.7]{word_tree.png}
-	\caption{A word tree visualizing occurrences of "love the" in the King James Bible \citep{Wattenberg2008}}
+	\caption{A word tree visualizing occurrences of "love the" in the King James Bible \cite{Wattenberg2008}}
 	\label{fig:wordtree}
 \end{figure}
 %%%%%%%%%%%%%%%%%%
@@ -103,7 +103,7 @@ A somewhat more precise visualization of text data is the word tree\citep{Watten
 \paragraph{Graphs in DAG Systems}
 
 \paragraph{KONECT}
-The KONECT project \citep{Kunegis2013} at the University of Koblenz-Landau has collected a large set of graph datasets and provided tools for their analysis. Their collection demonstrates that a very large number of heterogeneous data sets can be modeled as graphs, and further that a generic set of analyses can be applied to these data sets if they are represented in a unified way. Though there is a taxonomy of graphs based on their respective features (directed/undirected, weighted/unweighted, etc.) the vast majority of analyses are similar if not identical, and differences typically only affect the way in which analysis is performed rather than the analysis result format. Likewise, each of these analyses can be visualized in a straightforward manner.
+The KONECT project \cite{Kunegis2013} at the University of Koblenz-Landau has collected a large set of graph datasets and provided tools for their analysis. Their collection demonstrates that a very large number of heterogeneous data sets can be modeled as graphs, and further that a generic set of analyses can be applied to these data sets if they are represented in a unified way. Though there is a taxonomy of graphs based on their respective features (directed/undirected, weighted/unweighted, etc.) the vast majority of analyses are similar if not identical, and differences typically only affect the way in which analysis is performed rather than the analysis result format. Likewise, each of these analyses can be visualized in a straightforward manner.
 
 \paragraph{Distributions}
 As graphs are at their core built of distinct parts, many of the relevant analyses focus on similar structural tasks. Generally, these analyses consist of generating distributions of features across nodes or edges, and thus each can be visualized similarly. Within weighted graphs, the distribution of weights across edges in the graph provides a good representation of any skew or trends in the weighting. An example of this can be seen in Figure \ref{fig:edgeweight}. In cases where the graph is being generated during the execution of some task rather than being provided as input, such distributions can be visualized as a temporal distribution, representing a rate of change in the overall number of edges or nodes at specific points in time, such as can be seen in Figure \ref{fig:temporaldist}. Of course, these distribution analyses can be focused on other objects within the network, for example degree distributions rather than edge weight distributions. Each type of distribution will reveal some insight into either the nodes or edges of the graph. 
@@ -115,7 +115,7 @@ While distributions focus on simple aspects of a graph's structure, more complex
 \begin{figure}
 	\centering
 	\includegraphics[scale=1.0]{edgeweight_example.png}
-	\caption{A visualization of edge weight distribution \citep{KONECT}}
+	\caption{A visualization of edge weight distribution \cite{KONECT}}
 	\label{fig:edgeweight}
 \end{figure}
 %%%%%%%%%%%%%%%%%%
@@ -124,7 +124,7 @@ While distributions focus on simple aspects of a graph's structure, more complex
 \begin{figure}
 	\centering
 	\includegraphics[scale=1.0]{temporaldist_example.png}
-	\caption{A temporal visualization of edge growth \citep{KONECT}}
+	\caption{A temporal visualization of edge growth \cite{KONECT}}
 	\label{fig:temporaldist}
 \end{figure}
 %%%%%%%%%%%%%%%%%%
@@ -133,13 +133,13 @@ While distributions focus on simple aspects of a graph's structure, more complex
 \begin{figure}
 	\centering
 	\includegraphics[scale=1.0]{cumdist_example.png}
-	\caption{A visualization of cumulative distribution \citep{KONECT}}
+	\caption{A visualization of cumulative distribution \cite{KONECT}}
 	\label{fig:cumdist}
 \end{figure}
 %%%%%%%%%%%%%%%%%%
 
 \paragraph{Layout}
-As graphs are of course a form of structural data, visualizing the structure itself is intuitive. With very small graphs this is easy to do, but as graphs grow many problems present themselves. The most obvious issue is the size itself; a graph featuring ten million nodes will be impossible to visualize in a legible way unless it has very particular features which are accounted for beforehand and visualized accordingly. In the case of even relatively small graphs, it is usually necessary to have some kind of structural information about the graph so that node placement can be handled in a sensible way during visualization. Node placement has to consider not only visibility for users, but also semantic issues such as neighbor proximity and edge overlap. Some generic methods for such problems exist, such as force-directed flow algorithms \citep{Didimo2011}, but it is difficult to predict their efficacy in ad-hoc scenarios where the graph's structure is unknown.
+As graphs are of course a form of structural data, visualizing the structure itself is intuitive. With very small graphs this is easy to do, but as graphs grow many problems present themselves. The most obvious issue is the size itself; a graph featuring ten million nodes will be impossible to visualize in a legible way unless it has very particular features which are accounted for beforehand and visualized accordingly. In the case of even relatively small graphs, it is usually necessary to have some kind of structural information about the graph so that node placement can be handled in a sensible way during visualization. Node placement has to consider not only visibility for users, but also semantic issues such as neighbor proximity and edge overlap. Some generic methods for such problems exist, such as force-directed flow algorithms \cite{Didimo2011}, but it is difficult to predict their efficacy in ad-hoc scenarios where the graph's structure is unknown.
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -152,19 +152,19 @@ As graphs are of course a form of structural data, visualizing the structure its
 The primary difference between a hierarchical data set and a simple tree will almost always be the quantity of meta data contained in elements of a hierarchy. Typically in netwrok analysis, the features of a data set with which we are most interested are exclusively structural; in/out degrees, connectivity, edge weights, etc. With hierarchical data, we are frequently just as concerned with attributes of hierarchy elements as we are with the structure of the hierarchy itself. A good example of this would be a hierarchical file system in which we want to both examine the folder structure as well as features of individual sub-hierarchies such as total disk space, filepaths, and file types therein. 
 
 \paragraph{Treemaps}
-A relatively new visualization which is purpose-built for displaying hierarchies is the tree map. A tree map is a very space efficient method for displaying a hierarchy using a set of nested rectangles. Nesting of course occurs based on levels in the hierarchy being visualized, and layout and coloring can be performed based on features of the data. Though area based visualizations such as mosaic plots have existed for a very long time, the generation of a tree map is dependent on a recursive algorithm for generating tiles. Though the first instance of such an algorithm dates back over 20 years \citep{Shneiderman1992}, attention to the ways in which tree maps could be applied to varying types of data and analyses became much more popular several years later. In displaying hierarchies, the way in which hierarchies were visualized colored and labeled varied strongly depending on how many dimensions were contained in the data and what the purpose of the analysis was \citep{Bederson2002}\citep{Schreck2006}. A basic example treemap can be seen in Figure \ref{fig:treemap_ex}.
+A relatively new visualization which is purpose-built for displaying hierarchies is the tree map. A tree map is a very space efficient method for displaying a hierarchy using a set of nested rectangles. Nesting of course occurs based on levels in the hierarchy being visualized, and layout and coloring can be performed based on features of the data. Though area based visualizations such as mosaic plots have existed for a very long time, the generation of a tree map is dependent on a recursive algorithm for generating tiles. Though the first instance of such an algorithm dates back over 20 years \cite{Shneiderman1992}, attention to the ways in which tree maps could be applied to varying types of data and analyses became much more popular several years later. In displaying hierarchies, the way in which hierarchies were visualized colored and labeled varied strongly depending on how many dimensions were contained in the data and what the purpose of the analysis was \cite{Bederson2002}\cite{Schreck2006}. A basic example treemap can be seen in Figure \ref{fig:treemap_ex}.
 
 %%%%%%%%%%%%%%%%%%
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.8]{treemap_example.png}
-	\caption{A treemap showing relative folder sizes in a file system \citep{Fry2008}}
+	\caption{A treemap showing relative folder sizes in a file system \cite{Fry2008}}
 	\label{fig:treemap_ex}
 \end{figure}
 %%%%%%%%%%%%%%%%%%
 
 \paragraph{Alternative Visualizations}
-Many alternatives to tree maps for the visualization of hierarchies have been presented, but typically these are all some form of enhancement of modification of the basic tree map format \citep{Slingsby2009}. In most cases, if an analysis requires breaking a hierarchy into its constituent parts for a more specific analysis, a summary data set of another type (Generally numerical) can be extracted and the visualization methods from previous sections can be applied.
+Many alternatives to tree maps for the visualization of hierarchies have been presented, but typically these are all some form of enhancement of modification of the basic tree map format \cite{Slingsby2009}. In most cases, if an analysis requires breaking a hierarchy into its constituent parts for a more specific analysis, a summary data set of another type (Generally numerical) can be extracted and the visualization methods from previous sections can be applied.
    
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

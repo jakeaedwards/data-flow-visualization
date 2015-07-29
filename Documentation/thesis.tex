@@ -77,7 +77,7 @@
 %\usepackage{english}
 %\usepackage{babel}
 %\usepackage{supertabular}
-\usepackage[round]{natbib}
+%\usepackage[square]{natbib}
 \usepackage{afterpage}  % das problem mit den groﬂen tabellen
 \usepackage{url}
 \usepackage[sf,sl,outermarks]{titlesec}
@@ -717,10 +717,12 @@ Jacob \textsc{Edwards}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\addcontentsline{toc}{chapter}{Bibliography}
-\bibliographystyle{plainnat}
+%\bibliographystyle{plainnat}
 %IEEEtranSA
 %\bstctlcite{IEEEexample:BSTcontrol} % load IEEE cite control entry
-\bibliography{references}
+\bibliographystyle{IEEEtranSA}
+\bstctlcite{IEEEexample:BSTcontrol}
+\bibliography{references,IEEEconf}
 
 \cleardoublepage
 
