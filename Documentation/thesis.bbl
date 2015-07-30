@@ -64,12 +64,6 @@ F.~J. Anscombe, ``{Graphs in Statistical Analysis},'' \emph{The American
   \url{https://spark.apache.org/}
 \BIBentrySTDinterwordspacing
 
-\bibitem[{Apa}15c]{ApacheSoftwareFoundation2015}
-\BIBentryALTinterwordspacing
-------, ``{Welcome to Apache Hadoop},'' 2015. [Online]. Available:
-  \url{http://hadoop.apache.org/}
-\BIBentrySTDinterwordspacing
-
 \bibitem[BEHK10]{Battre2010}
 \BIBentryALTinterwordspacing
 D.~Battr\'{e}, S.~Ewen, F.~Hueske, and O.~Kao, ``{Nephele / PACTs : A
@@ -140,6 +134,12 @@ S.~Few, \emph{{Information Dashboard Design}}, 2006. [Online]. Available:
 \bibitem[Fis36]{Fisher1936}
 R.~Fisher, ``{The Use of Multiple Measurements in Taxonomic Problems},''
   \emph{Annals of Eugenics}, vol.~7, no.~2, pp. 179--188, 1936.
+
+\bibitem[Fou15]{ApacheSoftwareFoundation2015}
+\BIBentryALTinterwordspacing
+A.~S. Foundation, ``{Welcome to Apache Hadoop},'' 2015. [Online]. Available:
+  \url{http://hadoop.apache.org/}
+\BIBentrySTDinterwordspacing
 
 \bibitem[FR15]{Fry2015}
 \BIBentryALTinterwordspacing
