@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
 The style file: IEEEtranSA.bst
 I couldn't open database file IEEEconf.bib
----line 376 of file thesis.aux
+---line 378 of file thesis.aux
  : \bibdata{references,IEEEconf
  :                             }
 I'm skipping whatever remains of this command

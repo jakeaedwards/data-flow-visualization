@@ -10,6 +10,8 @@ import org.apache.flink.api.java.tuple.Tuple1;
 import org.apache.flink.api.java.tuple.Tuple2;
 import org.apache.flink.util.Collector;
 
+import java.util.Random;
+
 /**
  * Created by Jake on 6/30/2015.
  */
@@ -26,7 +28,7 @@ public class Census {
                 .types(String.class);
 
         // group by category and sum
-        DataSet<Tuple2<String, Integer>> totals = data.flatMap(new Counter()).groupBy(0).sum(1);
+        DataSet<Tuple2<String, Integer>> totals = data.flatMap(new BayesSimulator()).groupBy(0).sum(1);
 
         DataSet<Tuple2<String,String>> ages = env.readCsvFile(args[0])
                                                 .includeFields(true, false, false, false, false, false, false, false, false, false, false, false, false, false, true)
@@ -46,14 +48,14 @@ public class Census {
         totalsCollector.collect(1, totals, String.class, Integer.class);
         //totalsCollector.collect(2, richTotals, Float.class, Float.class);
         //totalsCollector.collect(3, poorTotals, Float.class, Float.class);
-        visualizer.visualizeBarChart(1, "Census Income Categories", "Category", "Count");
+        visualizer.visualizeBarChart(1, "Classifier Results", "Category", "Count");
         //visualizer.visualizeLineChart(2, ">50K Income Earners", "Age", "Count");
         //visualizer.visualizeLineChart(3, "<=50K Income Earners", "Age", "Count");
         //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
         // emit result
-        richTotals.writeAsCsv("hdfs:///datasets/jedwards/jobOutput");
-        //richTotals.print();
+        richTotals.print();
+
 
         // execute program
         env.execute("Conditional");
@@ -71,6 +73,24 @@ public class Census {
         @Override
         public void flatMap(Tuple1<String> category, Collector<Tuple2<String, Integer>> out){
             out.collect(new Tuple2<>(category.f0, 1));
+        }
+    }
+
+    public static final class BayesSimulator implements FlatMapFunction<Tuple1<String>, Tuple2<String, Integer>> {
+
+        Random r = new Random();
+        public void flatMap(Tuple1<String> original, Collector<Tuple2<String, Integer>> out){
+            float chance = r.nextFloat();
+            if(original.getField(0).equals("<=50K") && chance <= 0.10f){
+                out.collect(new Tuple2<>("False Positive", 1));
+            }
+            else if (original.getField(0).equals("<=50K")){
+                out.collect(new Tuple2<>("True Positive", 1));
+            }
+            else if(original.getField(0).equals(">50K") && chance <= 0.10f){
+                out.collect(new Tuple2<>("False Negative", 1));
+            }
+            else out.collect(new Tuple2<>("True Negative", 1));
         }
     }
 

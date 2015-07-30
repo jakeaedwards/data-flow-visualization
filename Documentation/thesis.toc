@@ -91,59 +91,59 @@
 \contentsline {paragraph}{}{37}{paragraph*.109}
 \contentsline {paragraph}{Visualization Code}{37}{paragraph*.115}
 \contentsline {paragraph}{Bar Chart}{38}{paragraph*.117}
-\contentsline {paragraph}{filtering}{39}{paragraph*.118}
-\contentsline {section}{\numberline {5.2}Network Analysis}{39}{section.121}
-\contentsline {paragraph}{Les Mis\IeC {\'e}rables}{39}{paragraph*.122}
-\contentsline {paragraph}{Edge Weights}{41}{paragraph*.123}
-\contentsline {paragraph}{Wikipedia Conflicts}{41}{paragraph*.126}
-\contentsline {paragraph}{Degree Distribution}{42}{paragraph*.128}
-\contentsline {section}{\numberline {5.3}Classification}{44}{section.131}
-\contentsline {paragraph}{Scatter Plot}{44}{paragraph*.132}
-\contentsline {paragraph}{Matrix Plot}{45}{paragraph*.134}
-\contentsline {paragraph}{Classification Method}{46}{paragraph*.135}
-\contentsline {section}{\numberline {5.4}Custom Applications}{46}{section.137}
-\contentsline {paragraph}{Treemap Implementations}{46}{paragraph*.138}
-\contentsline {paragraph}{Input Format}{46}{paragraph*.139}
-\contentsline {chapter}{\numberline {6}Implementation}{49}{chapter.141}
-\contentsline {section}{\numberline {6.1}Overview}{49}{section.142}
-\contentsline {paragraph}{Visualization Classes}{49}{paragraph*.143}
-\contentsline {section}{\numberline {6.2}Data Collection}{50}{section.145}
-\contentsline {paragraph}{Tuples}{50}{paragraph*.146}
-\contentsline {paragraph}{Data Collector}{50}{paragraph*.147}
-\contentsline {paragraph}{Collect Method}{51}{paragraph*.148}
-\contentsline {paragraph}{Type Erasure}{51}{paragraph*.149}
-\contentsline {paragraph}{Data Sets}{52}{paragraph*.150}
-\contentsline {section}{\numberline {6.3}Visualization}{52}{section.151}
-\contentsline {paragraph}{Factory Pattern}{52}{paragraph*.152}
-\contentsline {paragraph}{Processing}{52}{paragraph*.153}
-\contentsline {paragraph}{Libraries}{53}{paragraph*.154}
-\contentsline {paragraph}{Swing}{53}{paragraph*.155}
-\contentsline {paragraph}{Visualization Classes}{53}{paragraph*.163}
-\contentsline {paragraph}{Adjusting Visualizations}{54}{paragraph*.164}
-\contentsline {section}{\numberline {6.4}Usage}{54}{section.165}
-\contentsline {paragraph}{Order of Events}{54}{paragraph*.167}
-\contentsline {paragraph}{Performance}{56}{paragraph*.168}
-\contentsline {chapter}{\numberline {7}Future Work}{57}{chapter.169}
-\contentsline {section}{\numberline {7.1}Visualizations}{57}{section.170}
-\contentsline {paragraph}{Grammar of Graphics}{57}{paragraph*.171}
-\contentsline {paragraph}{Libraries}{57}{paragraph*.172}
-\contentsline {paragraph}{R \& ggplot}{58}{paragraph*.173}
-\contentsline {paragraph}{R in Java}{58}{paragraph*.174}
-\contentsline {paragraph}{Python}{58}{paragraph*.175}
-\contentsline {paragraph}{JyNi}{59}{paragraph*.176}
-\contentsline {section}{\numberline {7.2}Real-Time Results}{59}{section.177}
-\contentsline {paragraph}{Message Passing}{59}{paragraph*.178}
-\contentsline {section}{\numberline {7.3}Interface}{60}{section.179}
-\contentsline {paragraph}{Javascript}{60}{paragraph*.180}
-\contentsline {section}{\numberline {7.4}Automation}{60}{section.181}
-\contentsline {paragraph}{Automatic Collection}{60}{paragraph*.182}
-\contentsline {paragraph}{Automatic Visualization}{61}{paragraph*.183}
-\contentsline {chapter}{\numberline {8}Conclusions}{62}{chapter.184}
-\contentsline {paragraph}{Visualizations}{62}{paragraph*.185}
-\contentsline {paragraph}{Patterns}{62}{paragraph*.186}
-\contentsline {paragraph}{Applications}{63}{paragraph*.187}
-\contentsline {paragraph}{Summary}{63}{paragraph*.188}
-\contentsline {section}{\numberline {A.1}Collection Code}{64}{section.190}
-\contentsline {paragraph}{HDFS Collect Method}{64}{paragraph*.191}
-\contentsline {paragraph}{Local Collect Method}{65}{paragraph*.223}
-\contentsline {chapter}{\nonumberline Bibliography}{66}{appendix*.269}
+\contentsline {paragraph}{filtering}{39}{paragraph*.119}
+\contentsline {section}{\numberline {5.2}Network Analysis}{40}{section.122}
+\contentsline {paragraph}{Les Mis\IeC {\'e}rables}{40}{paragraph*.123}
+\contentsline {paragraph}{Edge Weights}{41}{paragraph*.124}
+\contentsline {paragraph}{Wikipedia Conflicts}{41}{paragraph*.127}
+\contentsline {paragraph}{Degree Distribution}{43}{paragraph*.129}
+\contentsline {section}{\numberline {5.3}Classification}{43}{section.132}
+\contentsline {paragraph}{Scatter Plot}{45}{paragraph*.133}
+\contentsline {paragraph}{Matrix Plot}{45}{paragraph*.135}
+\contentsline {paragraph}{Classification Method}{46}{paragraph*.136}
+\contentsline {section}{\numberline {5.4}Custom Applications}{46}{section.138}
+\contentsline {paragraph}{Treemap Implementations}{48}{paragraph*.139}
+\contentsline {paragraph}{Input Format}{48}{paragraph*.140}
+\contentsline {chapter}{\numberline {6}Implementation}{50}{chapter.142}
+\contentsline {section}{\numberline {6.1}Overview}{50}{section.143}
+\contentsline {paragraph}{Visualization Classes}{50}{paragraph*.144}
+\contentsline {section}{\numberline {6.2}Data Collection}{51}{section.146}
+\contentsline {paragraph}{Tuples}{51}{paragraph*.147}
+\contentsline {paragraph}{Data Collector}{51}{paragraph*.148}
+\contentsline {paragraph}{Collect Method}{52}{paragraph*.149}
+\contentsline {paragraph}{Type Erasure}{52}{paragraph*.150}
+\contentsline {paragraph}{Data Sets}{53}{paragraph*.151}
+\contentsline {section}{\numberline {6.3}Visualization}{53}{section.152}
+\contentsline {paragraph}{Factory Pattern}{53}{paragraph*.153}
+\contentsline {paragraph}{Processing}{53}{paragraph*.154}
+\contentsline {paragraph}{Libraries}{54}{paragraph*.155}
+\contentsline {paragraph}{Swing}{54}{paragraph*.156}
+\contentsline {paragraph}{Visualization Classes}{54}{paragraph*.164}
+\contentsline {paragraph}{Adjusting Visualizations}{55}{paragraph*.165}
+\contentsline {section}{\numberline {6.4}Usage}{55}{section.166}
+\contentsline {paragraph}{Order of Events}{55}{paragraph*.168}
+\contentsline {paragraph}{Performance}{57}{paragraph*.169}
+\contentsline {chapter}{\numberline {7}Future Work}{58}{chapter.170}
+\contentsline {section}{\numberline {7.1}Visualizations}{58}{section.171}
+\contentsline {paragraph}{Grammar of Graphics}{58}{paragraph*.172}
+\contentsline {paragraph}{Libraries}{58}{paragraph*.173}
+\contentsline {paragraph}{R \& ggplot}{59}{paragraph*.174}
+\contentsline {paragraph}{R in Java}{59}{paragraph*.175}
+\contentsline {paragraph}{Python}{59}{paragraph*.176}
+\contentsline {paragraph}{JyNi}{60}{paragraph*.177}
+\contentsline {section}{\numberline {7.2}Real-Time Results}{60}{section.178}
+\contentsline {paragraph}{Message Passing}{60}{paragraph*.179}
+\contentsline {section}{\numberline {7.3}Interface}{61}{section.180}
+\contentsline {paragraph}{Javascript}{61}{paragraph*.181}
+\contentsline {section}{\numberline {7.4}Automation}{61}{section.182}
+\contentsline {paragraph}{Automatic Collection}{61}{paragraph*.183}
+\contentsline {paragraph}{Automatic Visualization}{62}{paragraph*.184}
+\contentsline {chapter}{\numberline {8}Conclusions}{63}{chapter.185}
+\contentsline {paragraph}{Visualizations}{63}{paragraph*.186}
+\contentsline {paragraph}{Patterns}{63}{paragraph*.187}
+\contentsline {paragraph}{Applications}{64}{paragraph*.188}
+\contentsline {paragraph}{Summary}{64}{paragraph*.189}
+\contentsline {section}{\numberline {A.1}Collection Code}{65}{section.191}
+\contentsline {paragraph}{HDFS Collect Method}{65}{paragraph*.192}
+\contentsline {paragraph}{Local Collect Method}{66}{paragraph*.224}
+\contentsline {chapter}{\nonumberline Bibliography}{67}{appendix*.270}
