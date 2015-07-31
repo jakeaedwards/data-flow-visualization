@@ -31,19 +31,13 @@ Y.~Amsterdamer, S.~B. Davidson, D.~Deutch, T.~Milo, J.~Stoyanovich, and
   \url{http://dl.acm.org/citation.cfm?id=2095693}
 \BIBentrySTDinterwordspacing
 
-\bibitem[Ame]{Amende2010}
-\BIBentryALTinterwordspacing
-``{A Structured Review of Information Visualization Success Measurement}.''
-  [Online]. Available:
-  \url{http://ewic.bcs.org/upload/pdf/ewic\_hci10\_paper1.pdf}
-\BIBentrySTDinterwordspacing
+\bibitem[Ame10]{Amende2010}
+N.~Amende, ``{A Structured Review of Information Visualization Success
+  Measurement},'' in \emph{BCS-HCI 2010}, Dundee, UK, 2010, pp. 6--10.
 
 \bibitem[Ans73]{Anscombe1973}
-\BIBentryALTinterwordspacing
 F.~J. Anscombe, ``{Graphs in Statistical Analysis},'' \emph{The American
-  Statistician}, vol.~27, no.~1, pp. 17--21, 1973. [Online]. Available:
-  \url{http://www.sjsu.edu/faculty/gerstman/StatPrimer/anscombe1973.pdf}
-\BIBentrySTDinterwordspacing
+  Statistician}, vol.~27, no.~1, pp. 17--21, 1973.
 
 \bibitem[{Apa}14]{ApacheSoftwareFoundation2014}
 \BIBentryALTinterwordspacing
@@ -54,24 +48,21 @@ F.~J. Anscombe, ``{Graphs in Statistical Analysis},'' \emph{The American
 
 \bibitem[{Apa}15a]{Flink2015}
 \BIBentryALTinterwordspacing
-------, ``{Apache Flink},'' 2015. [Online]. Available:
+{Apache Software Foundation}, ``{Apache Flink},'' 2015. [Online]. Available:
   \url{http://flink.apache.org/}
 \BIBentrySTDinterwordspacing
 
 \bibitem[{Apa}15b]{Spark2015}
 \BIBentryALTinterwordspacing
-------, ``{Apache Spark},'' 2015. [Online]. Available:
+{Apache Software Foundation}, ``{Apache Spark},'' 2015. [Online]. Available:
   \url{https://spark.apache.org/}
 \BIBentrySTDinterwordspacing
 
 \bibitem[BEHK10]{Battre2010}
-\BIBentryALTinterwordspacing
 D.~Battr\'{e}, S.~Ewen, F.~Hueske, and O.~Kao, ``{Nephele / PACTs : A
   Programming Model and Execution Framework for Web-Scale Analytical Processing
   Categories and Subject Descriptors},'' \emph{ACM Symposium on Cloud
-  Computing}, pp. 119--130, 2010. [Online]. Available:
-  \url{http://doi.acm.org/10.1145/1807128.1807148$\backslash$nhttp://dl.acm.org/citation.cfm?id=1807148}
-\BIBentrySTDinterwordspacing
+  Computing}, pp. 119--130, 2010.
 
 \bibitem[Ber15]{Bernier2015}
 \BIBentryALTinterwordspacing
@@ -100,17 +91,14 @@ B.~B. Bederson, B.~Shneiderman, and M.~Wattenberg, ``{Ordered and quantum
 
 \bibitem[{Cit}13]{CityUniversityLondon2013}
 \BIBentryALTinterwordspacing
-------, ``{giCentre Utilities},'' 2013. [Online]. Available:
+{City University London}, ``{giCentre Utilities},'' 2013. [Online]. Available:
   \url{http://www.gicentre.net/software/\#/utils/}
 \BIBentrySTDinterwordspacing
 
 \bibitem[DGG87]{Deleuze1987}
-\BIBentryALTinterwordspacing
 G.~Deleuze, P.~Guattari, and F.~Guattari, \emph{{A thousand plateaus:
   Capitalism and schizophrenia}}.\hskip 1em plus 0.5em minus 0.4em\relax
-  University of Minnesota Press, 1987, vol.~19, no.~4. [Online]. Available:
-  \url{http://www.jstor.org/stable/203963?origin=crossref$\backslash$nhttp://www.amazon.com/dp/0816614024$\backslash$nhttp://books.google.com/books?hl=en\&lr=\&id=C948Tsr72woC\&oi=fnd\&pg=PR9\&dq=a+thousand+plateaus:+capitalism+and+schizophrenia\&ots=9kIrnHqEGg\&sig=geid0WbkPt-qSY-Ub7WB7f\_eK5w}
-\BIBentrySTDinterwordspacing
+  University of Minnesota Press, 1987, vol.~19, no.~4.
 
 \bibitem[DLR11]{Didimo2011}
 W.~Didimo, G.~Liotta, and S.~Romeao, ``{Topology-Driven Force-Directed
@@ -119,14 +107,12 @@ W.~Didimo, G.~Liotta, and S.~Romeao, ``{Topology-Driven Force-Directed
   Konstanz: Springer Berlin Heidelberg, 2011, pp. 165--176.
 
 \bibitem[Few06]{Few2006}
-\BIBentryALTinterwordspacing
-S.~Few, \emph{{Information Dashboard Design}}, 2006. [Online]. Available:
-  \url{http://proquest.safaribooksonline.com/0596100167?suggested=top}
-\BIBentrySTDinterwordspacing
+S.~Few, \emph{{Information Dashboard Design}}, 1st~ed.\hskip 1em plus 0.5em
+  minus 0.4em\relax Sebastopol: O'Reilly Media, 2006.
 
 \bibitem[Few07]{Few2007}
 \BIBentryALTinterwordspacing
-------, ``{Save the Pies for Dessert},'' \emph{Visual Business Intelligence
+S.~Few, ``{Save the Pies for Dessert},'' \emph{Visual Business Intelligence
   Newsletter}, pp. 1--14, 2007. [Online]. Available:
   \url{http://www.perceptualedge.com/articles/visual\_business\_intelligence/save\_the\_pies\_for\_dessert.pdf}
 \BIBentrySTDinterwordspacing
@@ -154,14 +140,11 @@ B.~Fry, \emph{{Visualizing data}}, 2008. [Online]. Available:
 \BIBentrySTDinterwordspacing
 
 \bibitem[GAW{\etalchar{+}}08]{Gedik2008}
-\BIBentryALTinterwordspacing
 B.~Gedik, H.~Andrade, K.-L. Wu, P.~S. Yu, and M.~Doo, ``{SPADE: The system S
   declarative stream processing engine.}'' \emph{Proceedings of the ACM SIGMOD
   International Conference on Management of Data}, no. SIGMOD 2008: Proceedings
   of the ACM SIGMOD International Conference on Management of Data 2008, pp.
-  1123--1134, 2008. [Online]. Available:
-  \url{https://access.korea.ac.kr/link.n2s?url=http://search.ebscohost.com/login.aspx?direct=true\&db=edselc\&AN=edselc.2-52.0-55649105542\&lang=ko\&site=eds-live\&scope=site}
-\BIBentrySTDinterwordspacing
+  1123--1134, 2008.
 
 \bibitem[GHJV95]{Gamma1995}
 E.~Gamma, R.~Helm, R.~Johnson, and J.~Vlissides, \emph{{Design Patterns}},
@@ -169,13 +152,10 @@ E.~Gamma, R.~Helm, R.~Johnson, and J.~Vlissides, \emph{{Design Patterns}},
   Addison Wesley, 1995.
 
 \bibitem[GNC{\etalchar{+}}09]{Gates2009}
-\BIBentryALTinterwordspacing
 A.~F. Gates, O.~Natkovich, S.~Chopra, P.~Kamath, S.~M. Narayanamurthy,
   C.~Olston, R.~Benjaminn, S.~Srinavasan, and U.~Srivastava, ``{Building a
   High-Level Dataflow System on top of Map-Reduce: The Pig Experience},''
-  \emph{Vldb '09}, pp. 1--12, 2009. [Online]. Available:
-  \url{papers3://publication/uuid/08DB3582-AD5E-47BB-A370-589985B45F92}
-\BIBentrySTDinterwordspacing
+  \emph{Vldb '09}, pp. 1--12, 2009.
 
 \bibitem[Ho08]{Ho2008}
 \BIBentryALTinterwordspacing
@@ -278,23 +258,17 @@ B.~Shneiderman, ``{Tree visualization with tree-maps: 2-d space-filling
   approach},'' pp. 92--99, 1992.
 
 \bibitem[SKM06]{Schreck2006}
-\BIBentryALTinterwordspacing
 T.~Schreck, D.~Keim, and F.~Mansmann, ``{Regular TreeMap Layouts for Visual
   Analysis of Hierarchical Data},'' in \emph{Spring Conference on Computer
-  Graphics}, 2006. [Online]. Available:
-  \url{http://www.gris.informatik.tu-darmstadt.de/~tschreck/docs/sccg06.pdf}
-\BIBentrySTDinterwordspacing
+  Graphics}, 2006.
 
 \bibitem[SW12]{Shoresh2012}
 N.~Shoresh and B.~Wong, ``{Points of view: Data exploration},'' \emph{Nature
   Methods}, vol.~9, no.~1, p.~5, 2012.
 
 \bibitem[Tuf01]{Tufle1983}
-\BIBentryALTinterwordspacing
 E.~Tufte, ``{The Visual Display of Quantitative Information},'' \emph{CT
-  Graphics, Cheshire}, 2001. [Online]. Available:
-  \url{http://www.colorado.edu/UCB/AcademicAffairs/ArtsSciences/geography/foote/maps/assign/reading/TufteCoversheet.pdf}
-\BIBentrySTDinterwordspacing
+  Graphics, Cheshire}, 2001.
 
 \bibitem[VWV09]{VanHam2009}
 F.~{Van Ham}, M.~Wattenberg, and F.~B. Vi\'{e}gas, ``{Mapping text with phrase
